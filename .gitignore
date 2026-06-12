@@ -15,6 +15,9 @@ dist-ssr
 # Claude Code local settings
 .claude/
 
+# Loose image staging folder at project root
+product-images/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

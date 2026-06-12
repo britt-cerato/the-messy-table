@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import Shop from './Pages/Shop'
 import About from './Pages/About'
 import Ideas from './Pages/Ideas'
+import Product from './Pages/Product'
 import './App.css'
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/:id" element={<Product />} />
           <Route path="/about" element={<About />} />
           <Route path="/ideas" element={<Ideas />} />
         </Routes>

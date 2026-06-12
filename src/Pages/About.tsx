@@ -9,8 +9,9 @@ function About() {
         <div className="about-image"></div>
         <div className="about-text">
           <h3>Hi, I'm Kerri!</h3>
-          <p>I am on a mission to help teachers who need new works, materials and crafts in their classrooms. I am here to give you something new and exciting for your kiddos to enjoy as well as allowing them to get a little messy with super easy crafts.</p>
+          <p>I have worked as a Montessori assistant at Southern NH Montessori Academy, and I am passionate about creating hands-on materials for teachers and homeschool families who want to bring something fresh and fun into their learning spaces. I am here to give you something new and exciting for your kiddos to enjoy as well as allowing them to get a little messy with super easy crafts.</p>
           <p>Every product I make is created with love, tested in real classrooms, and designed to make your life a little easier and a lot more fun.</p>
+          <p>Whether you're a classroom teacher or a homeschool family, my works are designed to bring the hands-on Montessori approach into your space — no fancy setup required.</p>
         </div>
       </section>
     </div>
