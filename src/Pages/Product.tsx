@@ -22,6 +22,7 @@ function Product() {
 
   const allImages = [product.image, ...product.gallery]
   const pageUrl = `https://themessytable.com/shop/${product.id}`
+  const pageTitle = `${product.name} — The Messy Table`
 
   const productSchema = {
     '@context': 'https://schema.org',
@@ -46,15 +47,15 @@ function Product() {
   return (
     <div>
       <Helmet>
-        <title>{product.name} — The Messy Table</title>
+        <title>{pageTitle}</title>
         <meta name="description" content={`${product.description} ${product.details.join('. ')}.`} />
-        <meta property="og:title" content={`${product.name} — The Messy Table`} />
+        <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={product.description} />
         <meta property="og:type" content="product" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={`${product.name} — The Messy Table`} />
+        <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={product.description} />
         <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
       </Helmet>
