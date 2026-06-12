@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap');
+
+:root {
+  --dusty-pink: #E8C4C0;
+  --warm-cream: #F5EDE0;
+  --sage-green: #B2C9A8;
+  --soft-lavender: #C4B0D8;
+  --warm-gray: #C8C0BC;
+  --off-white: #FDFAF7;
+  --text-dark: #5A4A4A;
+  --text-medium: #8B7070;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--off-white);
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-dark);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  background-color: var(--warm-cream);
+  border-bottom: 1px solid var(--dusty-pink);
+}
+
+.nav-brand h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  color: var(--text-dark);
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text-medium);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-dark);
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 48px;
+  background-color: var(--off-white);
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.hero-content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  color: var(--text-medium);
+  margin-bottom: 32px;
+  max-width: 500px;
+}
+
+.hero-button {
+  display: inline-block;
+  background-color: var(--dusty-pink);
+  color: var(--text-dark);
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.hero-button:hover {
+  background-color: var(--soft-lavender);
+}
+
+.products {
+  padding: 80px 48px;
+  background-color: var(--warm-cream);
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--text-dark);
+  margin-bottom: 48px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: var(--off-white);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--dusty-pink);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.product-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-medium);
+  font-size: 15px;
+}
+
+.ideas {
+  padding: 80px 48px;
+  background-color: var(--soft-lavender);
+  text-align: center;
+}
+
+.ideas-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.ideas-content p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 32px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ideas-button {
+  display: inline-block;
+  background-color: var(--off-white);
+  color: var(--text-dark);
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.ideas-button:hover {
+  background-color: var(--warm-cream);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 48px;
+  background-color: var(--text-dark);
+}
+
+.footer-brand h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  color: var(--off-white);
+  margin-bottom: 8px;
+}
+
+.footer-brand p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--warm-gray);
+}
+
+.footer-links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.footer-links a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--warm-gray);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: var(--off-white);
+}.page-hero {
+  padding: 60px 48px;
+  background-color: var(--warm-cream);
+  text-align: center;
+}
+
+.page-hero h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.page-hero p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  color: var(--text-medium);
+}.about-content {
+  display: flex;
+  gap: 48px;
+  padding: 80px 48px;
+  max-width: 1000px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.about-image {
+  width: 300px;
+  min-width: 300px;
+  height: 300px;
+  background-color: var(--dusty-pink);
+  border-radius: 16px;
+}
+
+.about-text h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.about-text p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: var(--text-medium);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* ---- Ideas Page ---- */
+
+.ideas-grid-section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.ideas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.idea-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.idea-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.idea-image {
+  background-color: #e8e0d5;
+  height: 180px;
+  width: 100%;
+}
+
+.idea-card h3 {
+  padding: 1rem 1.25rem 0.5rem;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.idea-card p {
+  padding: 0 1.25rem 1.25rem;
+  font-size: 0.95rem;
+  color: #6b6160;
+  text-align: left;
+}
