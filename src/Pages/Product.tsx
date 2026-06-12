@@ -11,6 +11,9 @@ function Product() {
   if (!product) {
     return (
       <div className="product-not-found">
+        <Helmet>
+          <title>Product Not Found — The Messy Table</title>
+        </Helmet>
         <h2>Product not found</h2>
         <Link to="/shop" className="back-link">← Back to Shop</Link>
       </div>
@@ -18,9 +21,43 @@ function Product() {
   }
 
   const allImages = [product.image, ...product.gallery]
+  const pageUrl = `https://themessytable.com/shop/${product.id}`
+
+  const productSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: product.name,
+    description: product.description,
+    brand: { '@type': 'Brand', name: 'The Messy Table' },
+    offers: {
+      '@type': 'Offer',
+      price: product.price.replace('$', ''),
+      priceCurrency: 'USD',
+      availability: 'https://schema.org/InStock',
+      url: product.etsy,
+      seller: { '@type': 'Organization', name: 'The Messy Table' },
+    },
+    audience: {
+      '@type': 'EducationalAudience',
+      audienceType: 'Montessori classroom, homeschool families, Pre-K to Grade 2',
+    },
+  }
 
   return (
     <div>
+      <Helmet>
+        <title>{product.name} — The Messy Table</title>
+        <meta name="description" content={`${product.description} ${product.details.join('. ')}.`} />
+        <meta property="og:title" content={`${product.name} — The Messy Table`} />
+        <meta property="og:description" content={product.description} />
+        <meta property="og:type" content="product" />
+        <meta property="og:url" content={pageUrl} />
+        <meta property="og:site_name" content="The Messy Table" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${product.name} — The Messy Table`} />
+        <meta name="twitter:description" content={product.description} />
+        <script type="application/ld+json">{JSON.stringify(productSchema)}</script>
+      </Helmet>
       <div className="product-page-breadcrumb">
         <Link to="/shop">Shop</Link>
         <span> / </span>
@@ -31,7 +68,7 @@ function Product() {
         <div className="product-page-images">
           <img
             src={allImages[activeImage]}
-            alt={product.name}
+            alt={`${product.name} — Montessori ${product.category} work`}
             className="product-page-image"
           />
           {allImages.length > 1 && (
