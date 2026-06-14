@@ -26,7 +26,8 @@ function Shop() {
         const items = PRODUCTS.filter((p) => p.category === cat.id)
         return (
           <section key={cat.id} className="products">
-            <h2 className="section-title">{cat.label} Works</h2>
+            <h2 className="section-title">{cat.sectionTitle}</h2>
+            <p className="section-description">{cat.description}</p>
             <div className="products-grid">
               {items.map((product) => (
                 <Link to={`/shop/${product.id}`} key={product.id} className="product-card">

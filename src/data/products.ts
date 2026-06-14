@@ -263,11 +263,11 @@ export const PRODUCTS: Product[] = [
   },
 ]
 
-export const CATEGORIES: { id: Category; label: string }[] = [
-  { id: 'nomenclature', label: 'Nomenclature' },
-  { id: 'language', label: 'Language' },
-  { id: 'math', label: 'Math' },
-  { id: 'seasonal', label: 'Seasonal' },
+export const CATEGORIES: { id: Category; label: string; sectionTitle: string; description: string }[] = [
+  { id: 'nomenclature', label: 'Matching Cards', sectionTitle: 'Matching Cards', description: 'Picture cards, label cards, and control cards — children match the word to the image and check their own work. Great for science, art, and vocabulary.' },
+  { id: 'language', label: 'Language', sectionTitle: 'Language Works', description: 'Hands-on phonics, word building, and reading activities for Pre-K through Grade 1.' },
+  { id: 'math', label: 'Math', sectionTitle: 'Math Works', description: 'Concrete math activities that build number sense, counting, and early arithmetic skills.' },
+  { id: 'seasonal', label: 'Seasonal', sectionTitle: 'Seasonal Works', description: 'Holiday and seasonal activities that keep the shelf fresh and kiddos excited all year long.' },
 ]
 
 export function getProduct(id: string): Product | undefined {

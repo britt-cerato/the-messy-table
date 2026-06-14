@@ -1,4 +1,6 @@
 import { Helmet } from 'react-helmet-async'
+import { Link } from 'react-router-dom'
+import { IDEAS } from '../data/ideas'
 
 function Ideas() {
   return (
@@ -15,27 +17,29 @@ function Ideas() {
         <meta name="twitter:title" content="Montessori Craft Ideas & Classroom Activities — The Messy Table" />
         <meta name="twitter:description" content="Free Montessori-inspired craft ideas and classroom activity guides for teachers and homeschool families." />
       </Helmet>
+
       <section className="page-hero">
-        <h2>Ideas</h2>
-        <p>Easy craft ideas and classroom activities your kiddos will love.</p>
+        <h2>Ideas &amp; Activity Guides</h2>
+        <p>Classroom-tested ideas from Kerri's Montessori classroom to yours.</p>
       </section>
+
       <section className="ideas-grid-section">
         <div className="ideas-grid">
-          <div className="idea-card">
-            <div className="idea-image"></div>
-            <h3>Paper Bag Puppets</h3>
-            <p>A super easy craft that keeps kiddos busy and creative for hours!</p>
-          </div>
-          <div className="idea-card">
-            <div className="idea-image"></div>
-            <h3>Rainbow Sensory Bins</h3>
-            <p>Perfect for early learners — colorful, tactile and so much fun.</p>
-          </div>
-          <div className="idea-card">
-            <div className="idea-image"></div>
-            <h3>Nature Collages</h3>
-            <p>Take learning outside and bring it back in with beautiful nature art.</p>
-          </div>
+          {IDEAS.map((idea) => (
+            <Link
+              to={`/ideas/${idea.slug}`}
+              key={idea.slug}
+              className="idea-card idea-card-link"
+            >
+              <div className="idea-image" aria-hidden="true" />
+              <div className="idea-card-body">
+                <span className="idea-card-category">{idea.category}</span>
+                <h3>{idea.title}</h3>
+                <p>{idea.excerpt}</p>
+                <span className="idea-card-read-more">Read more →</span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
     </div>

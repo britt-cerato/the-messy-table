@@ -3,6 +3,7 @@ import Home from './Pages/Home'
 import Shop from './Pages/Shop'
 import About from './Pages/About'
 import Ideas from './Pages/Ideas'
+import IdeaPost from './Pages/IdeaPost'
 import Product from './Pages/Product'
 import Contact from './Pages/Contact'
 import './App.css'
@@ -29,6 +30,7 @@ function App() {
           <Route path="/shop/:id" element={<Product />} />
           <Route path="/about" element={<About />} />
           <Route path="/ideas" element={<Ideas />} />
+          <Route path="/ideas/:slug" element={<IdeaPost />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <footer className="footer">

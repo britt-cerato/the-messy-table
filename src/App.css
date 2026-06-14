@@ -133,7 +133,16 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   color: var(--text-dark);
-  margin-bottom: 48px;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-medium);
+  max-width: 600px;
+  margin: 0 auto 40px;
+  line-height: 1.6;
 }
 
 .products-grid {
@@ -643,4 +652,201 @@ body {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   color: var(--text-medium);
+}
+/* ---- Ideas Hub ---- */
+
+.idea-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.idea-card-body {
+  padding: 1rem 1.25rem 1.25rem;
+}
+
+.idea-card-body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.idea-card-body p {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.idea-card-category {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--soft-lavender);
+  margin-bottom: 0.4rem;
+}
+
+.idea-card-read-more {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--soft-lavender);
+}
+
+/* ---- Idea Post (Article Page) ---- */
+
+.idea-post-breadcrumb {
+  padding: 20px 48px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: var(--text-medium);
+  background-color: var(--warm-cream);
+
+  @media (max-width: 600px) {
+    padding: 16px 24px;
+  }
+}
+
+.idea-post-breadcrumb a {
+  color: var(--soft-lavender);
+  text-decoration: none;
+}
+
+.idea-post-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.idea-post {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 2rem 2rem;
+
+  @media (max-width: 600px) {
+    padding: 2rem 1.25rem;
+  }
+}
+
+.idea-post-header {
+  margin-bottom: 2rem;
+}
+
+.idea-post-category {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--soft-lavender);
+  margin-bottom: 0.75rem;
+}
+
+.idea-post-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  line-height: 1.25;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.idea-post-byline {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--text-medium);
+  font-style: italic;
+}
+
+.idea-post-intro {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  margin-bottom: 2.5rem;
+  border-left: 3px solid var(--soft-lavender);
+  padding-left: 1.25rem;
+}
+
+.idea-post-section {
+  margin-bottom: 2rem;
+}
+
+.idea-post-section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.35rem;
+  color: var(--text-dark);
+  margin-bottom: 0.75rem;
+}
+
+.idea-post-section p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  line-height: 1.75;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.idea-post-faqs {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e8e0d5;
+}
+
+.idea-post-faqs h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.faq-item {
+  background-color: var(--warm-cream);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+}
+
+.faq-question {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.5rem;
+}
+
+.faq-answer {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-medium);
+  margin: 0;
+}
+
+.idea-post-products {
+  background-color: var(--warm-cream);
+  padding: 3rem 2rem;
+  margin-top: 1rem;
+}
+
+.idea-post-footer {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.5rem 2rem 3rem;
+}
+
+.back-link {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--soft-lavender);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
