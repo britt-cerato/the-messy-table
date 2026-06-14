@@ -362,6 +362,50 @@ body {
   margin-bottom: 16px;
 }
 
+/* ---- Work Ideas Theme Cards ---- */
+
+.idea-theme-card {
+  background-color: var(--off-white);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.idea-theme-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.idea-theme-image {
+  width: 100%;
+  height: 200px;
+  background-color: var(--dusty-pink);
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.idea-theme-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.idea-theme-card p {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--text-medium);
+  font-size: 15px;
+}
+
+.ideas-coming-soon {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text-medium);
+  margin-top: 48px;
+  text-align: center;
+}
+
 /* ---- Coming Soon ---- */
 
 .coming-soon {
