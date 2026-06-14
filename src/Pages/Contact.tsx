@@ -6,6 +6,7 @@ const localBusinessSchema = {
   name: 'The Messy Table',
   url: 'https://themessytable.com',
   telephone: '+16035486169',
+  email: 'themessytablenh@gmail.com',
   description: 'Handmade Montessori-inspired classroom materials for teachers and homeschool families. Custom orders welcome.',
   address: {
     '@type': 'PostalAddress',
@@ -38,6 +39,10 @@ function Contact() {
       </section>
       <section className="contact-content">
         <div className="contact-card">
+          <div className="contact-item">
+            <span className="contact-label">Email</span>
+            <a href="mailto:themessytablenh@gmail.com" className="contact-link">themessytablenh@gmail.com</a>
+          </div>
           <div className="contact-item">
             <span className="contact-label">Phone</span>
             <a href="tel:+16035486169" className="contact-link">(603) 548-6169</a>
