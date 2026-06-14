@@ -63,9 +63,9 @@ function Home() {
       </section>
       <section className="ideas">
         <div className="ideas-content">
-          <h2>Get Inspired</h2>
-          <p>Browse our collection of easy craft ideas and classroom activities your kiddos will love.</p>
-          <Link to="/ideas" className="ideas-button">Explore Ideas</Link>
+          <h2>Work Ideas</h2>
+          <p>Seasonal themes, holiday works, and inspiration for your classroom or home — straight from Kerri's shelf.</p>
+          <Link to="/ideas" className="ideas-button">Explore Work Ideas</Link>
         </div>
       </section>
     </div>
