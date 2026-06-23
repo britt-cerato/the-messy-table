@@ -23,7 +23,7 @@ function Shop() {
       </section>
 
       {CATEGORIES.map((cat) => {
-        const items = PRODUCTS.filter((p) => p.category === cat.id)
+        const items = PRODUCTS.filter((p) => p.categories.includes(cat.id))
         return (
           <section key={cat.id} className="products">
             <h2 className="section-title">{cat.sectionTitle}</h2>

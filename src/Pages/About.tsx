@@ -1,5 +1,5 @@
 import { Helmet } from 'react-helmet-async'
-import aboutPhoto from '../assets/about-placeholder.svg'
+import aboutPhoto from '../assets/kerri-about.jpg'
 
 const personSchema = {
   '@context': 'https://schema.org',

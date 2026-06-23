@@ -69,7 +69,7 @@ function Product() {
         <div className="product-page-images">
           <img
             src={allImages[activeImage]}
-            alt={`${product.name} — Montessori ${product.category} work`}
+            alt={`${product.name} — Montessori ${product.categories[0]} work`}
             className="product-page-image"
           />
           {allImages.length > 1 && (
