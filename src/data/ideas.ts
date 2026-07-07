@@ -1,3 +1,10 @@
+import imgBirdFeeder from '../assets/products/diy-bird-feeder.png'
+import imgSeedBombs from '../assets/products/garden-seed-bombs.png'
+import imgFlowerCrowns from '../assets/products/flower-crowns.png'
+import imgIceCream from '../assets/products/should-i-share-ice-cream.png'
+import imgNappingHouse from '../assets/products/the-napping-house.png'
+import imgSpilledMilk from '../assets/products/it-looks-like-spilled-milk.png'
+
 export interface IdeaSection {
   heading: string
   paragraphs: string[]
@@ -14,6 +21,7 @@ export interface Idea {
   excerpt: string
   date: string
   category: string
+  image?: string
   relatedProductIds: string[]
   intro: string
   sections: IdeaSection[]
@@ -396,6 +404,320 @@ export const IDEAS: Idea[] = [
       {
         question: 'My child avoids fine motor work. How do I encourage it?',
         answer: 'Seasonal and novelty materials often draw in reluctant workers — a Halloween-themed tong transfer or a Thanksgiving buttoning turkey feels different from a plain dressing frame. Also check that the materials aren\'t too challenging; starting slightly below a child\'s level builds confidence and engagement.',
+      },
+    ],
+  },
+
+  // ── Crafts ───────────────────────────────────────────────────
+  {
+    slug: 'diy-bird-feeder-craft',
+    title: 'DIY Bird Feeder Craft for Kids (Ages 3–6)',
+    excerpt: 'Mix birdseed and gelatin, press into cookie cutters, and hang outside for the birds. A hands-on nature craft that combines measuring, mixing, and a little patience.',
+    date: '2025-04-15',
+    category: 'Crafts',
+    image: imgBirdFeeder,
+    relatedProductIds: [],
+    intro: 'This bird feeder craft checks every box — measuring, mixing, waiting, and then the very satisfying payoff of watching real birds come to eat something the children made. It pairs beautifully with a spring or birds unit and gives kids a tangible connection to the natural world outside the classroom window.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Ingredients: 2–3 cups of wild bird seed, 1 cup of water (divided), and 4–5 packets of clear gelatin (0.25 oz each).',
+          'Supplies: ribbon, cookie cutters, parchment paper, cooking spray, straws, mixing bowls, a liquid measuring cup, a whisk, and a silicone spatula.',
+        ],
+      },
+      {
+        heading: 'Step-by-Step Instructions',
+        paragraphs: [
+          'Line a cookie sheet with parchment paper. Place cookie cutters on the sheet and spray the inside of each one with cooking spray.',
+          'Measure 2–3 cups of bird seed into a large bowl and set aside. In a separate medium bowl, pour half the water and sprinkle in the gelatin. Whisk to combine. Microwave the remaining water until boiling, then whisk it into the gelatin mixture until fully dissolved.',
+          'Pour the gelatin mixture into the bowl of bird seed and stir until all the liquid is absorbed. Refrigerate for about 5 minutes to cool.',
+          'Cut straws into 3-inch sections. Spoon the cooled mixture into each cookie cutter and press firmly. Push a straw piece about ½ inch down from the top all the way through to the cookie sheet — this creates the ribbon hole.',
+          'Refrigerate overnight (at least 8 hours). Gently remove the cookie cutters, press the straws through to clear the holes, thread ribbon through, and tie a knot. Air dry inside for 24 hours before hanging outside.',
+        ],
+      },
+      {
+        heading: 'Classroom Tips',
+        paragraphs: [
+          'Set up a spooning station where children take turns filling the cutters — great for fine motor practice. The overnight wait builds anticipation and is a natural chance to talk about patience and why things take time.',
+          'Once the feeders are hanging outside, start a simple observation journal where children draw or describe which birds they see. This extends the activity into science and literacy.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How long do the feeders last once hung outside?',
+        answer: 'About 1–2 weeks depending on weather and how many birds visit. They hold up best in dry weather.',
+      },
+      {
+        question: 'What if the feeder falls apart?',
+        answer: 'This usually means the gelatin wasn\'t fully dissolved or the mixture needed more fridge time. Make sure the hot water is truly boiling before adding it, and always refrigerate overnight rather than just a few hours.',
+      },
+      {
+        question: 'What age works best for this craft?',
+        answer: 'Ages 3–6 with light adult guidance. Three-year-olds can pour and stir with help; older children can manage most steps on their own.',
+      },
+    ],
+  },
+
+  {
+    slug: 'garden-seed-bombs',
+    title: 'Garden Seed Bombs: A Spring Craft for Little Hands',
+    excerpt: 'Blend coloured construction paper with water and wildflower seeds to make plantable seed bombs. A simple, mess-friendly craft that ends with real flowers growing in the garden.',
+    date: '2025-04-20',
+    category: 'Crafts',
+    image: imgSeedBombs,
+    relatedProductIds: [],
+    intro: 'Seed bombs are one of those magical crafts where the finished product actually does something. Children blend paper and water into a pulp, roll it into balls with wildflower seeds pressed in, and then plant them — and a few weeks later, flowers grow. It\'s science, practical life, and art all rolled into one soggy, wonderful ball.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Coloured construction paper, wildflower seeds, a cup of water, and a blender or food processor.',
+          'Optional: a paper plate for rolling the balls in seeds.',
+        ],
+      },
+      {
+        heading: 'Step-by-Step Instructions',
+        paragraphs: [
+          'Tear the construction paper into small pieces and place them in the blender or food processor.',
+          'Add a cup of water. Blend for a few minutes until you have a smooth pulp — add more water if needed to keep things moving.',
+          'Spread wildflower seeds across a paper plate.',
+          'Scoop up some of the paper pulp and roll it into a ball in your hands.',
+          'Roll the ball in the wildflower seeds so they stick to the outside.',
+          'Repeat until all the pulp is used up.',
+          'Plant the seed bombs in a garden outside and water them in. In a few weeks, watch the flowers grow!',
+        ],
+      },
+      {
+        heading: 'Classroom Tips',
+        paragraphs: [
+          'This works well as a small-group activity — one child operates the blender with an adult, while others take turns rolling and seed-coating. The sensory experience of the wet pulp is wonderful for young children.',
+          'Use multiple colours of construction paper for visual variety. The paper colour will show in the dried bomb, which makes them look beautiful and gives children ownership over their creation.',
+          'If you have a small garden or planter box near the classroom, plant them together as a group and track growth over the following weeks. This turns the craft into an ongoing science observation.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What kind of wildflower seeds work best?',
+        answer: 'Any wildflower seed mix from a garden centre works well. Look for mixes suited to your region and climate for the best results.',
+      },
+      {
+        question: 'Do the seed bombs need to dry before planting?',
+        answer: 'You can plant them right away while still damp, or let them dry for a day or two first. Both work — planting damp actually tends to help the seeds get a good start.',
+      },
+      {
+        question: 'Is a blender safe to use with children?',
+        answer: 'An adult should operate the blender. Children can participate in tearing the paper and adding it to the blender, then step back while it runs. The rolling and seeding steps are fully child-led.',
+      },
+    ],
+  },
+
+  {
+    slug: 'flower-crowns',
+    title: 'Paper Flower Crowns: A Simple Spring Craft',
+    excerpt: 'Cut, fold, and glue construction paper flowers into a wearable crown. A classic spring craft that children can make and wear the same day.',
+    date: '2025-05-01',
+    category: 'Crafts',
+    image: imgFlowerCrowns,
+    relatedProductIds: ['spring-flower-matching'],
+    intro: 'Flower crowns made from construction paper are a spring classroom staple — and for good reason. They involve measuring, cutting, folding, and assembling, which gives children a full range of fine motor practice. Best of all, children can wear their finished crown home the same day, which makes the payoff immediate and satisfying.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Different coloured construction paper, scissors, a glue stick, a pencil, a stapler, and scotch tape.',
+        ],
+      },
+      {
+        heading: 'Step-by-Step Instructions',
+        paragraphs: [
+          'Cut two long strips of green construction paper for the headband. Tape them together end-to-end for easy length adjusting later. Set aside.',
+          'Cut squares of construction paper in a variety of colours — about 2–3 inches each. Fold each square into quarters. Draw a simple petal shape on the folded square, being careful not to cut along the folded edges (this keeps the petals connected). Cut out the petals and unfold — you\'ll have a four-petal flower.',
+          'Cut small yellow circles for flower centres and small green leaf shapes.',
+          'Assemble the flowers by gluing the petal pieces, yellow centres, and leaves together.',
+          'Glue the finished flowers along the green headband.',
+          'Wrap the headband around the child\'s head to measure, then staple the two ends together to fit.',
+        ],
+      },
+      {
+        heading: 'Classroom Tips',
+        paragraphs: [
+          'Pre-cut the squares and strips ahead of time for younger children (3–4 year olds), and let older children (5–6) do the measuring and cutting themselves.',
+          'Pair this activity with a nature walk to look at real flowers first — children who have observed actual petals make more interesting flower shapes. It also ties in beautifully with the Spring Flower Matching work on the language shelf.',
+          'Display finished crowns on a bulletin board before sending them home — children love seeing their work on the wall.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What age is this craft best for?',
+        answer: 'Ages 3–6. Younger children benefit from pre-cut pieces and adult help with folding; older children can complete most steps independently with a brief demonstration.',
+      },
+      {
+        question: 'How do I make the crown fit different head sizes?',
+        answer: 'The tape-and-staple method is great for this — tape the two strips together loosely to start, then wrap and staple once you know the right size. You can always add a third strip if needed for larger heads.',
+      },
+      {
+        question: 'Can we use other materials for the flowers?',
+        answer: 'Yes! Tissue paper, foam sheets, and coffee filters all make beautiful flowers. Coffee filter flowers dyed with liquid watercolours are especially stunning.',
+      },
+    ],
+  },
+
+  // ── Book Activities ───────────────────────────────────────────
+  {
+    slug: 'should-i-share-my-ice-cream',
+    title: 'Should I Share My Ice Cream? A Circle Time Activity',
+    excerpt: 'After reading Gerald\'s classic dilemma, pass a paper ice cream cone around the circle and practise the language of sharing. A sweet and simple social-emotional activity.',
+    date: '2025-05-10',
+    category: 'Book Activities',
+    image: imgIceCream,
+    relatedProductIds: [],
+    intro: '"Should I Share My Ice Cream?" by Mo Willems is a perfect circle time read-aloud — it\'s funny, short, and opens up a genuine conversation about sharing and kindness. This follow-up activity keeps the energy going while giving every child a chance to practise both the act and the language of sharing.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          '"Should I Share My Ice Cream?" by Mo Willems, a piece of construction paper, and either a ball of yarn or a large pom-pom.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Read the book together at circle time.',
+          'After reading, roll a piece of construction paper into a cone shape — this is your ice cream cone. Use a ball of yarn or a large pom-pom as the "ice cream scoop" on top.',
+          'Start the activity by holding the cone and saying: "I\'m going to share my ice cream with [child\'s name]." Then pass the cone to that child.',
+          'That child passes it to the next child and says the same phrase with the next child\'s name.',
+          'Repeat around the whole circle until everyone has had a turn.',
+        ],
+      },
+      {
+        heading: 'Why This Activity Works',
+        paragraphs: [
+          'The physical act of passing the cone connects the language of sharing to a real gesture. For young children, this kind of embodied learning — doing the thing while saying the thing — helps the concept stick much more than discussion alone.',
+          'The repetitive phrase also gives reluctant speakers a safe structure. Every child says the same sentence, so no one has to come up with their own words. Children who are shy often find this kind of scripted, supported participation much more comfortable.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What if a child doesn\'t want to pass the cone?',
+        answer: 'Completely fine — offer them the choice to pass quietly without saying the phrase, or to hold it for a moment before passing. Social-emotional activities work best when participation is never forced.',
+      },
+      {
+        question: 'Can we do this activity without the book?',
+        answer: 'Yes, though the book sets up the context beautifully. If you don\'t have a copy, you can simply start by talking about a time someone shared something with them, then move into the activity.',
+      },
+      {
+        question: 'How many children can participate at once?',
+        answer: 'This works well for circle groups of any size — 5 to 25 children. Larger groups just mean more turns to practise the sharing phrase, which isn\'t a bad thing!',
+      },
+    ],
+  },
+
+  {
+    slug: 'the-napping-house',
+    title: 'The Napping House: A 3D Storytelling Craft',
+    excerpt: 'After reading the classic stacked-sleepers story, children colour, cut, and assemble their own 3D house with the characters layered inside — a retelling and fine motor activity in one.',
+    date: '2025-05-15',
+    category: 'Book Activities',
+    image: imgNappingHouse,
+    relatedProductIds: ['the-mitten'],
+    intro: '"The Napping House" by Audrey Wood is a beloved cumulative story — each new character stacks on top of the last, building and building until the flea wakes everyone up. This craft activity recreates that stacking magic in a 3D paper house that children build themselves, then use to retell the story.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          '"The Napping House" by Audrey Wood, a printable napping house template with characters, scissors, glue, and crayons or coloured pencils.',
+        ],
+      },
+      {
+        heading: 'Step-by-Step Instructions',
+        paragraphs: [
+          'Start by colouring the house and all the characters in their storybook colours.',
+          'Cut out the house template and each character separately.',
+          'Flip the house template over. Glue the bed template onto the back (inside) of the house.',
+          'Fold along the black lines — the two door flaps and the roof — so you have a completed 3D house that opens.',
+          'Open the house back up. Glue the characters one by one onto the bed, stacking them in the same order they appear in the book — grandmother, child, dog, cat, mouse, flea.',
+          'Have children write their name on their finished house.',
+        ],
+      },
+      {
+        heading: 'Classroom Tips',
+        paragraphs: [
+          'Read the book first, pausing each time a new character climbs into bed and asking children to predict what will happen next. This builds comprehension and sets up the stacking sequence they\'ll recreate in the craft.',
+          'Set this up as a choice-time activity at a table rather than a whole-group craft — children can come when they\'re ready, which gives them ownership and allows you to work with small groups. The steps are sequential, so having a visual reference card (a photo of the finished house) helps children work more independently.',
+          'When the houses are done, invite children to open theirs and retell the story to a partner or in a small group. Retelling is one of the most powerful comprehension activities there is.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Where do I find the printable template?',
+        answer: 'A simple web search for "Napping House printable template" will turn up several free options. Look for one that includes the house outline with fold lines and individual character cutouts.',
+      },
+      {
+        question: 'What age works best for this activity?',
+        answer: 'Ages 4–6. Younger children (3–4) may need help with the folding and gluing steps; children 5 and up can usually complete it with minimal guidance after a demonstration.',
+      },
+      {
+        question: 'Can we do a simpler version for very young children?',
+        answer: 'Yes — skip the 3D house entirely and just colour and cut out the characters, then have children sequence them in order from memory. Even this simpler version builds retelling and comprehension skills.',
+      },
+    ],
+  },
+
+  {
+    slug: 'it-looks-like-spilled-milk',
+    title: 'It Looks Like Spilled Milk: A Paint-Folding Art Activity',
+    excerpt: 'After reading the classic cloud-spotting book, children squeeze white paint onto blue paper, fold it in half, and unfold to reveal their own sky shapes. What do you see?',
+    date: '2025-05-20',
+    category: 'Book Activities',
+    image: imgSpilledMilk,
+    relatedProductIds: [],
+    intro: '"It Looks Like Spilled Milk" by Charles G. Shaw introduces children to the idea that shapes in the sky (and everywhere else) can look like many different things depending on how you look at them. The paint-folding activity that follows puts that same imaginative seeing directly in children\'s hands — they create a shape and then decide what it looks like to them.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'White paint in squeeze bottles, blue construction paper, and a white coloured pencil or black marker for children to write their names.',
+        ],
+      },
+      {
+        heading: 'Step-by-Step Instructions',
+        paragraphs: [
+          'Read "It Looks Like Spilled Milk" at circle time, pausing on each page to ask children what they think the white shape could be.',
+          'Cut the blue construction paper in half, then fold each half in half to create a centre crease. Unfold.',
+          'Have each child squeeze 3–5 drops of white paint onto one side of their paper.',
+          'Fold the paper in half along the crease and smooth it out gently with one hand.',
+          'Open the paper back up — the child has created a unique white shape on a blue background.',
+          'Ask the child: "What does your picture look like to you?" Write their answer on the back.',
+          'Have the child write their name on the front using the white pencil or black marker.',
+        ],
+      },
+      {
+        heading: 'Classroom Tips',
+        paragraphs: [
+          'Squeeze bottles make this activity much easier to manage than cups of paint — children have more control over how much paint they use, and there\'s less mess. Fill the bottles with a fairly thin white paint so it spreads easily when the paper is folded.',
+          'Display the finished pictures on a "sky" bulletin board — blue paper background, finished artworks floating like clouds. Add a label with each child\'s name and what they said their shape looked like. Parents love this display.',
+          'This activity is a beautiful extension of any weather, seasons, or imagination unit. It also connects naturally to poetry — read aloud a few short poems about clouds while children work.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What kind of paint works best?',
+        answer: 'Tempera paint works well — it\'s washable and the right consistency. Thin it slightly with water if it\'s too thick to spread easily when folded. Acrylic is too fast-drying for this technique.',
+      },
+      {
+        question: 'Can we use other colours?',
+        answer: 'Absolutely. Try light blue paint on white paper, yellow on black paper for a starry-night effect, or let children choose their own colour combination. The book uses white on blue, but the technique works with any high-contrast pair.',
+      },
+      {
+        question: 'What if a child says "I don\'t know" when asked what their picture looks like?',
+        answer: 'Prompt gently: "Does it look like an animal? A food? Something outside?" If they still aren\'t sure, that\'s fine — write "I\'m still deciding" or just their description of the colours. The observation process matters more than arriving at a specific answer.',
       },
     ],
   },

@@ -94,6 +94,10 @@ function IdeaPost() {
           </p>
         </header>
 
+        {idea.image && (
+          <img src={idea.image} alt={idea.title} className="idea-post-hero-image" />
+        )}
+
         <p className="idea-post-intro">{idea.intro}</p>
 
         {idea.sections.map((section) => (

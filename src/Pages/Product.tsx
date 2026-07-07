@@ -99,16 +99,14 @@ function Product() {
           </ul>
 
           <a
-            href={product.etsy}
-            target="_blank"
-            rel="noopener noreferrer"
+            href={`mailto:themessytablenh@gmail.com?subject=Order Request: ${encodeURIComponent(product.name)}&body=Hi Kerri!%0D%0A%0D%0AI'd love to order the ${encodeURIComponent(product.name)} (${encodeURIComponent(product.price)}).%0D%0A%0D%0APlease let me know how to complete my purchase!%0D%0A%0D%0AThanks!`}
             className="buy-button"
           >
-            Buy on Etsy
+            Order Now
           </a>
 
           <p className="product-page-note">
-            You'll be taken to our Etsy shop to complete your purchase safely.
+            Clicking "Order Now" will open an email to Kerri with your order details. She'll get back to you quickly to arrange payment and shipping! 💛
           </p>
         </div>
       </div>
