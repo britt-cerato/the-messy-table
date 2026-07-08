@@ -11,3 +11,6 @@ createRoot(document.getElementById('root')!).render(
     </HelmetProvider>
   </StrictMode>,
 )
+
+// Signal to the pre-render script that React has finished mounting
+document.dispatchEvent(new Event('render-event'))

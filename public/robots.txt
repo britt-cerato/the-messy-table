@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://themessytable.com/sitemap.xml
+Sitemap: https://themessytable.org/sitemap.xml

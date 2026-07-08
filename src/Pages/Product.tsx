@@ -21,8 +21,10 @@ function Product() {
   }
 
   const allImages = [product.image, ...product.gallery]
-  const pageUrl = `https://themessytable.com/shop/${product.id}`
-  const pageTitle = `${product.name} — The Messy Table`
+  const pageUrl = `https://themessytable.org/shop/${product.id}`
+  const ageDetail = product.details.find((d) => d.toLowerCase().includes('suits') || d.toLowerCase().includes('ages'))
+  const pageTitle = `${product.name} — Handmade Montessori ${product.categories[0].charAt(0).toUpperCase() + product.categories[0].slice(1).replace(/-/g, ' ')} Work | The Messy Table`
+  const pageDescription = `${product.description}${ageDetail ? ` ${ageDetail}.` : ''} Handmade Montessori-inspired material by Kerri, a Montessori educator in Southern NH.`
 
   const productSchema = {
     '@context': 'https://schema.org',
@@ -30,17 +32,31 @@ function Product() {
     name: product.name,
     description: product.description,
     brand: { '@type': 'Brand', name: 'The Messy Table' },
+    additionalProperty: product.details.map((d) => ({
+      '@type': 'PropertyValue',
+      value: d,
+    })),
     offers: {
       '@type': 'Offer',
       price: product.price.replace('$', ''),
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       url: product.etsy,
-      seller: { '@type': 'Organization', name: 'The Messy Table' },
+      seller: {
+        '@type': 'Organization',
+        name: 'The Messy Table',
+        url: 'https://themessytable.org',
+      },
     },
     audience: {
       '@type': 'EducationalAudience',
       audienceType: 'Montessori classroom, homeschool families, Pre-K to Grade 2',
+      educationalRole: 'student',
+    },
+    manufacturer: {
+      '@type': 'Person',
+      name: 'Kerri',
+      jobTitle: 'Montessori Educator',
     },
   }
 
@@ -48,9 +64,9 @@ function Product() {
     <div>
       <Helmet>
         <title>{pageTitle}</title>
-        <meta name="description" content={`${product.description} ${product.details.join('. ')}.`} />
+        <meta name="description" content={pageDescription} />
         <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={product.description} />
+        <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="product" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:site_name" content="The Messy Table" />
@@ -71,6 +87,7 @@ function Product() {
             src={allImages[activeImage]}
             alt={`${product.name} — Montessori ${product.categories[0]} work`}
             className="product-page-image"
+            loading="eager"
           />
           {allImages.length > 1 && (
             <div className="product-page-thumbnails">
@@ -81,6 +98,7 @@ function Product() {
                   alt={`${product.name} photo ${i + 1}`}
                   className={`product-thumbnail ${i === activeImage ? 'active' : ''}`}
                   onClick={() => setActiveImage(i)}
+                  loading="lazy"
                 />
               ))}
             </div>

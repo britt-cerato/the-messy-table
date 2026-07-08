@@ -9,8 +9,16 @@ function ForTeachers() {
   return (
     <div>
       <Helmet>
-        <title>For Teachers — The Messy Table</title>
-        <meta name="description" content="Handmade Montessori works for Pre-K to Grade 2 classroom teachers. Shelf-ready materials, nomenclature cards, fine motor works, and seasonal collections — made by a Montessori educator who gets it." />
+        <title>Montessori Classroom Materials for Teachers — Handmade Works | The Messy Table</title>
+        <meta name="description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms. Nomenclature cards, seasonal activities, fine motor works, and write the room printables — made by a fellow Montessori teacher." />
+        <meta property="og:title" content="Montessori Classroom Materials for Teachers — Handmade Works | The Messy Table" />
+        <meta property="og:description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms. Nomenclature cards, seasonal activities, fine motor works, and write the room printables — made by a fellow Montessori teacher." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://themessytable.org/for-teachers" />
+        <meta property="og:site_name" content="The Messy Table" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Montessori Classroom Materials for Teachers | The Messy Table" />
+        <meta name="twitter:description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms — nomenclature cards, seasonal activities, and write the room printables." />
       </Helmet>
 
       {/* Hero */}
@@ -64,7 +72,7 @@ function ForTeachers() {
         <div className="products-grid">
           {featured.map((product) => (
             <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} className="product-image" />
+              <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
             </Link>

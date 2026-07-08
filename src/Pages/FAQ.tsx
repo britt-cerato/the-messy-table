@@ -1,6 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 
+// ── FAQ data ──────────────────────────────────────────────────────────────────
+// Defined before the component so the FAQPage schema can reference it directly.
 const FAQS = [
   {
     question: 'What age are these works designed for?',
@@ -36,12 +38,31 @@ const FAQS = [
   },
 ]
 
+const faqPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+}
+
 function FAQ() {
   return (
     <div>
       <Helmet>
-        <title>FAQ — The Messy Table</title>
-        <meta name="description" content="Frequently asked questions about The Messy Table's handmade Montessori materials — shipping, age ranges, custom orders, and more." />
+        <title>FAQ — Handmade Montessori Materials &amp; Printable Downloads | The Messy Table</title>
+        <meta name="description" content="Answers to common questions about The Messy Table's handmade Montessori materials — shipping, age ranges, custom orders, printable PDFs and more." />
+        <meta property="og:title" content="FAQ — Handmade Montessori Materials & Printable Downloads | The Messy Table" />
+        <meta property="og:description" content="Answers to common questions about The Messy Table's handmade Montessori materials — shipping, age ranges, custom orders, printable PDFs and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://themessytable.org/faq" />
+        <meta property="og:site_name" content="The Messy Table" />
+        <script type="application/ld+json">{JSON.stringify(faqPageSchema)}</script>
       </Helmet>
 
       <section className="page-hero">

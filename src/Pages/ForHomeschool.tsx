@@ -9,8 +9,16 @@ function ForHomeschool() {
   return (
     <div>
       <Helmet>
-        <title>For Homeschool Families — The Messy Table</title>
-        <meta name="description" content="Montessori-inspired materials for homeschool families. Printable PDFs and hands-on works that bring Montessori learning to your kitchen table — without a full classroom setup." />
+        <title>Montessori Materials for Homeschool Families | The Messy Table</title>
+        <meta name="description" content="Bring Montessori to your kitchen table. Handmade works and printable PDFs designed for homeschool families — hands-on math, language activities, and seasonal works for ages 3–8." />
+        <meta property="og:title" content="Montessori Materials for Homeschool Families | The Messy Table" />
+        <meta property="og:description" content="Bring Montessori to your kitchen table. Handmade works and printable PDFs designed for homeschool families — hands-on math, language activities, and seasonal works for ages 3–8." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://themessytable.org/for-homeschool" />
+        <meta property="og:site_name" content="The Messy Table" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Montessori Materials for Homeschool Families | The Messy Table" />
+        <meta name="twitter:description" content="Bring Montessori to your kitchen table. Handmade works and printable PDFs for homeschool families — hands-on math, language activities, and seasonal works for ages 3–8." />
       </Helmet>
 
       {/* Hero */}
@@ -64,7 +72,7 @@ function ForHomeschool() {
         <div className="products-grid">
           {featured.map((product) => (
             <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} className="product-image" />
+              <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
             </Link>

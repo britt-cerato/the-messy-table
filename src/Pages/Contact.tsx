@@ -4,7 +4,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
   name: 'The Messy Table',
-  url: 'https://themessytable.com',
+  url: 'https://themessytable.org',
   telephone: '+16035486169',
   email: 'themessytablenh@gmail.com',
   description: 'Handmade Montessori-inspired classroom materials for teachers and homeschool families. Custom orders welcome.',
@@ -14,23 +14,23 @@ const localBusinessSchema = {
     addressCountry: 'US',
   },
   areaServed: ['NH', 'US'],
-  sameAs: ['https://www.etsy.com/shop/TheMessyTable'],
+  sameAs: ['https://www.etsy.com/shop/TMTBYKerri'],
 }
 
 function Contact() {
   return (
     <div>
       <Helmet>
-        <title>Contact The Messy Table — Custom Orders &amp; Questions</title>
-        <meta name="description" content="Reach Kerri at The Messy Table for custom orders, wholesale inquiries, or questions about handmade Montessori classroom materials. Based in Southern New Hampshire." />
-        <meta property="og:title" content="Contact The Messy Table — Custom Orders & Questions" />
-        <meta property="og:description" content="Reach Kerri at The Messy Table for custom orders, wholesale inquiries, or questions about handmade Montessori classroom materials." />
+        <title>Contact Kerri | The Messy Table</title>
+        <meta name="description" content="Get in touch with Kerri at The Messy Table — for custom orders, questions about products, or just to say hello." />
+        <meta property="og:title" content="Contact Kerri | The Messy Table" />
+        <meta property="og:description" content="Get in touch with Kerri at The Messy Table — for custom orders, questions about handmade Montessori materials, or just to say hello." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://themessytable.com/contact" />
+        <meta property="og:url" content="https://themessytable.org/contact" />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Contact The Messy Table — Custom Orders & Questions" />
-        <meta name="twitter:description" content="Reach Kerri for custom orders or questions about handmade Montessori classroom materials." />
+        <meta name="twitter:title" content="Contact Kerri | The Messy Table" />
+        <meta name="twitter:description" content="Get in touch with Kerri at The Messy Table for custom orders or questions about handmade Montessori materials." />
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
       <section className="page-hero">

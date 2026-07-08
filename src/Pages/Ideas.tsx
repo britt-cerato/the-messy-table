@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { IDEAS } from '../data/ideas'
 import valentinesImg from '../assets/products/valentines-mason-jar-addition.jpg'
@@ -78,6 +79,18 @@ const THEMES = [
 function Ideas() {
   return (
     <div>
+      <Helmet>
+        <title>Work Ideas &amp; Montessori Activity Guides | The Messy Table</title>
+        <meta name="description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf. Browse guides for nomenclature, CVC words, math, art appreciation, and more." />
+        <meta property="og:title" content="Work Ideas & Montessori Activity Guides | The Messy Table" />
+        <meta property="og:description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf. Browse guides for nomenclature, CVC words, math, art appreciation, and more." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://themessytable.org/ideas" />
+        <meta property="og:site_name" content="The Messy Table" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Work Ideas & Montessori Activity Guides | The Messy Table" />
+        <meta name="twitter:description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf." />
+      </Helmet>
       <section className="page-hero">
         <h2>Work Ideas</h2>
         <p>Seasonal themes and work inspiration from Kerri's classroom.</p>
@@ -89,7 +102,7 @@ function Ideas() {
           {THEMES.map((theme) => (
             <Link to={theme.shopLink} key={theme.title} className="idea-theme-card">
               {theme.image
-                ? <img src={theme.image} alt={theme.title} className="idea-theme-image" />
+                ? <img src={theme.image} alt={theme.title} className="idea-theme-image" loading="lazy" />
                 : <div className="idea-theme-image" />
               }
               <h3>{theme.title}</h3>
@@ -106,7 +119,7 @@ function Ideas() {
           {IDEAS.map((idea) => (
             <Link to={`/ideas/${idea.slug}`} key={idea.slug} className="idea-list-card">
               {IDEA_IMAGES[idea.slug] && (
-                <img src={IDEA_IMAGES[idea.slug]} alt={idea.title} className="idea-list-image" />
+                <img src={IDEA_IMAGES[idea.slug]} alt={idea.title} className="idea-list-image" loading="lazy" />
               )}
               <div className="idea-list-text">
                 <span className="idea-list-category">{idea.category}</span>

@@ -6,7 +6,7 @@ const personSchema = {
   '@type': 'Person',
   name: 'Kerri',
   jobTitle: 'Montessori Educator',
-  description: 'Montessori educator with 5 years of experience in Southern New Hampshire and founder of The Messy Table.',
+  description: 'Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire and founder of The Messy Table, a handmade Montessori materials shop.',
   address: {
     '@type': 'PostalAddress',
     addressRegion: 'NH',
@@ -15,8 +15,17 @@ const personSchema = {
   owns: {
     '@type': 'Organization',
     name: 'The Messy Table',
-    url: 'https://themessytable.com',
+    url: 'https://themessytable.org',
   },
+}
+
+const aboutPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'About Kerri — Montessori Educator & Maker | The Messy Table',
+  url: 'https://themessytable.org/about',
+  description: 'Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire. She handcrafts every Montessori material in her shop with care.',
+  mainEntity: personSchema,
 }
 
 function About() {
@@ -24,16 +33,17 @@ function About() {
     <div>
       <Helmet>
         <title>About Kerri — Montessori Educator &amp; Maker | The Messy Table</title>
-        <meta name="description" content="Meet Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire and the maker behind The Messy Table's handmade classroom materials." />
+        <meta name="description" content="Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire. She handcrafts every Montessori material in her shop with care." />
         <meta property="og:title" content="About Kerri — Montessori Educator & Maker | The Messy Table" />
-        <meta property="og:description" content="Meet Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire and the maker behind The Messy Table's handmade classroom materials." />
+        <meta property="og:description" content="Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire. She handcrafts every Montessori material in her shop with care." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://themessytable.com/about" />
+        <meta property="og:url" content="https://themessytable.org/about" />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Kerri — Montessori Educator & Maker | The Messy Table" />
-        <meta name="twitter:description" content="Meet Kerri, a Montessori educator with 5 years of experience in Southern NH and the maker behind The Messy Table." />
+        <meta name="twitter:description" content="Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern NH and the maker behind The Messy Table." />
         <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(aboutPageSchema)}</script>
       </Helmet>
       <section className="page-hero">
         <h2>About Kerri</h2>

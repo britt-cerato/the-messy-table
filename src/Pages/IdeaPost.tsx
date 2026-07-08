@@ -19,7 +19,7 @@ function IdeaPost() {
     )
   }
 
-  const pageUrl = `https://themessytable.com/ideas/${idea.slug}`
+  const pageUrl = `https://themessytable.org/ideas/${idea.slug}`
   const pageTitle = `${idea.title} | The Messy Table`
 
   const relatedProducts = idea.relatedProductIds
@@ -28,21 +28,28 @@ function IdeaPost() {
 
   const articleSchema = {
     '@context': 'https://schema.org',
-    '@type': 'Article',
+    '@type': 'BlogPosting',
     headline: idea.title,
     description: idea.excerpt,
+    articleSection: idea.category,
+    keywords: `Montessori, ${idea.category.toLowerCase()}, handmade Montessori materials, classroom activities, homeschool`,
     author: {
       '@type': 'Person',
       name: 'Kerri',
-      description: 'Montessori educator with 5 years of experience in Southern New Hampshire',
+      description: 'Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire',
+      url: 'https://themessytable.org/about',
     },
     publisher: {
       '@type': 'Organization',
       name: 'The Messy Table',
-      url: 'https://themessytable.com',
+      url: 'https://themessytable.org',
     },
     datePublished: idea.date,
     url: pageUrl,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': pageUrl,
+    },
   }
 
   const faqSchema = idea.faqs.length > 0
@@ -70,6 +77,7 @@ function IdeaPost() {
         <meta property="og:type" content="article" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:type" content="article" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={idea.excerpt} />
@@ -138,6 +146,7 @@ function IdeaPost() {
                   src={product.image}
                   alt={`${product.name} — Montessori ${product.categories[0]} work`}
                   className="product-image"
+                  loading="lazy"
                 />
                 <h3>{product.name}</h3>
                 <p>{product.price}</p>

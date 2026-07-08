@@ -6,7 +6,7 @@ import heroImg from '../assets/products/IMG_7113-1.jpeg'
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
 
-const SITE_URL = 'https://themessytable.com'
+const SITE_URL = 'https://themessytable.org'
 
 const orgSchema = {
   '@context': 'https://schema.org',
@@ -27,21 +27,37 @@ const orgSchema = {
   sameAs: ['https://www.etsy.com/shop/TMTBYKerri'],
 }
 
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'The Messy Table',
+  url: SITE_URL,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${SITE_URL}/shop?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
+}
+
 function Home() {
   return (
     <div>
       <Helmet>
-        <title>The Messy Table — Handmade Montessori Materials</title>
-        <meta name="description" content="Handmade Montessori materials for teachers and homeschool families, by Kerri — a Montessori educator with 5 years of experience in Southern NH. Nomenclature cards, language works, math activities, and seasonal crafts for Pre-K to Grade 2." />
-        <meta property="og:title" content="The Messy Table — Handmade Montessori Materials" />
-        <meta property="og:description" content="Handmade Montessori materials for teachers and homeschool families, by Kerri — a Montessori educator with 5 years of experience in Southern NH. Nomenclature cards, language works, math activities, and seasonal crafts for Pre-K to Grade 2." />
+        <title>The Messy Table — Handmade Montessori Materials for Classrooms &amp; Homeschool</title>
+        <meta name="description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Shop nomenclature cards, write the room activities, math manipulatives, and seasonal works for Pre-K to Grade 2." />
+        <meta property="og:title" content="The Messy Table — Handmade Montessori Materials for Classrooms & Homeschool" />
+        <meta property="og:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Shop nomenclature cards, write the room activities, math manipulatives, and seasonal works for Pre-K to Grade 2." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="The Messy Table — Handmade Montessori Materials" />
-        <meta name="twitter:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH." />
+        <meta name="twitter:title" content="The Messy Table — Handmade Montessori Materials for Classrooms & Homeschool" />
+        <meta name="twitter:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
       <section className="hero">
         <div className="hero-content">
@@ -77,7 +93,7 @@ function Home() {
         <div className="products-grid">
           {featured.map((product) => (
             <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} className="product-image" />
+              <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
               <h3>{product.name}</h3>
               <p>{product.price}</p>
             </Link>
