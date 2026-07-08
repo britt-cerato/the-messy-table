@@ -12,7 +12,7 @@ const FAQS = [
   },
   {
     question: 'Do you offer shipping?',
-    answer: 'Yes! Kerri ships all physical works. Shipping costs are calculated at checkout on Etsy based on your location. Printable PDF products are available as instant downloads — no shipping required.',
+    answer: 'Yes! Kerri ships all physical works. Shipping costs will be included in your order confirmation email. Printable PDF products are sent directly to your email — no shipping required.',
   },
   {
     question: 'What is the difference between a physical product and a printable PDF?',

@@ -32,9 +32,9 @@ function Home() {
     <div>
       <Helmet>
         <title>The Messy Table — Handmade Montessori Materials</title>
-        <meta name="description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator with 5 years of experience in Southern NH. Shop nomenclature cards, language works, math activities, and seasonal crafts." />
+        <meta name="description" content="Handmade Montessori materials for teachers and homeschool families, by Kerri — a Montessori educator with 5 years of experience in Southern NH. Nomenclature cards, language works, math activities, and seasonal crafts for Pre-K to Grade 2." />
         <meta property="og:title" content="The Messy Table — Handmade Montessori Materials" />
-        <meta property="og:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator with 5 years of experience in Southern NH. Shop nomenclature cards, language works, math activities, and seasonal crafts." />
+        <meta property="og:description" content="Handmade Montessori materials for teachers and homeschool families, by Kerri — a Montessori educator with 5 years of experience in Southern NH. Nomenclature cards, language works, math activities, and seasonal crafts for Pre-K to Grade 2." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="The Messy Table" />
@@ -122,7 +122,7 @@ function Home() {
           </div>
           <div className="home-faq-item">
             <h3>How do I get my digital download after purchase?</h3>
-            <p>After you complete your purchase on Etsy, you'll receive an email with a download link. You can also find your files in your Etsy account under "Purchases and Reviews."</p>
+            <p>After you place your order, Kerri will email the PDF directly to you. Just check your inbox — it'll be ready to print right away!</p>
           </div>
           <div className="home-faq-item">
             <h3>Can I print a PDF more than once?</h3>

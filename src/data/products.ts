@@ -46,7 +46,7 @@ import imgCubbyLabels2 from '../assets/products/cubby-labels-2.jpeg'
 import imgNameTags from '../assets/products/name-tags-2.jpeg'
 import imgNameTags2 from '../assets/products/name-tags.jpeg'
 
-export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup'
+export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
 
 export interface Product {
@@ -163,7 +163,7 @@ export const PRODUCTS: Product[] = [
     id: 'write-the-room-summer',
     name: 'Write the Room — Summer',
     price: '$12.00',
-    categories: ['language'],
+    categories: ['language', 'printable'],
     image: img7092,
     gallery: [],
     description: 'Place picture cards around the room and have children find and write each word on their recording sheet. A summer-themed favourite that gets kiddos moving!',
@@ -174,7 +174,7 @@ export const PRODUCTS: Product[] = [
     id: 'spring-worksheets',
     name: 'Spring Worksheets',
     price: '$12.00',
-    categories: ['language'],
+    categories: ['language', 'printable'],
     themes: ['spring'],
     image: img7134new,
     gallery: [img7132, img7134],
@@ -283,7 +283,7 @@ export const PRODUCTS: Product[] = [
     id: 'identifying-number-to-object',
     name: 'Identifying Number to Object',
     price: '$12.00',
-    categories: ['math', 'seasonal'],
+    categories: ['math', 'seasonal', 'printable'],
     themes: ['st-patricks'],
     image: imgIdentifyingNumberToObject,
     gallery: [],
@@ -307,7 +307,7 @@ export const PRODUCTS: Product[] = [
     id: 'st-patricks-day-worksheets',
     name: "St. Patrick's Day Worksheets",
     price: '$10.00',
-    categories: ['seasonal'],
+    categories: ['seasonal', 'printable'],
     themes: ['st-patricks'],
     image: img7094,
     gallery: [],
@@ -355,7 +355,7 @@ export const PRODUCTS: Product[] = [
     id: 'write-the-room-spring',
     name: 'Write the Room — Spring',
     price: '$12.00',
-    categories: ['language'],
+    categories: ['language', 'printable'],
     themes: ['spring'],
     image: imgWriteTheRoomSpring,
     gallery: [],
@@ -367,7 +367,7 @@ export const PRODUCTS: Product[] = [
     id: 'i-love-to-read-write-the-room',
     name: 'I Love to Read! Write the Room',
     price: '$12.00',
-    categories: ['language'],
+    categories: ['language', 'printable'],
     image: imgWriteTheRoomRead,
     gallery: [],
     description: 'Children find each picture card around the room, read the word, and draw a matching picture in the box on their recording sheet. A lovely activity for building reading confidence and visual comprehension.',
@@ -402,7 +402,7 @@ export const PRODUCTS: Product[] = [
     id: 'earth-day-write-the-room',
     name: 'Earth Day Write the Room',
     price: '$12.00',
-    categories: ['language', 'seasonal'],
+    categories: ['language', 'seasonal', 'printable'],
     image: imgEarthDayWriteTheRoom,
     gallery: [],
     description: 'An Earth Day write the room activity! Children walk around the room finding picture cards, then write the matching word on their recording sheet. A great way to build vocabulary while celebrating our planet.',
@@ -450,6 +450,7 @@ export const CATEGORIES: { id: Category; label: string; sectionTitle: string; de
   { id: 'math', label: 'Math', sectionTitle: 'Math Works', description: 'Concrete math activities that build number sense, counting, and early arithmetic skills.' },
   { id: 'seasonal', label: 'Seasonal', sectionTitle: 'Seasonal Works', description: 'Holiday and seasonal activities that keep the shelf fresh and kiddos excited all year long.' },
   { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags, and classroom organisation materials to help your space feel warm, welcoming, and ready for learning.' },
+  { id: 'printable', label: 'Printable Downloads', sectionTitle: 'Printable Downloads', description: 'Instant PDF downloads you print at home or at a print shop — ready to use right away. No waiting for shipping!' },
 ]
 
 export function getProduct(id: string): Product | undefined {

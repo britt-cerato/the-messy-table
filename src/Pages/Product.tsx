@@ -106,7 +106,9 @@ function Product() {
           </a>
 
           <p className="product-page-note">
-            Clicking "Order Now" will open an email to Kerri with your order details. She'll get back to you quickly to arrange payment and shipping! 💛
+            {product.categories.includes('printable')
+              ? 'Clicking "Order Now" will open an email to Kerri. Once payment is arranged, she\'ll email you the PDF straight away — ready to print at home! 🖨️'
+              : 'Clicking "Order Now" will open an email to Kerri with your order details. She\'ll get back to you quickly to arrange payment and shipping! 💛'}
           </p>
         </div>
       </div>

@@ -48,9 +48,9 @@ function Shop() {
     <div>
       <Helmet>
         <title>Shop Montessori Classroom Materials — The Messy Table</title>
-        <meta name="description" content="Browse 25 handmade Montessori classroom works: nomenclature cards, CVC word building, bead stairs, clip cards, and seasonal activities for Pre-K through Grade 2." />
+        <meta name="description" content="Handmade Montessori materials for teachers and homeschool families. Browse nomenclature cards, CVC word building, bead stairs, clip cards, and seasonal activities for Pre-K through Grade 2." />
         <meta property="og:title" content="Shop Montessori Classroom Materials — The Messy Table" />
-        <meta property="og:description" content="Browse 25 handmade Montessori classroom works: nomenclature cards, CVC word building, bead stairs, clip cards, and seasonal activities for Pre-K through Grade 2." />
+        <meta property="og:description" content="Handmade Montessori materials for teachers and homeschool families. Browse nomenclature cards, CVC word building, bead stairs, clip cards, and seasonal activities for Pre-K through Grade 2." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.com/shop" />
         <meta property="og:site_name" content="The Messy Table" />
