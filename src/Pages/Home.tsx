@@ -56,6 +56,7 @@ function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="The Messy Table — Handmade Montessori Materials for Classrooms & Homeschool" />
         <meta name="twitter:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
+        <meta name="google-site-verification" content="rWWUnsBI5MYIv5s8" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
