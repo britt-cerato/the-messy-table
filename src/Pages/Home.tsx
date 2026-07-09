@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { PRODUCTS } from '../data/products'
 import heroImg from '../assets/products/messy-table-collage-lavender.jpg'
+import heroImgMobile from '../assets/products/messy-table-collage-lavender-mobile.jpg'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -69,7 +70,10 @@ function Home() {
           <Link to="/shop" className="hero-button">Shop Now</Link>
         </div>
         <div className="hero-image-wrap">
-          <img src={heroImg} alt="Kerri's handmade Montessori works" className="hero-image" />
+          <picture>
+            <source media="(max-width: 768px)" srcSet={heroImgMobile} />
+            <img src={heroImg} alt="Kerri's handmade Montessori works" className="hero-image" />
+          </picture>
         </div>
       </section>
       <section className="home-audience-section">

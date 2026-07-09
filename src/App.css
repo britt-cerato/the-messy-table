@@ -113,6 +113,10 @@ body {
   object-fit: cover;
   box-shadow: 0 8px 32px rgba(0,0,0,0.10);
   display: block;
+
+  @media (max-width: 768px) {
+    aspect-ratio: 3 / 4;
+  }
 }
 
 .hero-content h2 {
