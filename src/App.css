@@ -1102,30 +1102,55 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.faq-list {
-  display: flex;
-  flex-direction: column;
+.faq-card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+
+  @media (max-width: 700px) {
+    grid-template-columns: 1fr;
+  }
 }
 
-.faq-item {
-  background-color: var(--warm-cream);
-  border-radius: 10px;
-  padding: 1.25rem 1.5rem;
+.faq-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 1.75rem;
+  border-left: 5px solid transparent;
+  box-shadow: 0 2px 12px rgba(90, 74, 74, 0.07);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.faq-question {
+.faq-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(90, 74, 74, 0.12);
+}
+
+.faq-card--pink  { border-left-color: var(--dusty-pink); }
+.faq-card--green { border-left-color: var(--sage-green); }
+.faq-card--lavender { border-left-color: var(--soft-lavender); }
+
+.faq-card-icon {
+  display: block;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.faq-card-question {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: var(--text-dark);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
 }
 
-.faq-answer {
+.faq-card-answer {
   font-family: 'DM Sans', sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.65;
+  font-size: 0.93rem;
+  line-height: 1.7;
   color: var(--text-medium);
   margin: 0;
 }
