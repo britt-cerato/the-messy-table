@@ -33,9 +33,10 @@ function About() {
     <div>
       <Helmet>
         <title>About Kerri — Montessori Educator &amp; Maker | The Messy Table</title>
-        <meta name="description" content="Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire. She handcrafts every Montessori material in her shop with care." />
+        <meta name="description" content="Meet Kerri, a Montessori educator with 5 years of classroom experience in Southern NH. She handcrafts every material in her shop with care." />
+        <link rel="canonical" href="https://themessytable.org/about" />
         <meta property="og:title" content="About Kerri — Montessori Educator & Maker | The Messy Table" />
-        <meta property="og:description" content="Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern New Hampshire. She handcrafts every Montessori material in her shop with care." />
+        <meta property="og:description" content="Meet Kerri, a Montessori educator with 5 years of classroom experience in Southern NH. She handcrafts every material in her shop with care." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/about" />
         <meta property="og:site_name" content="The Messy Table" />
@@ -50,7 +51,7 @@ function About() {
         <p>The heart and hands behind The Messy Table.</p>
       </section>
       <section className="about-content">
-        <img src={aboutPhoto} alt="Kerri" className="about-image" />
+        <img src={aboutPhoto} alt="Kerri, founder of The Messy Table" className="about-image" />
         <div className="about-text">
           <h3>Hi, I'm Kerri!</h3>
           <p>I'm a Montessori educator with 5 years of experience in Southern New Hampshire, and I'm passionate about creating hands-on materials for teachers and homeschool families who want to bring something fresh and fun into their learning spaces. I'm here to give your kiddos something new and exciting to enjoy — and to let them get a little messy with super easy crafts.</p>

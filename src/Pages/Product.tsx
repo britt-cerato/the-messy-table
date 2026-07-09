@@ -65,11 +65,13 @@ function Product() {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={pageDescription} />
+        <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:type" content="product" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={`https://themessytable.org${allImages[0]}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={product.description} />

@@ -9,10 +9,11 @@ function ForHomeschool() {
   return (
     <div>
       <Helmet>
-        <title>Montessori Materials for Homeschool Families | The Messy Table</title>
-        <meta name="description" content="Bring Montessori to your kitchen table. Handmade works and printable PDFs designed for homeschool families — hands-on math, language activities, and seasonal works for ages 3–8." />
-        <meta property="og:title" content="Montessori Materials for Homeschool Families | The Messy Table" />
-        <meta property="og:description" content="Bring Montessori to your kitchen table. Handmade works and printable PDFs designed for homeschool families — hands-on math, language activities, and seasonal works for ages 3–8." />
+        <title>Montessori Materials for Homeschool | The Messy Table</title>
+        <meta name="description" content="Bring Montessori to your kitchen table. Handmade works and printables for homeschool families — hands-on math, language, and seasonal activities." />
+        <link rel="canonical" href="https://themessytable.org/for-homeschool" />
+        <meta property="og:title" content="Montessori Materials for Homeschool | The Messy Table" />
+        <meta property="og:description" content="Bring Montessori to your kitchen table. Handmade works and printables for homeschool families — hands-on math, language, and seasonal activities." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/for-homeschool" />
         <meta property="og:site_name" content="The Messy Table" />

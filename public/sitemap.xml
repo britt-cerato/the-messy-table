@@ -1,171 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-  <!-- Static pages -->
   <url>
-    <loc>https://themessytable.com/</loc>
+    <loc>https://themessytable.org/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop</loc>
+    <loc>https://themessytable.org/shop</loc>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/ideas</loc>
+    <loc>https://themessytable.org/ideas</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/about</loc>
+    <loc>https://themessytable.org/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/contact</loc>
+    <loc>https://themessytable.org/contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Nomenclature products -->
   <url>
-    <loc>https://themessytable.com/shop/animal-nomenclature</loc>
+    <loc>https://themessytable.org/faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/for-teachers</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/for-homeschool</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/animal-nomenclature</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/penguin-nomenclature</loc>
+    <loc>https://themessytable.org/shop/penguin-nomenclature</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/horse-bridle-nomenclature</loc>
+    <loc>https://themessytable.org/shop/horse-bridle-nomenclature</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/van-gogh-cards</loc>
+    <loc>https://themessytable.org/shop/van-gogh-cards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/human-development-cards</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Language products -->
-  <url>
-    <loc>https://themessytable.com/shop/valentines-word-building</loc>
+    <loc>https://themessytable.org/shop/human-development-cards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/spring-flower-matching</loc>
+    <loc>https://themessytable.org/shop/valentines-word-building</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/word-family-flower-pots</loc>
+    <loc>https://themessytable.org/shop/spring-flower-matching</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/write-the-room-summer</loc>
+    <loc>https://themessytable.org/shop/word-family-flower-pots</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/spring-worksheets</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Math products -->
-  <url>
-    <loc>https://themessytable.com/shop/tally-marks-clip-cards</loc>
+    <loc>https://themessytable.org/shop/write-the-room-summer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/bead-stair</loc>
+    <loc>https://themessytable.org/shop/spring-worksheets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/ten-frames-clip-cards</loc>
+    <loc>https://themessytable.org/shop/tally-marks-clip-cards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/fall-math-clip-cards</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Ideas articles -->
-  <url>
-    <loc>https://themessytable.com/ideas/what-are-nomenclature-cards</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://themessytable.com/ideas/cvc-word-activities-kindergarten</loc>
+    <loc>https://themessytable.org/shop/bead-stair</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/ideas/montessori-math-at-home</loc>
+    <loc>https://themessytable.org/shop/ten-frames-clip-cards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/ideas/setting-up-a-language-shelf</loc>
+    <loc>https://themessytable.org/shop/valentines-mason-jar-addition</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/ideas/fall-montessori-activities</loc>
+    <loc>https://themessytable.org/shop/fall-math-clip-cards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/ideas/montessori-art-appreciation-children</loc>
+    <loc>https://themessytable.org/shop/halloween-counting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/ideas/practical-life-fine-motor-activities</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Seasonal products -->
-  <url>
-    <loc>https://themessytable.com/shop/halloween-counting</loc>
+    <loc>https://themessytable.org/shop/halloween-patterns</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/halloween-patterns</loc>
+    <loc>https://themessytable.org/shop/thanksgiving-buttoning</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/thanksgiving-buttoning</loc>
+    <loc>https://themessytable.org/shop/identifying-number-to-object</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/st-patricks-day-worksheets</loc>
+    <loc>https://themessytable.org/shop/rainbow-letter-matching</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.com/shop/the-mitten</loc>
+    <loc>https://themessytable.org/shop/st-patricks-day-worksheets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://themessytable.org/shop/dress-up-snowman</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/build-a-snowman</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/the-mitten</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/write-the-room-spring</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/i-love-to-read-write-the-room</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/cubby-labels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/name-tags</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/earth-day-write-the-room</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/animal-tracks-booklet</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/animal-tracks-matching</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/van-gogh-matching</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/what-are-nomenclature-cards</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/cvc-word-activities-kindergarten</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/montessori-math-at-home</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/setting-up-a-language-shelf</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/fall-montessori-activities</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/montessori-art-appreciation-children</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/practical-life-fine-motor-activities</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/diy-bird-feeder-craft</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/garden-seed-bombs</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/flower-crowns</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/should-i-share-my-ice-cream</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/the-napping-house</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/it-looks-like-spilled-milk</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>

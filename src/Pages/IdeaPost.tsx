@@ -72,12 +72,13 @@ function IdeaPost() {
       <Helmet>
         <title>{pageTitle}</title>
         <meta name="description" content={idea.excerpt} />
+        <link rel="canonical" href={pageUrl} />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={idea.excerpt} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:site_name" content="The Messy Table" />
-        <meta property="og:type" content="article" />
+        {idea.image && <meta property="og:image" content={`https://themessytable.org${idea.image}`} />}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={idea.excerpt} />

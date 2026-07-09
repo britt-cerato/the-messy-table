@@ -46,16 +46,18 @@ function Home() {
   return (
     <div>
       <Helmet>
-        <title>The Messy Table — Handmade Montessori Materials for Classrooms &amp; Homeschool</title>
-        <meta name="description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Shop nomenclature cards, write the room activities, math manipulatives, and seasonal works for Pre-K to Grade 2." />
-        <meta property="og:title" content="The Messy Table — Handmade Montessori Materials for Classrooms & Homeschool" />
-        <meta property="og:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Shop nomenclature cards, write the room activities, math manipulatives, and seasonal works for Pre-K to Grade 2." />
+        <title>Handmade Montessori Materials | The Messy Table</title>
+        <meta name="description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
+        <link rel="canonical" href={SITE_URL} />
+        <meta property="og:title" content="Handmade Montessori Materials | The Messy Table" />
+        <meta property="og:description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={`${SITE_URL}${heroImg}`} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="The Messy Table — Handmade Montessori Materials for Classrooms & Homeschool" />
-        <meta name="twitter:description" content="Handmade Montessori-inspired classroom works by Kerri, a Montessori educator in Southern NH. Nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
+        <meta name="twitter:title" content="Handmade Montessori Materials | The Messy Table" />
+        <meta name="twitter:description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
         <meta name="google-site-verification" content="hFgkrmtEqX8PHDfHHf0isj5rk6s9dtROYtYfnHKMYbQ" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>

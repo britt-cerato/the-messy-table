@@ -63,13 +63,16 @@ function FAQ() {
   return (
     <div>
       <Helmet>
-        <title>FAQ — Handmade Montessori Materials &amp; Printable Downloads | The Messy Table</title>
+        <title>Frequently Asked Questions | The Messy Table</title>
         <meta name="description" content="Answers to common questions about The Messy Table's handmade Montessori materials — shipping, age ranges, custom orders, printable PDFs and more." />
-        <meta property="og:title" content="FAQ — Handmade Montessori Materials & Printable Downloads | The Messy Table" />
+        <link rel="canonical" href="https://themessytable.org/faq" />
+        <meta property="og:title" content="Frequently Asked Questions | The Messy Table" />
         <meta property="og:description" content="Answers to common questions about The Messy Table's handmade Montessori materials — shipping, age ranges, custom orders, printable PDFs and more." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/faq" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Frequently Asked Questions | The Messy Table" />
         <script type="application/ld+json">{JSON.stringify(faqPageSchema)}</script>
       </Helmet>
 

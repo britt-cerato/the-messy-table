@@ -22,6 +22,7 @@ function Contact() {
       <Helmet>
         <title>Contact Kerri | The Messy Table</title>
         <meta name="description" content="Get in touch with Kerri at The Messy Table — for custom orders, questions about products, or just to say hello." />
+        <link rel="canonical" href="https://themessytable.org/contact" />
         <meta property="og:title" content="Contact Kerri | The Messy Table" />
         <meta property="og:description" content="Get in touch with Kerri at The Messy Table — for custom orders, questions about handmade Montessori materials, or just to say hello." />
         <meta property="og:type" content="website" />

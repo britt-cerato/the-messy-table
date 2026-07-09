@@ -81,9 +81,10 @@ function Ideas() {
     <div>
       <Helmet>
         <title>Work Ideas &amp; Montessori Activity Guides | The Messy Table</title>
-        <meta name="description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf. Browse guides for nomenclature, CVC words, math, art appreciation, and more." />
+        <meta name="description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf — nomenclature, CVC words, math, and art." />
+        <link rel="canonical" href="https://themessytable.org/ideas" />
         <meta property="og:title" content="Work Ideas & Montessori Activity Guides | The Messy Table" />
-        <meta property="og:description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf. Browse guides for nomenclature, CVC words, math, art appreciation, and more." />
+        <meta property="og:description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf — nomenclature, CVC words, math, and art." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/ideas" />
         <meta property="og:site_name" content="The Messy Table" />

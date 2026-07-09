@@ -4,6 +4,32 @@
 
 The user is still learning. Always explain what you're doing as you work — describe the action you're about to take, why you're taking it, and what effect it will have. Keep explanations clear and jargon-free.
 
+## Available skills (installed globally at ~/.claude/skills/)
+
+These come from the moss + method build methodology (github.com/timcerato/moss-method) and apply to any site work here. Reach for them instead of re-deriving the same checks from scratch:
+
+- **seo-audit** — systematic SEO check: titles/descriptions, canonical links, schema.org coverage, sitemap completeness, alt text, internal linking. Run this before any "improve SEO" request.
+- **deploy-cloudflare** — pre-flight checks and troubleshooting for Cloudflare Pages deploys (wrangler config, redirects, sitemap domain correctness, post-deploy verification).
+- **scaffold-local-site** — project scaffolding patterns if a new page type or section needs to be built from scratch.
+- **write-service-pages** / **write-location-pages** — copywriting patterns for SEO-optimized page content (not directly applicable to this product catalog, but useful if service/location-style pages are ever added).
+- **confidence-check** — run before any non-trivial implementation to verify readiness.
+- **troubleshoot** — systematic root-cause debugging, don't retry blind.
+- **pm**, **brainstorm**, **deep-research**, **token-efficiency** — general-purpose workflow skills.
+
+## SEO standards for this site
+
+- Every page's `<Helmet>` block needs: `<title>` (≤60 chars), `<meta name="description">` (≤160 chars), `<link rel="canonical">`, and Open Graph tags (title/description/type/url/site_name/image).
+- Add `schema.org` JSON-LD structured data where it fits the content type: `Product` on product pages, `FAQPage` wherever there's a visible FAQ list, `BlogPosting` on article-style pages, `Organization`/`Person`/`LocalBusiness` on Home/About/Contact.
+- `public/sitemap.xml` is **generated**, not hand-maintained — `generate-sitemap.mjs` derives it from `src/data/products.ts` and `src/data/ideas.ts` at build time (wired into `npm run build`). Don't hand-edit `public/sitemap.xml` directly; edit the generator or the data files instead.
+- All image `alt` text must be meaningful (product name, or descriptive text) — never empty or filename-derived.
+- No `<div>` where a semantic element applies; one clear heading hierarchy per page.
+
+## Performance / image standards
+
+- Images are compressed via `vite-plugin-image-optimizer` (in `vite.config.ts`) at build time. **PNG: quality 100 (true lossless)** — PNG's algorithm shrinks files (tested: up to 77% smaller) without any quality tradeoff. **JPEG/JPG: quality 85 (visually lossless)** — testing showed quality 100 JPEG re-encodes came out *larger* than the original camera photos (phones already compress fairly aggressively), so those files got zero savings at true lossless. Quality 85 is the standard web-photo setting: no visible difference even zoomed in, but ~60-80% smaller. This was a deliberate tradeoff confirmed with the user on 2026-07-09 — don't lower these values further without asking first.
+- Use `loading="lazy"` on below-the-fold images (already the pattern in product grids); the primary above-the-fold image on a page can use `loading="eager"`.
+- Core Web Vitals targets: LCP < 2.5s, CLS < 0.1, Lighthouse mobile score 90+.
+
 ## Deployment
 
 ### Live site

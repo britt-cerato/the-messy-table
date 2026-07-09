@@ -9,10 +9,11 @@ function ForTeachers() {
   return (
     <div>
       <Helmet>
-        <title>Montessori Classroom Materials for Teachers — Handmade Works | The Messy Table</title>
-        <meta name="description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms. Nomenclature cards, seasonal activities, fine motor works, and write the room printables — made by a fellow Montessori teacher." />
-        <meta property="og:title" content="Montessori Classroom Materials for Teachers — Handmade Works | The Messy Table" />
-        <meta property="og:description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms. Nomenclature cards, seasonal activities, fine motor works, and write the room printables — made by a fellow Montessori teacher." />
+        <title>Montessori Materials for Teachers | The Messy Table</title>
+        <meta name="description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms — nomenclature cards, seasonal activities, and fine motor works." />
+        <link rel="canonical" href="https://themessytable.org/for-teachers" />
+        <meta property="og:title" content="Montessori Materials for Teachers | The Messy Table" />
+        <meta property="og:description" content="Shelf-ready handmade Montessori works for Pre-K to Grade 2 classrooms — nomenclature cards, seasonal activities, and fine motor works." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/for-teachers" />
         <meta property="og:site_name" content="The Messy Table" />

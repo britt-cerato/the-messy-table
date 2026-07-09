@@ -38,6 +38,12 @@ function Shop() {
         <Helmet>
           <title>{label} Montessori Works — The Messy Table</title>
           <meta name="description" content={`Handmade Montessori works for ${label.toLowerCase()} — made by Kerri, a Montessori educator in Southern NH. Perfect for Pre-K to Grade 2 classrooms and homeschool families.`} />
+          <link rel="canonical" href={`${SITE_URL}/shop?theme=${theme}`} />
+          <meta property="og:title" content={`${label} Montessori Works — The Messy Table`} />
+          <meta property="og:description" content={`Handmade Montessori works for ${label.toLowerCase()} from Kerri's classroom.`} />
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content={`${SITE_URL}/shop?theme=${theme}`} />
+          <meta property="og:site_name" content="The Messy Table" />
         </Helmet>
         <section className="page-hero">
           <h2>{label}</h2>
@@ -64,10 +70,11 @@ function Shop() {
   return (
     <div>
       <Helmet>
-        <title>Shop Handmade Montessori Materials — Nomenclature Cards, Math Works &amp; More</title>
-        <meta name="description" content="Browse handmade Montessori classroom works and printable activities for Pre-K through Grade 2. Nomenclature cards, write the room printables, math manipulatives, and seasonal activities — made with love by a Montessori teacher." />
-        <meta property="og:title" content="Shop Handmade Montessori Materials — Nomenclature Cards, Math Works & More" />
-        <meta property="og:description" content="Browse handmade Montessori classroom works and printable activities for Pre-K through Grade 2. Nomenclature cards, write the room printables, math manipulatives, and seasonal activities — made with love by a Montessori teacher." />
+        <title>Shop Montessori Materials | The Messy Table</title>
+        <meta name="description" content="Browse handmade Montessori classroom works for Pre-K through Grade 2 — nomenclature cards, math works, write the room, and seasonal activities." />
+        <link rel="canonical" href={`${SITE_URL}/shop`} />
+        <meta property="og:title" content="Shop Montessori Materials | The Messy Table" />
+        <meta property="og:description" content="Browse handmade Montessori classroom works for Pre-K through Grade 2 — nomenclature cards, math works, write the room, and seasonal activities." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/shop`} />
         <meta property="og:site_name" content="The Messy Table" />
