@@ -449,7 +449,7 @@ export const CATEGORIES: { id: Category; label: string; sectionTitle: string; de
   { id: 'language', label: 'Language', sectionTitle: 'Language Works', description: 'Hands-on phonics, word building, and reading activities for Pre-K through Grade 1.' },
   { id: 'math', label: 'Math', sectionTitle: 'Math Works', description: 'Concrete math activities that build number sense, counting, and early arithmetic skills.' },
   { id: 'seasonal', label: 'Seasonal', sectionTitle: 'Seasonal Works', description: 'Holiday and seasonal activities that keep the shelf fresh and kiddos excited all year long.' },
-  { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags, and classroom organisation materials to help your space feel warm, welcoming, and ready for learning.' },
+  { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags, and classroom organization materials to help your space feel warm, welcoming, and ready for learning.' },
   { id: 'printable', label: 'Printable Downloads', sectionTitle: 'Printable Downloads', description: 'Instant PDF downloads you print at home or at a print shop — ready to use right away. No waiting for shipping!' },
 ]
 
