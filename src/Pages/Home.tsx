@@ -1,7 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { PRODUCTS } from '../data/products'
-import heroImg from '../assets/products/IMG_7113-1.jpeg'
+import heroImg from '../assets/products/messy-table-collage-lavender.jpg'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
