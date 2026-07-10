@@ -869,6 +869,44 @@ body {
   background-color: var(--soft-lavender);
 }
 
+.buy-now-wrapper {
+  max-width: 320px;
+}
+
+.paypal-button-container {
+  min-height: 45px;
+}
+
+.buy-now-loading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--text-medium);
+  margin-top: 8px;
+}
+
+.buy-now-fallback-link {
+  color: var(--text-medium);
+  text-decoration: underline;
+}
+
+.buy-now-fallback-link:hover {
+  color: var(--text-dark);
+}
+
+.buy-now-success {
+  background-color: var(--sage-green);
+  border-radius: 16px;
+  padding: 20px 24px;
+  max-width: 400px;
+}
+
+.buy-now-success p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text-dark);
+  margin: 0;
+}
+
 .product-page-note {
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;

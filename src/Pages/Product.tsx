@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useParams } from 'react-router-dom'
 import { getProduct } from '../data/products'
+import BuyNowButton from '../components/BuyNowButton'
 
 function Product() {
   const { id } = useParams<{ id: string }>()
@@ -118,18 +119,30 @@ function Product() {
             ))}
           </ul>
 
-          <a
-            href={`mailto:themessytablenh@gmail.com?subject=Order Request: ${encodeURIComponent(product.name)}&body=Hi Kerri!%0D%0A%0D%0AI'd love to order the ${encodeURIComponent(product.name)} (${encodeURIComponent(product.price)}).%0D%0A%0D%0APlease let me know how to complete my purchase!%0D%0A%0D%0AThanks!`}
-            className="buy-button"
-          >
-            Order Now
-          </a>
-
-          <p className="product-page-note">
-            {product.categories.includes('printable')
-              ? 'Clicking "Order Now" will open an email to Kerri. Once payment is arranged, she\'ll email you the PDF straight away — ready to print at home! 🖨️'
-              : 'Clicking "Order Now" will open an email to Kerri with your order details. She\'ll get back to you quickly to arrange payment and shipping! 💛'}
-          </p>
+          {product.categories.includes('classroom-setup') ? (
+            <>
+              <a
+                href={`mailto:themessytablenh@gmail.com?subject=Order Request: ${encodeURIComponent(product.name)}&body=Hi Kerri!%0D%0A%0D%0AI'd love to order the ${encodeURIComponent(product.name)} (${encodeURIComponent(product.price)}).%0D%0A%0D%0APlease let me know how to complete my purchase!%0D%0A%0D%0AThanks!`}
+                className="buy-button"
+              >
+                Order Now
+              </a>
+              <p className="product-page-note">
+                This item is made to order — clicking "Order Now" will open an email to Kerri so she
+                can get your personalization details (name, illustration choice) before arranging
+                payment. 💛
+              </p>
+            </>
+          ) : (
+            <>
+              <BuyNowButton product={product} />
+              <p className="product-page-note">
+                {product.categories.includes('printable')
+                  ? 'Pay securely with PayPal — Kerri will email you the PDF straight away, ready to print at home! 🖨️'
+                  : "Pay securely with PayPal — you'll enter your shipping address at checkout, and Kerri will get your order ready to ship! 💛"}
+              </p>
+            </>
+          )}
         </div>
       </div>
     </div>
