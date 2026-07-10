@@ -20,7 +20,7 @@ function loadPayPalScript(): Promise<void> {
 
   paypalScriptPromise = new Promise((resolve, reject) => {
     const script = document.createElement('script')
-    script.src = `https://www.paypal.com/sdk/js?client-id=${PAYPAL_CLIENT_ID}&currency=USD&intent=capture`
+    script.src = `https://www.paypal.com/sdk/js?client-id=${PAYPAL_CLIENT_ID}&currency=USD&intent=capture&disable-funding=paylater`
     script.async = true
     script.onload = () => resolve()
     script.onerror = () => {
