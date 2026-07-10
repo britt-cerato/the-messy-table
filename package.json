@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "node generate-sitemap.mjs && tsc -b && vite build && node prerender.mjs",
+    "build": "node fix-image-orientation.mjs && node generate-sitemap.mjs && tsc -b && vite build && node prerender.mjs",
     "lint": "eslint .",
     "preview": "vite preview"
   },
