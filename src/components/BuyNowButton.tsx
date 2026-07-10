@@ -85,7 +85,7 @@ function BuyNowButton({ product }: BuyNowButtonProps) {
           .Buttons({
             style: {
               layout: 'vertical',
-              color: 'gold',
+              color: 'black',
               shape: 'pill',
               label: 'paypal',
               height: 45,
