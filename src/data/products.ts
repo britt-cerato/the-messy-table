@@ -10,7 +10,6 @@ import img7088 from '../assets/products/IMG_7088.jpeg'
 import img7090 from '../assets/products/IMG_7090.jpeg'
 import img7092 from '../assets/products/IMG_7092.jpeg'
 import img7094 from '../assets/products/IMG_7094.jpeg'
-import img7105 from '../assets/products/IMG_7105.jpeg'
 import img7108 from '../assets/products/IMG_7108.jpeg'
 import img7113 from '../assets/products/IMG_7113.jpeg'
 import img7113_1 from '../assets/products/IMG_7113-1.jpeg'
@@ -39,6 +38,20 @@ import imgWriteTheRoomSpring from '../assets/products/write-the-room.jpeg'
 import imgWriteTheRoomRead from '../assets/products/write-the-room-read.jpeg'
 import imgEarthDayWriteTheRoom from '../assets/products/earth-day-write-the-room.jpeg'
 import imgCubbyLabels from '../assets/products/cubby-labels.jpeg'
+import imgAnimalNomenclatureFrog from '../assets/products/animal-nomenclature-frog.jpeg'
+import imgEnglishBridleNomenclature from '../assets/products/english-bridle-nomenclature.jpeg'
+import imgAnimalNomenclatureLadybug from '../assets/products/animal-nomenclature-ladybug.jpeg'
+import imgAnimalNomenclatureHorse from '../assets/products/animal-nomenclature-horse.jpeg'
+import imgPenguinNomenclature from '../assets/products/penguin-nomenclature.jpeg'
+import imgAnimalParentBabyMatching from '../assets/products/animal-parent-baby-matching.jpg'
+import imgAnimalParentBabyMatching2 from '../assets/products/animal-parent-baby-matching-2.jpg'
+import imgAnimalParentBabyMatching3 from '../assets/products/animal-parent-baby-matching-3.jpg'
+import imgColorMatching from '../assets/products/color-matching.jpg'
+import imgColorMatching2 from '../assets/products/color-matching-2.jpg'
+import imgColorMatching3 from '../assets/products/color-matching-3.jpg'
+import imgDinosaurThreePartMatching from '../assets/products/dinosaur-three-part-matching.jpg'
+import imgDinosaurThreePartMatching2 from '../assets/products/dinosaur-three-part-matching-2.jpg'
+import imgDinosaurThreePartMatching3 from '../assets/products/dinosaur-three-part-matching-3.jpg'
 import imgAnimalTracksBooklet from '../assets/products/animal-tracks-booklet.jpeg'
 import imgAnimalTracksMatching from '../assets/products/animal-tracks-matching.jpeg'
 import imgVanGoghMatching from '../assets/products/van-gogh-matching.jpeg'
@@ -71,10 +84,10 @@ export const PRODUCTS: Product[] = [
     name: 'Animal Nomenclature Cards',
     price: '$15.00',
     categories: ['nomenclature'],
-    image: img7105,
-    gallery: [],
-    description: 'Three-part nomenclature card sets for learning the parts of a frog, ladybug, and horse. Includes picture cards, label cards, and control cards — perfect for independent Montessori work.',
-    details: ['Three sets: Frog, Ladybug & Horse', 'Three-part cards per set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
+    image: imgAnimalNomenclatureFrog,
+    gallery: [imgAnimalNomenclatureLadybug, imgAnimalNomenclatureHorse],
+    description: 'Three-part nomenclature card sets for learning the parts of a frog and ladybug. Includes picture cards, label cards, and control cards — perfect for independent Montessori work.',
+    details: ['Two sets: Frog & Ladybug', 'Three-part cards per set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
     etsy: ETSY,
   },
   {
@@ -82,8 +95,8 @@ export const PRODUCTS: Product[] = [
     name: 'Penguin Nomenclature Cards',
     price: '$15.00',
     categories: ['nomenclature'],
-    image: img7121,
-    gallery: [img7119],
+    image: imgPenguinNomenclature,
+    gallery: [img7121, img7119],
     description: 'Three-part nomenclature cards for learning the parts of a penguin — head, bill, tail, webbed feet and more. A favourite for winter and animal units.',
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2', 'Great for science shelves'],
     etsy: ETSY,
@@ -93,10 +106,21 @@ export const PRODUCTS: Product[] = [
     name: 'English Bridle Nomenclature Cards',
     price: '$15.00',
     categories: ['nomenclature'],
-    image: img7126,
-    gallery: [],
+    image: imgEnglishBridleNomenclature,
+    gallery: [img7126],
     description: 'Three-part nomenclature cards for learning the parts of an English bridle — noseband, browband, cheekpieces, throatlatch and more. Perfect for horse lovers.',
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Grade 1 and up', 'Great for equestrian or animal units'],
+    etsy: ETSY,
+  },
+  {
+    id: 'horse-nomenclature',
+    name: 'Horse Nomenclature Cards',
+    price: '$15.00',
+    categories: ['nomenclature'],
+    image: imgAnimalNomenclatureHorse,
+    gallery: [],
+    description: 'Three-part nomenclature cards for learning the parts of a horse — a classic Montessori work for animal lovers. Includes picture cards, label cards, and control cards.',
+    details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2', 'Great for science and animal units'],
     etsy: ETSY,
   },
   {
@@ -119,6 +143,40 @@ export const PRODUCTS: Product[] = [
     gallery: [img7078, img7079],
     description: 'Three-part nomenclature cards tracing human development from fertilisation to 40 weeks. A thoughtful, accurate resource for science and life cycles.',
     details: ['Three-part card set', 'Covers zygote through 40-week fetus', 'Printed & hand-assembled', 'Suits Grade 1 and up'],
+    etsy: ETSY,
+  },
+
+  {
+    id: 'animal-parent-baby-matching',
+    name: 'Animal Parent & Baby Matching Cards',
+    price: '$18.00',
+    categories: ['nomenclature'],
+    image: imgAnimalParentBabyMatching,
+    gallery: [imgAnimalParentBabyMatching2, imgAnimalParentBabyMatching3],
+    description: 'Three-part matching cards pairing animals with their young — from farm favourites like Horse & Foal and Pig & Piglet to zoo animals like Lion & Whelp and Elephant & Calves. Children learn both animal names and their baby names.',
+    details: ['16 animal pairs', 'Farm & zoo animals', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
+    etsy: ETSY,
+  },
+  {
+    id: 'color-matching',
+    name: 'Color Matching Cards',
+    price: '$15.00',
+    categories: ['nomenclature'],
+    image: imgColorMatching,
+    gallery: [imgColorMatching2, imgColorMatching3],
+    description: 'Bright, simple color matching cards pairing a solid color tile with a real-world object in that color — red apple, orange, yellow banana, green kiwi, blue blueberries, purple grapes. A perfect early learning work.',
+    details: ['6 colors included', 'Real photo objects', 'Printed & hand-assembled', 'Suits Toddler to Pre-K'],
+    etsy: ETSY,
+  },
+  {
+    id: 'dinosaur-three-part-matching',
+    name: 'Dinosaur Three Part Matching Cards',
+    price: '$18.00',
+    categories: ['nomenclature'],
+    image: imgDinosaurThreePartMatching,
+    gallery: [imgDinosaurThreePartMatching2, imgDinosaurThreePartMatching3],
+    description: 'Three-part matching cards featuring 15 dinosaurs — T-Rex, Triceratops, Velociraptor, Stegosaurus, Spinosaurus and more. A dinosaur lover\'s dream for Montessori shelves.',
+    details: ['15 dinosaurs included', 'Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 3'],
     etsy: ETSY,
   },
 
@@ -252,7 +310,7 @@ export const PRODUCTS: Product[] = [
     image: img7084,
     gallery: [],
     description: 'Sort spooky Halloween objects onto numbered pumpkin cards 1–10. Spiders, bats, skulls, ghosts and more make counting irresistibly fun in October.',
-    details: ['Pumpkin number cards 1–10', 'Objects not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
+    details: ['Pumpkin number cards 1–10', 'Small counting objects needed (e.g. pom poms, buttons, gems)', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
     etsy: ETSY,
   },
   {
