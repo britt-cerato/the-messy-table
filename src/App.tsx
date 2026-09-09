@@ -54,6 +54,7 @@ function App() {
           <div className="footer-brand">
             <h3>The Messy Table</h3>
             <p>Handmade with love for teachers everywhere.</p>
+            <p>PO Box 56 · Milford, NH 03055</p>
           </div>
           <ul className="footer-links">
             <li><Link to="/shop">Shop</Link></li>

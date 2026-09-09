@@ -9,7 +9,10 @@ const localBusinessSchema = {
   description: 'Handmade Montessori-inspired classroom materials for teachers and homeschool families. Custom orders welcome.',
   address: {
     '@type': 'PostalAddress',
+    postOfficeBoxNumber: '56',
+    addressLocality: 'Milford',
     addressRegion: 'NH',
+    postalCode: '03055',
     addressCountry: 'US',
   },
   areaServed: ['NH', 'US'],
@@ -42,6 +45,10 @@ function Contact() {
           <div className="contact-item">
             <span className="contact-label">Email</span>
             <a href="mailto:themessytablenh@gmail.com" className="contact-link">themessytablenh@gmail.com</a>
+          </div>
+          <div className="contact-item">
+            <span className="contact-label">Mail</span>
+            <span className="contact-link">PO Box 56, Milford, NH 03055</span>
           </div>
           <p className="contact-note">Kerri typically responds within 1–2 business days.</p>
         </div>
