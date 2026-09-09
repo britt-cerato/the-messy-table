@@ -25,7 +25,7 @@ const orgSchema = {
     addressRegion: 'NH',
     addressCountry: 'US',
   },
-  sameAs: ['https://www.etsy.com/shop/TMTBYKerri'],
+  sameAs: [],
 }
 
 const websiteSchema = {

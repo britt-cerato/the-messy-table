@@ -72,10 +72,7 @@ export interface Product {
   gallery: string[]
   description: string
   details: string[]
-  etsy: string
 }
-
-const ETSY = 'https://www.etsy.com/shop/TMTBYKerri'
 
 export const PRODUCTS: Product[] = [
   // ── Nomenclature ──────────────────────────────────────────────
@@ -88,7 +85,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgAnimalNomenclatureLadybug, imgAnimalNomenclatureHorse],
     description: 'Three-part nomenclature card sets for learning the parts of a frog and ladybug. Includes picture cards, label cards, and control cards — perfect for independent Montessori work.',
     details: ['Two sets: Frog & Ladybug', 'Three-part cards per set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
-    etsy: ETSY,
   },
   {
     id: 'penguin-nomenclature',
@@ -99,7 +95,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7121, img7119],
     description: 'Three-part nomenclature cards for learning the parts of a penguin — head, bill, tail, webbed feet and more. A favourite for winter and animal units.',
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2', 'Great for science shelves'],
-    etsy: ETSY,
   },
   {
     id: 'horse-bridle-nomenclature',
@@ -110,7 +105,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7126],
     description: 'Three-part nomenclature cards for learning the parts of an English bridle — noseband, browband, cheekpieces, throatlatch and more. Perfect for horse lovers.',
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Grade 1 and up', 'Great for equestrian or animal units'],
-    etsy: ETSY,
   },
   {
     id: 'horse-nomenclature',
@@ -121,7 +115,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Three-part nomenclature cards for learning the parts of a horse — a classic Montessori work for animal lovers. Includes picture cards, label cards, and control cards.',
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2', 'Great for science and animal units'],
-    etsy: ETSY,
   },
   {
     id: 'van-gogh-cards',
@@ -132,7 +125,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7076, img7077],
     description: 'Three-part matching cards featuring Van Gogh masterpieces — Starry Night, Irises, Almond Blossom and more. A beautiful way to introduce children to fine art.',
     details: ['Three-part card set', '12 paintings included', 'Printed & hand-assembled', 'Suits Pre-K to Grade 3'],
-    etsy: ETSY,
   },
   {
     id: 'human-development-cards',
@@ -143,7 +135,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7078, img7079],
     description: 'Three-part nomenclature cards tracing human development from fertilisation to 40 weeks. A thoughtful, accurate resource for science and life cycles.',
     details: ['Three-part card set', 'Covers zygote through 40-week fetus', 'Printed & hand-assembled', 'Suits Grade 1 and up'],
-    etsy: ETSY,
   },
 
   {
@@ -155,7 +146,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgAnimalParentBabyMatching2, imgAnimalParentBabyMatching3],
     description: 'Three-part matching cards pairing animals with their young — from farm favourites like Horse & Foal and Pig & Piglet to zoo animals like Lion & Whelp and Elephant & Calves. Children learn both animal names and their baby names.',
     details: ['16 animal pairs', 'Farm & zoo animals', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
-    etsy: ETSY,
   },
   {
     id: 'color-matching',
@@ -166,7 +156,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgColorMatching2, imgColorMatching3],
     description: 'Bright, simple color matching cards pairing a solid color tile with a real-world object in that color — red apple, orange, yellow banana, green kiwi, blue blueberries, purple grapes. A perfect early learning work.',
     details: ['6 colors included', 'Real photo objects', 'Printed & hand-assembled', 'Suits Toddler to Pre-K'],
-    etsy: ETSY,
   },
   {
     id: 'dinosaur-three-part-matching',
@@ -177,7 +166,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgDinosaurThreePartMatching2, imgDinosaurThreePartMatching3],
     description: 'Three-part matching cards featuring 15 dinosaurs — T-Rex, Triceratops, Velociraptor, Stegosaurus, Spinosaurus and more. A dinosaur lover\'s dream for Montessori shelves.',
     details: ['15 dinosaurs included', 'Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 3'],
-    etsy: ETSY,
   },
 
   // ── Language ──────────────────────────────────────────────────
@@ -191,7 +179,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "CVC word building cards with a Valentine's heart theme. Children build and read short vowel words — a sweet way to practise phonics in February.",
     details: ['30+ CVC word cards', 'Short vowel families', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'spring-flower-matching',
@@ -203,7 +190,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7113, img7114, img7111],
     description: 'Match card to object with beautiful spring flowers — daffodil, sunflower, tulip, rose, orchid, lotus, hibiscus and more. Pairs perfectly with real flower objects.',
     details: ['8 flower matching cards', 'Includes picture & label cards', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'word-family-flower-pots',
@@ -215,7 +201,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Organize the corresponding ending sound picture to the correct flower pot.',
     details: ['5 word family pots', 'Picture sorting cards included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'write-the-room-summer',
@@ -226,7 +211,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Place picture cards around the room and have children find and write each word on their recording sheet. A summer-themed favourite that gets kiddos moving!',
     details: ['14 picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'spring-worksheets',
@@ -238,7 +222,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7132, img7134],
     description: 'A spring-themed worksheet pack covering vowels, blends, digraphs and flower sorting. Includes Growing Sounds, Bales of Vowels, Planting Digraphs, Ladybug Vowels and Birdhouse Blends.',
     details: ['5 worksheets included', 'Covers vowels, blends & digraphs', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
 
   // ── Math ──────────────────────────────────────────────────────
@@ -251,7 +234,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Count the tally marks on each bird card and clip the correct number. A fun, hands-on way to practise tally marks and counting.',
     details: ['15 clip cards', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 2'],
-    etsy: ETSY,
   },
   {
     id: 'bead-stair',
@@ -262,7 +244,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'A Montessori-inspired colour-coded bead stair for learning numbers 1–10. Each number has its own colour, helping children visualise quantity and build number sense.',
     details: ['Numbers 1–10', 'Colour-coded by number', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'ten-frames-clip-cards',
@@ -273,7 +254,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Count the dots on the ten frame and clip the correct number. Rainbow-themed cards covering numbers 11–20 — perfect for building number sense beyond 10.',
     details: ['Numbers 11–20', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'valentines-mason-jar-addition',
@@ -285,7 +265,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "Addition equation cards with an adorable Valentine's mason jar theme. Children solve the equation and write the sum in the answer box — a sweet way to practise addition facts in February.",
     details: ['Addition facts included', 'Answer box on each card', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'fall-math-clip-cards',
@@ -297,7 +276,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Count the fall objects and clip the correct number. Autumn-themed clip cards with pumpkins, apples, leaves and more — a cosy seasonal math work.',
     details: ['Numbers 1–5', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
 
   // ── Seasonal ──────────────────────────────────────────────────
@@ -311,7 +289,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Sort spooky Halloween objects onto numbered pumpkin cards 1–10. Spiders, bats, skulls, ghosts and more make counting irresistibly fun in October.',
     details: ['Pumpkin number cards 1–10', 'Small counting objects needed (e.g. pom poms, buttons, gems)', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'halloween-patterns',
@@ -323,7 +300,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Complete the pattern using spooky Halloween objects — ghosts, skulls, spiders and pumpkins. A hands-on patterning work that kiddos beg to do in October.',
     details: ['Pattern strips included', 'Objects not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'thanksgiving-buttoning',
@@ -335,7 +311,6 @@ export const PRODUCTS: Product[] = [
     gallery: [img7086],
     description: 'A practical life buttoning work with a Thanksgiving twist — a hand-sewn felt turkey with colourful feathers to button on and off. Builds fine motor skills while celebrating the season.',
     details: ['Hand-sewn felt turkey', 'Colourful removable feathers', 'Develops fine motor skills', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'identifying-number-to-object',
@@ -347,7 +322,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "Match the number to the corresponding number of objects in this St. Patrick's Day themed work.",
     details: ['Numbers practice included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'rainbow-letter-matching',
@@ -359,7 +333,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "A rainbow-themed letter matching work where children clip clothespins labelled with letters around the arc of a colourful rainbow. Perfect for St. Patrick's Day or any time you want to make alphabet practice irresistible.",
     details: ['All 26 letters included', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'st-patricks-day-worksheets',
@@ -371,7 +344,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "A St. Patrick's Day maths worksheet pack — Shamrock Math, Rainbow Addition, St. Patrick's Day Graphing, Clover Skip Counting and more.",
     details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'dress-up-snowman',
@@ -383,7 +355,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgDressUpSnowman2],
     description: 'Mix and match hats, scarves, and buttons to dress up a snowman! Children use the reference card to recreate the outfit or create their own. A fun and imaginative winter work for Pre-K and Kindergarten.',
     details: ['Snowman mat included', 'Multiple outfit cards', 'Hats, scarves & button pieces', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'build-a-snowman',
@@ -395,7 +366,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgBuildASnowman2],
     description: 'Match picture cards to the correct beginning letter on the snowman board. Children sort all 26 letters using picture oval cards — a hands-on alphabet work with a cosy winter twist.',
     details: ['All 26 letters included', 'Picture sorting oval cards', 'Snowman sorting board', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   {
     id: 'the-mitten',
@@ -407,7 +377,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "A sequencing and retelling work based on Jan Brett's \"The Mitten.\" Includes hand-cut animal characters and a felt mitten for hands-on storytelling.",
     details: ['Hand-cut animal characters', 'Felt mitten included', 'Based on Jan Brett\'s "The Mitten"', 'Suits Pre-K to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'write-the-room-spring',
@@ -419,7 +388,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'A spring-themed write the room activity! Place picture cards around the classroom, then children walk around, find each card, and write the word on their recording sheet. A fun way to get kiddos moving and practising spelling at the same time.',
     details: ['14 spring picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'i-love-to-read-write-the-room',
@@ -430,7 +398,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Children find each picture card around the room, read the word, and draw a matching picture in the box on their recording sheet. A lovely activity for building reading confidence and visual comprehension.',
     details: ['12 picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
-    etsy: ETSY,
   },
   // ── Classroom Setup ───────────────────────────────────────────
   {
@@ -442,7 +409,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgCubbyLabels2],
     description: 'Personalised cubby labels made to order with each child\'s name and a cute illustrated plant. A beautiful way to make every student feel at home in your classroom.',
     details: ['Custom names per label', 'Choice of plant illustration', 'Printed & hand-cut', 'Contact Kerri to place a custom order'],
-    etsy: ETSY,
   },
   {
     id: 'name-tags',
@@ -453,7 +419,6 @@ export const PRODUCTS: Product[] = [
     gallery: [imgNameTags2],
     description: 'Personalised desk name tags made to order — featuring each child\'s name, a watercolour illustration, the full alphabet, and a number line. A functional and beautiful addition to any classroom.',
     details: ['Custom names per tag', 'Alphabet & number line included', 'Watercolour illustration', 'Contact Kerri to place a custom order'],
-    etsy: ETSY,
   },
 
   {
@@ -465,7 +430,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'An Earth Day write the room activity! Children walk around the room finding picture cards, then write the matching word on their recording sheet. A great way to build vocabulary while celebrating our planet.',
     details: ['Earth Day themed picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'animal-tracks-booklet',
@@ -476,7 +440,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'A printed and bound "Footprints of Forest Animals" booklet — a beautiful non-fiction reader that introduces children to the tracks left by woodland creatures. Great for science shelves and nature study.',
     details: ['Printed & ring-bound', 'Forest animals included', 'Suits Pre-K to Grade 1', 'Great paired with the Animal Tracks Matching Work'],
-    etsy: ETSY,
   },
   {
     id: 'animal-tracks-matching',
@@ -487,7 +450,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Children match each animal photo card to its corresponding track card — a hands-on science work that builds observation skills and nature vocabulary. Includes forest animals like moose, deer, raccoon, and more.',
     details: ['Animal photo + track card pairs', 'Self-correcting design', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
-    etsy: ETSY,
   },
   {
     id: 'van-gogh-matching',
@@ -498,7 +460,6 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'A beautiful art matching work featuring the paintings of Vincent Van Gogh. Children match identical scallop-edged cards — a quiet, focused activity that builds visual discrimination and introduces great works of art.',
     details: ['Scallop-edged art cards', 'Features Van Gogh paintings', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
-    etsy: ETSY,
   },
 ]
 

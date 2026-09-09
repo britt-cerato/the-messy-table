@@ -42,7 +42,7 @@ function Product() {
       price: product.price.replace('$', ''),
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
-      url: product.etsy,
+      url: `https://themessytable.org/products/${product.id}`,
       seller: {
         '@type': 'Organization',
         name: 'The Messy Table',
