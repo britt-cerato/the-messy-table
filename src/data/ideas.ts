@@ -721,6 +721,122 @@ export const IDEAS: Idea[] = [
       },
     ],
   },
+  // ── Winter Activities ─────────────────────────────────────────
+  {
+    slug: 'felt-penguin-dress-up',
+    title: 'Felt Penguin Dress Up: A Winter Creative Play Activity',
+    excerpt: 'Children dress their own felt penguin with colourful scarves, hats, and ear muffs — a simple open-ended activity that builds colour recognition and imaginative thinking for ages 3–6.',
+    date: '2025-11-01',
+    category: 'Seasonal',
+    relatedProductIds: ['the-mitten'],
+    intro: 'This activity is exactly the kind of thing that looks simple from the outside but keeps children deeply engaged. Each child gets a felt penguin and a pile of colourful accessories — scarves, hats, and ear muffs cut from felt — and they dress it however they like. There\'s no right answer, no pattern to follow. That freedom is the point.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Felt in black, white, orange, blue, purple, yellow, pink, and green.',
+          'Googly eyes, liquid glue, and pom-poms in a variety of colours.',
+        ],
+      },
+      {
+        heading: 'How to Prepare the Activity',
+        paragraphs: [
+          'Make the felt penguins in advance before presenting the activity to the children. Cut a simple penguin body from black felt with a white tummy, orange felt beak and feet, and attach the googly eyes with liquid glue. Let them dry completely.',
+          'Cut out a variety of scarves, hats, and ear muffs from the different coloured felts. Sort them into three separate piles — one for scarves, one for hats, one for ear muffs — so children can easily find what they\'re looking for.',
+          'Set the penguins and sorted accessories out on a tray or mat, ready for the children to explore.',
+        ],
+      },
+      {
+        heading: 'How the Children Use It',
+        paragraphs: [
+          'Children pick up a penguin and choose whatever accessories they like from the three piles. Some will carefully colour-coordinate; others will mix as many colours as possible. Both approaches are wonderful.',
+          'The felt accessories can be switched in and out easily, so children often redress their penguin multiple times. This repetition builds vocabulary naturally — naming the colours, talking about what the penguin is wearing, comparing choices with a friend.',
+          'Pom-poms can be added as optional decorations on the hats or scarves for extra sensory interest.',
+        ],
+      },
+      {
+        heading: 'Why This Activity Works',
+        paragraphs: [
+          'Open-ended activities — where there\'s no single right outcome — are some of the most valuable things on an early childhood shelf. They develop self-direction, creative thinking, and the confidence to make choices without waiting for adult approval.',
+          'The felt medium is forgiving and satisfying. Pieces stay in place well enough to "work" without being permanent. Younger children who haven\'t yet developed the fine motor control for small fastenings (buttons, snaps) can manage felt accessories easily and experience genuine success.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How do I cut the felt pieces so they\'re consistent?',
+        answer: 'A simple paper template makes this much faster. Draw your scarf, hat, and ear muff shapes on paper, cut them out, then trace around the template onto the felt. You can cut several layers of felt at once to speed up the process.',
+      },
+      {
+        question: 'How many penguins should I make?',
+        answer: 'One per child if it\'s an individual work, or two or three if it\'s a shared tray at a table. Having a few extras means the activity is always ready even if one penguin goes missing or gets worn out.',
+      },
+      {
+        question: 'Can children add their own decorations?',
+        answer: 'Absolutely — that\'s encouraged. Setting out additional pom-poms, small felt shapes, or even sequins gives children who are deeply engaged something extra to explore. Keep any very small pieces away from children under three.',
+      },
+    ],
+  },
+
+  {
+    slug: 'snowman-letter-tracing',
+    title: 'Snowman Letter Tracing: A Sensory Writing Activity',
+    excerpt: 'Children pick a letter card, then trace the letter in shaving cream on a tray — a tactile, winter-themed way to practise letter formation that children ask to do again and again.',
+    date: '2025-11-15',
+    category: 'Seasonal',
+    relatedProductIds: ['winter-rhyming-cards'],
+    intro: 'Shaving cream tracing is one of those activities that sounds messy but is actually very manageable — and children are completely captivated by it. The sensory feedback of tracing through the cream reinforces letter shapes in a way that pencil and paper simply can\'t. Pair it with a snowman theme and a set of letter cards and you have a winter language work children will choose again and again.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Letter cards (uppercase, lowercase, or both depending on your children\'s stage).',
+          'A small tray — a baking tray or sensory tray with low sides works perfectly.',
+          'A card holder stand to prop the letter card upright so children can see it clearly while they trace.',
+          'One can of shaving cream.',
+        ],
+      },
+      {
+        heading: 'How to Set Up',
+        paragraphs: [
+          'Spray a thin, even layer of shaving cream across the bottom of the tray. You don\'t need much — just enough to cover the surface.',
+          'Set the card holder stand at the back of the tray and place a letter card in it. The child will look at the card and trace the same letter in the shaving cream in front of them.',
+          'Have additional letter cards within easy reach so children can swap them out independently.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'The child picks out a letter card and places it in the card holder stand so they can see it clearly.',
+          'Using one finger, the child traces the letter shape in the shaving cream, following the model on the card.',
+          'When they\'re happy with it, they smooth out the shaving cream with their palm to "erase" — and the surface is ready to go again. Add a small spray of shaving cream if the surface gets thin.',
+          'Children repeat with different letter cards, self-directing which letters to practise and for how long.',
+        ],
+      },
+      {
+        heading: 'Why Sensory Writing Works',
+        paragraphs: [
+          'When a child forms a letter with their finger — especially in a medium as tactile as shaving cream — they engage more of their brain than when they write with a pencil. The sensory feedback from the cool, smooth cream makes the motor memory stronger.',
+          'The "erase and repeat" nature of the activity removes the anxiety some children feel around making mistakes on paper. There is no wrong mark here — everything smooths away and can be tried again.',
+          'This activity is excellent for children who are working on letter formation but aren\'t yet ready for consistent pencil work, as well as for any child who needs a fresh, engaging way to revisit a skill.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Is shaving cream safe for young children?',
+        answer: 'Standard foam shaving cream is generally safe for skin contact in a supervised activity and is used widely in early childhood settings. Avoid if any child has very sensitive skin. As with all sensory materials, supervise closely and remind children it\'s not for tasting.',
+      },
+      {
+        question: 'What kind of letter cards work best?',
+        answer: 'Cards with directional arrows showing how to form the letter are ideal — they give children a model for where to start and which direction to move. Montessori sandpaper letter cards can also be adapted for this activity.',
+      },
+      {
+        question: 'How do I clean up?',
+        answer: 'Shaving cream wipes away easily with a damp cloth. Most surfaces (trays, tables, hands) clean up in seconds. Rinse the tray under warm water when the activity is done and it\'s ready for next time.',
+      },
+    ],
+  },
 ]
 
 export function getIdea(slug: string): Idea | undefined {
