@@ -119,8 +119,8 @@ function Ideas() {
         <div className="ideas-list">
           {IDEAS.map((idea) => (
             <Link to={`/ideas/${idea.slug}`} key={idea.slug} className="idea-list-card">
-              {IDEA_IMAGES[idea.slug] && (
-                <img src={IDEA_IMAGES[idea.slug]} alt={idea.title} className="idea-list-image" loading="lazy" />
+              {(IDEA_IMAGES[idea.slug] || idea.image) && (
+                <img src={IDEA_IMAGES[idea.slug] || idea.image} alt={idea.title} className="idea-list-image" loading="lazy" />
               )}
               <div className="idea-list-text">
                 <span className="idea-list-category">{idea.category}</span>
