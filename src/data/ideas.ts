@@ -6,6 +6,11 @@ import imgNappingHouse from '../assets/products/the-napping-house.png'
 import imgSpilledMilk from '../assets/products/it-looks-like-spilled-milk.png'
 import imgFeltPenguinDressUp from '../assets/products/felt-penguin-dress-up.jpg'
 import imgSnowmanLetterTracing from '../assets/products/snowman-letter-tracing.jpg'
+import imgFallPatterning from '../assets/products/fall-patterning.jpg'
+import imgFallNumberPuzzle from '../assets/products/fall-number-puzzle.jpg'
+import imgFallClipCards from '../assets/products/fall-clip-cards.jpg'
+import imgAppleLifeCycle from '../assets/products/apple-life-cycle.jpg'
+import imgHalloweenCountingBrew from '../assets/products/halloween-counting-brew.jpg'
 
 export interface IdeaSection {
   heading: string
@@ -723,6 +728,258 @@ export const IDEAS: Idea[] = [
       },
     ],
   },
+  // ── Fall & Halloween Activities ───────────────────────────────
+  {
+    slug: 'fall-patterning-activity',
+    title: 'Fall Patterning with Real Objects',
+    excerpt: 'Extend printed pattern strips using real fall objects like acorns, sunflowers, and pumpkins — a hands-on patterning activity that brings the season right onto the work mat.',
+    date: '2025-09-15',
+    category: 'Seasonal',
+    image: imgFallPatterning,
+    relatedProductIds: ['halloween-patterns'],
+    intro: 'Patterning is one of those foundational math skills that sneaks up on you — by the time children are confidently reading ABAB and ABCABC patterns, they\'ve already laid important groundwork for algebraic thinking. Fall is the perfect season to make this work feel exciting, because the objects themselves do half the job.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Printed pattern strips featuring fall images — pumpkins, sunflowers, and acorns work beautifully together.',
+          'Real or realistic fall objects to match: small decorative acorns, a sunflower head, a mini pumpkin, or any fall nature items you can collect.',
+          'A work mat or tray to keep everything organised.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Lay the pattern strips out on the mat. Each strip shows a repeating pattern that ends with a blank space — the child\'s job is to figure out what comes next and place the correct real object in that space.',
+          'Start with simple ABAB patterns (pumpkin, sunflower, pumpkin, sunflower, ?) before moving to ABCABC or AABB patterns.',
+          'Once a child can extend the pattern, invite them to cover the strip and recreate the whole pattern from memory using only the real objects. This moves the work from pattern recognition to pattern production.',
+        ],
+      },
+      {
+        heading: 'Why Real Objects Make It Better',
+        paragraphs: [
+          'The tactile experience of handling real objects — the weight of an acorn, the texture of a dried sunflower — anchors the abstract concept of patterning in something children can actually feel.',
+          'It also makes the work look irresistible on the shelf. A printed card next to a pile of real acorns draws children in before they\'ve even thought about math.',
+          'Nature objects are free, change with the season, and can be swapped out to keep the same work feeling fresh. Pinecones in October, dried corn in November — the pattern skill stays the same.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What if real objects aren\'t available?',
+        answer: 'Printed picture cards or small seasonal erasers work just as well. The key is that the "extending" piece is a separate, moveable object — not just pointing at the strip.',
+      },
+      {
+        question: 'How do I know when a child is ready for harder patterns?',
+        answer: 'When they can extend an ABAB pattern quickly and without hesitation, introduce a third element (ABCABC). When that\'s solid, try AABB or AABC. Follow the child\'s lead — frustration means step back, boredom means step up.',
+      },
+      {
+        question: 'Can this activity work for a whole group?',
+        answer: 'Yes — set up several strips at a table and have children work side by side. Pattern work is naturally self-checking (it either continues correctly or it doesn\'t), so children can work independently even in a group setting.',
+      },
+    ],
+  },
+
+  {
+    slug: 'fall-number-sequencing-puzzle',
+    title: 'Fall Number Sequencing Puzzle',
+    excerpt: 'Children arrange numbered picture strips in order from 1 to 10 to assemble a fall scene — a self-correcting sequencing activity that builds number order and one-to-one correspondence.',
+    date: '2025-09-20',
+    category: 'Seasonal',
+    image: imgFallNumberPuzzle,
+    relatedProductIds: ['fall-math-clip-cards'],
+    intro: 'Number sequencing puzzles are wonderfully versatile — they look like a simple put-it-in-order task, but the thinking involved is much richer. A child who can sequence 1 to 10 reliably understands that numbers have a fixed order, that each number is one more than the last, and that the sequence has a start and an end. This fall version wraps all of that in a pumpkin patch.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Numbered picture strips, 1 through 10, each showing part of a fall scene (a pumpkin patch with a child).',
+          'A flat work surface where the strips can be laid out in a row.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Mix up the numbered strips and place them in a pile or scattered on the mat.',
+          'The child arranges the strips in order from 1 to 10, left to right, until the full scene comes together. The image itself acts as a self-check — if the picture looks right, the sequence is right.',
+          'For an added challenge, flip the strips face-down after completing them and have the child try to recall the order from memory.',
+        ],
+      },
+      {
+        heading: 'Extending the Work',
+        paragraphs: [
+          'Once forward sequencing (1–10) is easy, invite the child to reverse it (10–1). This sounds simple but requires a fundamentally different kind of thinking and takes longer to develop.',
+          'You can also use the strips for number recognition alone — hold one up and ask the child to say the number without looking at adjacent strips for clues.',
+          'Pair this work with a ten-frame or bead stair so children connect the numeral on the strip to an actual quantity.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What age is this appropriate for?',
+        answer: 'Most children are ready for 1–10 sequencing between ages 3.5 and 5. Younger children may need to work with fewer strips (1–5) first. Older children can work with strips going up to 20.',
+      },
+      {
+        question: 'How is this different from just counting?',
+        answer: 'Counting is reciting a sequence by memory. Sequencing requires a child to look at symbols (numerals) and arrange them — a step up that connects the spoken sequence to its written form.',
+      },
+      {
+        question: 'Can I make my own version at home?',
+        answer: 'Yes — take any horizontal image and cut it into 10 equal strips, then write the numbers 1–10 along the bottom. The image can be anything: a family photo, a favourite book cover, a piece of the child\'s own artwork.',
+      },
+    ],
+  },
+
+  {
+    slug: 'fall-count-and-clip',
+    title: 'Fall Count and Clip Cards',
+    excerpt: 'Children count the fall objects on each card and clip a clothespin to the correct number — a self-correcting counting activity that also builds fine motor strength.',
+    date: '2025-10-01',
+    category: 'Seasonal',
+    image: imgFallClipCards,
+    relatedProductIds: ['fall-math-clip-cards'],
+    intro: 'Clip cards are one of the most classroom-friendly formats in early childhood math. They\'re self-correcting, reusable, and the physical action of clipping builds the exact pincer grip children need for writing. Add fall-themed images — pumpkins, apples, scarecrows, hay bales — and you have a counting work that stays on the shelf from September through November.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'A set of fall-themed count and clip cards, each showing a different number of fall objects with three number choices along the bottom.',
+          'A small basket of wooden clothespins — one per child, or several if children are working simultaneously.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'The child picks up a card, counts the objects shown, and clips a clothespin onto the number that matches.',
+          'Work through the cards one at a time. Some children prefer to do them all and then check; others check as they go. Both are fine.',
+          'To self-check: mark a small dot on the back of each card next to the correct answer. The child flips the card to see if their clip is in the right spot.',
+        ],
+      },
+      {
+        heading: 'Classroom Tips',
+        paragraphs: [
+          'Keep the clothespins in a small basket next to the card stack so children can set up and clean up independently.',
+          'For children who are still developing counting accuracy, encourage them to move their finger to each object as they count — one touch per number — rather than scanning the image.',
+          'These cards work beautifully as a transition activity, a morning work choice, or a small-group math rotation.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What number range works best?',
+        answer: 'Cards covering 1–5 are appropriate for most Pre-K children. Kindergartners can typically handle 1–10. If you have a mixed-age group, use both sets and let children self-select.',
+      },
+      {
+        question: 'What if a child consistently gets the wrong answer?',
+        answer: 'Watch how they count. The most common error at this stage is counting an object twice or skipping one. Practice one-to-one correspondence (one touch = one count) before returning to the clip cards.',
+      },
+      {
+        question: 'Can I use these for small group instruction?',
+        answer: 'Yes — have each child in the group work with the same card at the same time, then discuss: "How many did you count? Did anyone get a different answer?" The conversation is often as valuable as the counting.',
+      },
+    ],
+  },
+
+  {
+    slug: 'apple-life-cycle-activity',
+    title: 'Apple Life Cycle: A Fall Science Activity',
+    excerpt: 'Children sequence the stages of an apple\'s life — from seed to fruit — using a diagram, a sorting worksheet, and a fold-out accordion book they assemble themselves.',
+    date: '2025-10-05',
+    category: 'Seasonal',
+    image: imgAppleLifeCycle,
+    relatedProductIds: [],
+    intro: 'The apple life cycle is a perfect fall science topic because the end result — a ripe apple — is something children know well and love. Working backwards from the apple to the seed, and then forward again through all the stages, builds the kind of sequential scientific thinking that underpins later biology, ecology, and environmental science.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'An apple life cycle diagram (seed → seedling → tree → bud → flower → fruit) — laminated for repeated use.',
+          'A sequencing worksheet where children cut out and arrange the life cycle stages in order.',
+          'Optional: an accordion fold-out book template (children colour each stage and fold the pages into a compact book they can take home).',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Start by looking at the diagram together and naming each stage: seed, seedling, sapling, tree, flower, fruit. Ask the child if they\'ve ever seen an apple tree, an apple blossom, or an apple seed.',
+          'Give the child the sequencing worksheet. They cut apart the six stages and glue them in the correct order, using the diagram as a reference.',
+          'For the accordion book: children colour each stage, fold the pages accordion-style, and staple apple-shaped covers to the front and back. The finished book opens to reveal the full life cycle.',
+        ],
+      },
+      {
+        heading: 'Connecting to Real Apples',
+        paragraphs: [
+          'Cut open a real apple at snack time and look at the seeds together. Ask: "What would happen if we planted this?" The life cycle activity becomes much more meaningful when it starts from something the child can hold.',
+          'If you can visit an apple orchard or even look at photos of apple trees in bloom, the flower stage — often the one children find hardest to connect to the fruit — becomes much more concrete.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How many stages should I include for very young children?',
+        answer: 'Three stages (seed, tree, apple) is plenty for children under 4. The six-stage version is appropriate for children 4 and up who can manage a longer sequence.',
+      },
+      {
+        question: 'Does this connect to any standards?',
+        answer: 'Yes — basic life cycle sequencing is part of most early childhood science standards. It covers concepts like growth, change over time, and the relationship between plants and their seeds.',
+      },
+      {
+        question: 'Can we do this activity without a printed diagram?',
+        answer: 'A simple hand-drawn circle diagram works perfectly. Draw six circles arranged in a ring, label each stage, and draw an arrow between them. Children can then sequence picture cards around the outside.',
+      },
+    ],
+  },
+
+  {
+    slug: 'halloween-counting-brew',
+    title: 'Halloween Counting Brew',
+    excerpt: 'Children count spooky objects — spiders, eyeballs, and worms — into a cauldron to match numbered brew cards. A Halloween counting activity that makes math feel like magic.',
+    date: '2025-10-15',
+    category: 'Seasonal',
+    image: imgHalloweenCountingBrew,
+    relatedProductIds: ['halloween-counting'],
+    intro: '"Add three spiders to the brew." There\'s something irresistible about a Halloween counting activity that involves a real cauldron and genuinely spooky objects. This counting brew work takes the same one-to-one correspondence and number recognition skills as a standard counting activity and wraps them in enough October atmosphere that children choose it again and again.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'A small black cauldron or bucket (Halloween buckets from a dollar store work perfectly).',
+          'A set of numbered "Counting Brew" cards — each card shows a number and the type of ingredient to add.',
+          'Spooky counting objects: plastic spiders, googly eyeballs, rubber worms, and any other Halloween-themed small objects.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Fan the numbered brew cards out on the mat. The child picks a card and reads (or is told) what it says — for example, "5 spiders."',
+          'The child counts out that many spiders and drops them into the cauldron one by one, counting aloud as they go.',
+          'Continue with the remaining cards, adding the correct number of each ingredient. At the end, children can peer into the brew and count everything that went in.',
+        ],
+      },
+      {
+        heading: 'Why This Activity Works',
+        paragraphs: [
+          'Counting into a container is more engaging than placing objects on a flat mat — there\'s a satisfying drop and rattle each time. The objects themselves are a draw: children who walk past other counting works will stop at the cauldron.',
+          'The activity also builds number-word and numeral recognition simultaneously. Children who can\'t yet read the numeral can count the images on the card; children who can read the numeral practice connecting it to the quantity they count out.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'Where can I find the small Halloween objects?',
+        answer: 'Dollar stores, party supply shops, and Amazon all carry bags of small plastic spiders, eyeballs, and worms affordably. Look in the Halloween section starting in September. A small bag of each type gives you plenty for this work.',
+      },
+      {
+        question: 'What number range should the cards cover?',
+        answer: 'Cards covering 1–10 work for most Pre-K and Kindergarten children. You can adjust the upper end based on where your children are — some will be ready for numbers up to 20 by late October.',
+      },
+      {
+        question: 'Can I leave this on the shelf all of October?',
+        answer: 'Absolutely — this is a perfect October shelf work. Swap the objects occasionally if interest drops (different types of spiders, coloured eyeballs vs. plain) to keep it feeling fresh without changing the core activity.',
+      },
+    ],
+  },
+
   // ── Winter Activities ─────────────────────────────────────────
   {
     slug: 'felt-penguin-dress-up',
