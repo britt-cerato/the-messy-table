@@ -4,6 +4,8 @@ import imgFlowerCrowns from '../assets/products/flower-crowns.png'
 import imgIceCream from '../assets/products/should-i-share-ice-cream.png'
 import imgNappingHouse from '../assets/products/the-napping-house.png'
 import imgSpilledMilk from '../assets/products/it-looks-like-spilled-milk.png'
+import imgFeltPenguinDressUp from '../assets/products/felt-penguin-dress-up.jpg'
+import imgSnowmanLetterTracing from '../assets/products/snowman-letter-tracing.jpg'
 
 export interface IdeaSection {
   heading: string
@@ -728,6 +730,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Children dress their own felt penguin with colourful scarves, hats, and ear muffs — a simple open-ended activity that builds colour recognition and imaginative thinking for ages 3–6.',
     date: '2025-11-01',
     category: 'Seasonal',
+    image: imgFeltPenguinDressUp,
     relatedProductIds: ['the-mitten'],
     intro: 'This activity is exactly the kind of thing that looks simple from the outside but keeps children deeply engaged. Each child gets a felt penguin and a pile of colourful accessories — scarves, hats, and ear muffs cut from felt — and they dress it however they like. There\'s no right answer, no pattern to follow. That freedom is the point.',
     sections: [
@@ -784,6 +787,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Children pick a letter card, then trace the letter in shaving cream on a tray — a tactile, winter-themed way to practise letter formation that children ask to do again and again.',
     date: '2025-11-15',
     category: 'Seasonal',
+    image: imgSnowmanLetterTracing,
     relatedProductIds: ['winter-rhyming-cards'],
     intro: 'Shaving cream tracing is one of those activities that sounds messy but is actually very manageable — and children are completely captivated by it. The sensory feedback of tracing through the cream reinforces letter shapes in a way that pencil and paper simply can\'t. Pair it with a snowman theme and a set of letter cards and you have a winter language work children will choose again and again.',
     sections: [
