@@ -502,7 +502,7 @@ export const PRODUCTS: Product[] = [
     id: 'flower-sorting-printable',
     name: 'Flower Sorting (Printable)',
     price: '$5.00',
-    categories: ['nomenclature', 'printable'],
+    categories: ['printable'],
     image: imgFlowerSortingPrintable,
     gallery: [],
     description: 'Sort flower parts into stems, petals, and leaves with this hands-on printable work. Includes a sorting mat and a full set of cut-and-sort picture cards — a beautiful way to explore plant science.',
