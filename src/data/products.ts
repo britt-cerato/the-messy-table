@@ -68,6 +68,7 @@ import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
 import imgWordGarden from '../assets/products/word-garden.png'
+import imgWinterCountingPuzzle from '../assets/products/winter-counting-puzzle.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -430,6 +431,17 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Match the puzzle pairs in this festive Christmas activity! Children connect the two halves of each chevron-shaped card to make a match — Santa, reindeer, snowman, sleigh, Christmas tree, gingerbread man and more.',
     details: ['12 matching pairs included', 'Chevron puzzle-edge cards for self-checking', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+  },
+  {
+    id: 'winter-counting-puzzle',
+    name: 'Winter Counting Number Puzzle',
+    price: '$5.00',
+    categories: ['printable', 'seasonal'],
+    themes: ['winter'],
+    image: imgWinterCountingPuzzle,
+    gallery: [],
+    description: 'Cut the strips and sort them in counting order! Three winter-themed puzzle pages — snowflakes (0–6), winter clothes (7–11), and a polar bear with snowballs (12–16). A hands-on way to practise counting and number sequencing.',
+    details: ['3 puzzle pages included', 'Counts 0 through 16', 'Cut-and-sort activity', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
   },
   // ── Classroom Setup ───────────────────────────────────────────
   {
