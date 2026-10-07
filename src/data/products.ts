@@ -67,6 +67,7 @@ import imgFlowerSortingPrintable from '../assets/products/flower-sorting-printab
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
+import imgWordGarden from '../assets/products/word-garden.png'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -530,6 +531,16 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Sort beginning and ending sounds with these colourful flower pot cards! Each card shows two pictures — children say each word aloud and decide whether the target sound is at the beginning (B) or ending (E). A fun spring-themed phonics work.',
     details: ['20 picture sorting cards across 4 pages', 'Beginning & ending sound sort (B/E)', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+  },
+  {
+    id: 'word-garden',
+    name: 'Word Garden',
+    price: '$5.00',
+    categories: ['language', 'printable'],
+    image: imgWordGarden,
+    gallery: [],
+    description: 'Say each word slowly and watch your words grow! This beautiful worksheet gives children 20 numbered boxes to stretch out and record their sounds — perfect for phonemic awareness and spelling practice.',
+    details: ['20 word boxes with drawing and writing space', 'Supports sound-by-sound spelling', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
