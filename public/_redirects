@@ -1,2 +1,3 @@
 https://www.themessytable.org/* https://themessytable.org/:splat 301
+/assets/* /index.html 404
 /* /index.html 200

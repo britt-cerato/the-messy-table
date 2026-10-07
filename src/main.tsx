@@ -12,5 +12,5 @@ createRoot(document.getElementById('root')!).render(
   </StrictMode>,
 )
 
-// Signal to the pre-render script that React has finished mounting
+// Signal to the prerender script that React has finished mounting
 document.dispatchEvent(new Event('render-event'))
