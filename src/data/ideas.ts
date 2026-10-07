@@ -11,6 +11,8 @@ import imgFallNumberPuzzle from '../assets/products/fall-number-puzzle.jpg'
 import imgFallClipCards from '../assets/products/fall-clip-cards.jpg'
 import imgAppleLifeCycle from '../assets/products/apple-life-cycle.jpg'
 import imgHalloweenCountingBrew from '../assets/products/halloween-counting-brew.jpg'
+import imgDisguiseATurkey from '../assets/products/disguise-a-turkey.jpg'
+import imgPolarExpressSequencing from '../assets/products/polar-express-sequencing.jpg'
 
 export interface IdeaSection {
   heading: string
@@ -1095,6 +1097,106 @@ export const IDEAS: Idea[] = [
       {
         question: 'How do I clean up?',
         answer: 'Shaving cream wipes away easily with a damp cloth. Most surfaces (trays, tables, hands) clean up in seconds. Rinse the tray under warm water when the activity is done and it\'s ready for next time.',
+      },
+    ],
+  },
+
+  {
+    slug: 'disguise-a-turkey',
+    title: 'Disguise A Turkey: A Thanksgiving Take-Home Project',
+    excerpt: 'After reading Turkey Trouble at circle time, children take home a turkey outline and a big creative challenge — disguise the turkey so it doesn\'t get eaten for Thanksgiving!',
+    date: '2026-10-07',
+    category: 'Book Activities',
+    image: imgDisguiseATurkey,
+    relatedProductIds: [],
+    intro: 'This beloved Thanksgiving project starts with a circle time read-aloud of Turkey Trouble by Wendi Silvano — a story about a turkey who desperately tries to disguise himself before Thanksgiving. After reading, children get their own turkey outline to take home and transform. The results are always hilarious and heartfelt.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'A copy of Turkey Trouble by Wendi Silvano, a turkey outline printed on white paper (any simple turkey silhouette works), a manila folder for each child, and an instruction sheet explaining the project to families.',
+        ],
+      },
+      {
+        heading: 'How to Set Up the Activity',
+        paragraphs: [
+          'Read Turkey Trouble together at circle time. Take time after reading to talk about the story — what disguises did the turkey try? Did they work? What would the children do if they were the turkey?',
+          'Explain the take-home project: each child\'s job is to disguise their turkey so it won\'t get caught. They can use any materials they have at home — drawings, collage, fabric scraps, googly eyes, stickers, paint, or anything else their imagination comes up with.',
+          'Send each child home with their turkey outline and the instruction sheet tucked inside a manila folder. Ask them to write their name on both the turkey paper and the folder so nothing gets mixed up.',
+          'Ask them to keep the folder closed — it\'s a secret until they come back!',
+        ],
+      },
+      {
+        heading: 'When They Return',
+        paragraphs: [
+          'When children bring their turkeys back, set aside time to do a gallery reveal. Each child opens their folder and shares their disguised turkey with the class. This is a wonderful moment for language: encourage children to describe what their turkey is pretending to be and why that disguise would work.',
+          'The variety is always wonderful — turkeys dressed as superheroes, pizza slices, flowers, dinosaurs, and everything in between. Display the finished turkeys on a bulletin board for the classroom to enjoy through November.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What age is this project for?',
+        answer: 'This project works beautifully for Pre-K through Grade 1. Younger children may need more help at home, but the open-ended creative element means every child can participate at their own level.',
+      },
+      {
+        question: 'What if a family doesn\'t have many materials at home?',
+        answer: 'Send home a small baggie of basic supplies — a few crayons, some stickers, and a strip of coloured paper — so every child has something to work with regardless of what\'s available at home.',
+      },
+      {
+        question: 'Can we do this as an in-classroom activity instead?',
+        answer: 'Absolutely. Set up a supply table with collage materials, markers, and craft scraps and let children work on their turkeys in the classroom. The take-home version is special because it involves families, but the in-class version works just as well.',
+      },
+    ],
+  },
+
+  {
+    slug: 'polar-express-sequencing',
+    title: 'Polar Express Sequencing Activity',
+    excerpt: 'After a cosy read-aloud of The Polar Express, children sequence six key events from the story in order — a literacy and comprehension activity perfect for December.',
+    date: '2026-10-07',
+    category: 'Book Activities',
+    image: imgPolarExpressSequencing,
+    relatedProductIds: [],
+    intro: 'The Polar Express by Chris Van Allsburg is a December classic. This simple follow-up activity gives children a chance to revisit the story\'s events and practise retelling — a key comprehension skill — by numbering six illustrated squares in the order they happened in the book.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'A copy of The Polar Express by Chris Van Allsburg, one sequencing worksheet per child (with six illustrated story events), crayons or coloured pencils, and a pencil for numbering.',
+        ],
+      },
+      {
+        heading: 'How to Run the Activity',
+        paragraphs: [
+          'Read The Polar Express aloud at circle time. Read slowly and take time to look at the illustrations together — Van Allsburg\'s artwork is stunning and worth pausing over.',
+          'After reading, gather children at a table (or leave the activity available at an open work area for children to come to independently).',
+          'Walk through the sequencing worksheet together as a group: read each of the six squares aloud and discuss what moment from the story each one shows. Some children may need support reading the descriptions depending on their age and reading level.',
+          'Children write their name at the top, then number each square from 1 to 6 in the small box, reflecting the order events happened in the book.',
+          'When everyone is finished, come back together and review the sequence as a group — children can share their reasoning for the order they chose.',
+        ],
+      },
+      {
+        heading: 'Extension Ideas',
+        paragraphs: [
+          'Serve hot cocoa while children work — it fits perfectly with the story\'s famous hot chocolate scene and makes the whole activity feel like an event.',
+          'After sequencing, invite children to draw their favourite scene from the book on the back of their worksheet or in their journals.',
+          'Older children can write a sentence about each event in the order they numbered them, turning the sequencing into a short retelling.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'What age is this activity for?',
+        answer: 'This activity works well for Kindergarten through Grade 2. Pre-K children can participate with more adult support in reading the squares — the discussion and oral sequencing is valuable even if they don\'t write the numbers independently.',
+      },
+      {
+        question: 'What if children disagree on the order?',
+        answer: 'That\'s a great teachable moment! Encourage children to go back to the book and find the pages that show each event. Using the text to support their answer is exactly the kind of comprehension skill this activity is building.',
+      },
+      {
+        question: 'Can I use this with a different book?',
+        answer: 'The sequencing format works with any story that has a clear beginning, middle, and end. Create your own six-square worksheet with events from whatever book your class is reading.',
       },
     ],
   },
