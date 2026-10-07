@@ -20,7 +20,6 @@ import img7123 from '../assets/products/IMG_7123.jpeg'
 import img7126 from '../assets/products/IMG_7126.jpeg'
 import img7129 from '../assets/products/IMG_7129.jpeg'
 import img7130 from '../assets/products/IMG_7130.jpeg'
-import img7132 from '../assets/products/IMG_7132.jpeg'
 import img7134 from '../assets/products/IMG_7134.jpeg'
 import img7134new from '../assets/products/IMG_7134-new.jpeg'
 import img7111 from '../assets/products/IMG_7111.jpeg'
@@ -229,7 +228,7 @@ export const PRODUCTS: Product[] = [
     categories: ['language', 'printable'],
     themes: ['spring'],
     image: img7134new,
-    gallery: [img7132, img7134],
+    gallery: [img7134],
     description: 'A spring-themed worksheet pack covering vowels, blends, digraphs and flower sorting. Includes Growing Sounds, Bales of Vowels, Planting Digraphs, Ladybug Vowels and Birdhouse Blends.',
     details: ['5 worksheets included', 'Covers vowels, blends & digraphs', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
