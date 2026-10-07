@@ -64,6 +64,7 @@ import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jp
 import imgAnimalThreePartFarmZoo from '../assets/products/animal-three-part-farm-zoo.jpg'
 import imgColorMatchingPrintable from '../assets/products/color-matching-printable.jpg'
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-printable.jpg'
+import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -507,6 +508,16 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Sort flower parts into stems, petals, and leaves with this hands-on printable work. Includes a sorting mat and a full set of cut-and-sort picture cards — a beautiful way to explore plant science.',
     details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+  },
+  {
+    id: 'planting-diagraphs',
+    name: 'Planting Diagraphs Worksheet',
+    price: '$5.00',
+    categories: ['language', 'printable'],
+    image: imgPlantingDiagraphs,
+    gallery: [],
+    description: 'Practice ending diagraphs with this fun planting-themed worksheet! Children look at each picture, say the word, and colour the correct ending sound — ch, sh, or th. A great independent phonics work for early readers.',
+    details: ['12 picture cards with ch, sh, th choices', 'Ending diagraph practice', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
