@@ -1,6 +1,8 @@
+import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, useSearchParams } from 'react-router-dom'
-import { PRODUCTS, CATEGORIES } from '../data/products'
+import { PRODUCTS, CATEGORIES, type Product } from '../data/products'
+import QuickViewModal from '../components/QuickViewModal'
 
 const THEME_LABELS: Record<string, string> = {
   valentines: "Valentine's Day",
@@ -26,9 +28,31 @@ const itemListSchema = {
   })),
 }
 
+function ProductCard({ product, onQuickView }: { product: Product; onQuickView: (p: Product) => void }) {
+  return (
+    <div className="product-card-wrap">
+      <Link to={`/shop/${product.id}`} className="product-card">
+        <div className="product-image-wrap">
+          <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
+        </div>
+        <h3>{product.name}</h3>
+        <p>{product.price}</p>
+      </Link>
+      <button
+        className="quick-view-btn"
+        onClick={() => onQuickView(product)}
+        aria-label={`Quick view ${product.name}`}
+      >
+        Quick View
+      </button>
+    </div>
+  )
+}
+
 function Shop() {
   const [searchParams] = useSearchParams()
   const theme = searchParams.get('theme')
+  const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null)
 
   if (theme) {
     const label = THEME_LABELS[theme] ?? theme
@@ -52,17 +76,16 @@ function Shop() {
         <section className="products">
           <div className="products-grid">
             {items.map((product) => (
-              <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
-                <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
-                <h3>{product.name}</h3>
-                <p>{product.price}</p>
-              </Link>
+              <ProductCard key={product.id} product={product} onQuickView={setQuickViewProduct} />
             ))}
           </div>
           <p style={{ textAlign: 'center', marginTop: '16px' }}>
             <Link to="/shop" style={{ color: 'var(--text-muted)', fontSize: '14px' }}>← Back to all products</Link>
           </p>
         </section>
+        {quickViewProduct && (
+          <QuickViewModal product={quickViewProduct} onClose={() => setQuickViewProduct(null)} />
+        )}
       </div>
     )
   }
@@ -97,16 +120,15 @@ function Shop() {
             <p className="section-description">{cat.description}</p>
             <div className="products-grid">
               {items.map((product) => (
-                <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
-                  <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
-                  <h3>{product.name}</h3>
-                  <p>{product.price}</p>
-                </Link>
+                <ProductCard key={product.id} product={product} onQuickView={setQuickViewProduct} />
               ))}
             </div>
           </section>
         )
       })}
+      {quickViewProduct && (
+        <QuickViewModal product={quickViewProduct} onClose={() => setQuickViewProduct(null)} />
+      )}
     </div>
   )
 }
