@@ -15,6 +15,8 @@ import doodleGlueStick from '../assets/doodles/doodle-glue-stick.svg'
 import heroPhoto1 from '../assets/products/halloween-counting-brew.jpg'
 import heroPhoto2 from '../assets/products/rainbow-letter-matching.jpg'
 import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
+import heroPhoto4 from '../assets/products/flower-sorting-mat.jpg'
+import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -139,6 +141,12 @@ function Home() {
           </div>
           <div className="polaroid polaroid--3 polaroid--lavender">
             <img src={heroPhoto3} alt="" className="polaroid-img" loading="eager" />
+          </div>
+          <div className="polaroid polaroid--4 polaroid--blush">
+            <img src={heroPhoto4} alt="" className="polaroid-img" loading="lazy" />
+          </div>
+          <div className="polaroid polaroid--5 polaroid--mint">
+            <img src={heroPhoto5} alt="" className="polaroid-img" loading="lazy" />
           </div>
         </div>
         {/* doodles scattered across the hero */}
@@ -270,6 +278,9 @@ function Home() {
                     alt={idea.title}
                     className="idea-masonry-img"
                     loading="lazy"
+                    style={idea.slug === 'it-looks-like-spilled-milk'
+                      ? { height: 190, objectFit: 'cover', objectPosition: 'left center' }
+                      : undefined}
                   />
                   <div className="idea-masonry-body">
                     <div className="idea-masonry-category">{idea.category}</div>
