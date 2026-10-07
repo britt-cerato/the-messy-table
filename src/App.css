@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@400;500&family=Caveat:wght@600;700&display=swap');
 
 :root {
   --blush: #f4a7b9;
@@ -65,10 +65,12 @@ body {
 .nav-brand a { text-decoration: none; }
 
 .nav-brand h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-family: 'Caveat', cursive;
+  font-size: 30px;
+  font-weight: 700;
   color: var(--brown);
   letter-spacing: 0.5px;
+  line-height: 1;
 }
 
 .nav-right {
@@ -325,28 +327,56 @@ body {
   background: linear-gradient(90deg, var(--mint) 0%, #d0efd6 50%, var(--mint) 100%);
 }
 
-.home-audience-icon { font-size: 32px; display: block; margin-bottom: 14px; }
-
-.home-audience-card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 22px;
-  color: var(--brown);
-  margin-bottom: 12px;
-}
-
-.home-audience-card p {
+.audience-label {
+  display: inline-block;
   font-family: 'DM Sans', sans-serif;
-  font-size: 15px;
-  color: var(--brown-mid);
-  line-height: 1.65;
-  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 16px;
 }
 
-.home-audience-cta {
+.audience-label--teachers  { background: rgba(244,167,185,0.25); color: var(--brown); }
+.audience-label--homeschool { background: rgba(195,177,225,0.28); color: var(--brown); }
+
+.audience-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--brown);
+  line-height: 1.4;
+  margin-bottom: 14px;
+}
+
+.audience-bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.audience-bullets li {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
-  font-weight: 600;
-  color: var(--brown);
+  color: var(--brown-mid);
+  line-height: 1.6;
+  padding-left: 16px;
+  position: relative;
+  margin-bottom: 6px;
+}
+
+.audience-bullets li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--blush);
+}
+
+.audience-icons {
+  font-size: 20px;
+  margin-top: 4px;
 }
 
 /* ── Shared Section Title / Description ───────────────── */
@@ -847,13 +877,15 @@ body {
 
 .home-faq-section {
   padding: 64px 48px;
-  background-color: white;
-  background-image: repeating-linear-gradient(
-    transparent,
-    transparent 31px,
-    rgba(195,177,225,0.22) 31px,
-    rgba(195,177,225,0.22) 32px
-  );
+  background-color: #fdfaf5;
+  background-image:
+    linear-gradient(90deg, transparent 72px, rgba(240,120,120,0.18) 72px, rgba(240,120,120,0.18) 74px, transparent 74px),
+    repeating-linear-gradient(
+      transparent,
+      transparent 31px,
+      rgba(195,177,225,0.35) 31px,
+      rgba(195,177,225,0.35) 32px
+    );
   text-align: center;
 
   @media (max-width: 600px) { padding: 48px 24px; }

@@ -7,6 +7,11 @@ import kerriPhoto from '../assets/kerri-about.jpg'
 import heroCollage from '../assets/products/messy-table-collage-lavender.jpg'
 import doodleGlitter from '../assets/doodles/doodle-glitter.svg'
 import doodleSparkle from '../assets/doodles/doodle-sparkle.svg'
+import doodleScissors from '../assets/doodles/doodle-scissors.svg'
+import doodlePaperclip from '../assets/doodles/doodle-paperclip.svg'
+import doodleFlower from '../assets/doodles/doodle-flower.svg'
+import doodleCrayon from '../assets/doodles/doodle-crayon.svg'
+import doodleGlueStick from '../assets/doodles/doodle-glue-stick.svg'
 import heroPhoto1 from '../assets/products/halloween-counting-brew.jpg'
 import heroPhoto2 from '../assets/products/rainbow-letter-matching.jpg'
 import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
@@ -154,23 +159,33 @@ function Home() {
       <WavyDivider />
 
       {/* ── Who Is This For (Index Cards) ── */}
-      <section className="home-audience-section">
+      <section className="home-audience-section" style={{ position: 'relative', overflow: 'hidden' }}>
+        <img src={doodleScissors} alt="" aria-hidden="true" className="hero-glitter" style={{ top: '12px', right: '5%', width: '52px', opacity: 0.45, transform: 'rotate(20deg)' }} />
+        <img src={doodlePaperclip} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '16px', left: '4%', width: '36px', opacity: 0.4, transform: 'rotate(-15deg)' }} />
         <h2 className="section-title">Who is this for?</h2>
         <p className="section-description">
           Whether you're managing a classroom of 22 or learning alongside one curious kid at home, there's something here for you.
         </p>
         <div className="home-audience-grid">
           <Link to="/for-teachers" className="home-audience-card home-audience-card--teachers">
-            <span className="home-audience-icon">🍎</span>
-            <h3>I'm a Teacher</h3>
-            <p>Shelf-ready works, nomenclature cards, seasonal collections, and fine motor activities — made for the Pre-K to Grade 2 classroom.</p>
-            <span className="home-audience-cta">See what's for teachers →</span>
+            <span className="audience-label audience-label--teachers">for teachers</span>
+            <p className="audience-headline">Classroom-ready projects &amp; seasonal craft ideas.</p>
+            <ul className="audience-bullets">
+              <li>Easy prep, bulk materials available</li>
+              <li>Printable guides &amp; lesson plans</li>
+              <li>Made for Pre-K to Grade 2</li>
+            </ul>
+            <div className="audience-icons">🍎 ✏️</div>
           </Link>
           <Link to="/for-homeschool" className="home-audience-card home-audience-card--homeschool">
-            <span className="home-audience-icon">🏡</span>
-            <h3>I Homeschool</h3>
-            <p>Printable PDFs, hands-on works, and seasonal activities that come alive on your kitchen table — no classroom setup required.</p>
-            <span className="home-audience-cta">See what's for homeschoolers →</span>
+            <span className="audience-label audience-label--homeschool">for homeschool parents</span>
+            <p className="audience-headline">Open-ended activities for curious kids.</p>
+            <ul className="audience-bullets">
+              <li>Montessori-inspired, screen-free play</li>
+              <li>Gentle learning &amp; creative exploration</li>
+              <li>No classroom setup required</li>
+            </ul>
+            <div className="audience-icons">🏡 🌿</div>
           </Link>
         </div>
       </section>
@@ -178,7 +193,9 @@ function Home() {
       <WavyDivider />
 
       {/* ── Featured Products (Kraft Gift Tags) ── */}
-      <section className="products">
+      <section className="products" style={{ position: 'relative' }}>
+        <img src={doodleCrayon} alt="" aria-hidden="true" className="hero-glitter" style={{ top: '24px', left: '3%', width: '44px', opacity: 0.4, transform: 'rotate(-30deg)' }} />
+        <img src={doodleFlower} alt="" aria-hidden="true" className="hero-glitter" style={{ top: '20px', right: '3%', width: '40px', opacity: 0.45 }} />
         <h2 className="section-title">Featured Products</h2>
         <div className="products-grid">
           {featured.map((product) => (
@@ -199,7 +216,9 @@ function Home() {
       <WavyDivider />
 
       {/* ── What's in the Shop (Cut-Here) ── */}
-      <section className="home-what-section">
+      <section className="home-what-section" style={{ position: 'relative' }}>
+        <img src={doodleGlueStick} alt="" aria-hidden="true" className="hero-glitter" style={{ top: '18px', right: '6%', width: '38px', opacity: 0.38, transform: 'rotate(15deg)' }} />
+        <img src={doodleSparkle} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '24px', left: '5%', width: '32px', opacity: 0.42 }} />
         <h2 className="section-title">What's in the Shop?</h2>
         <p className="section-description">
           Kerri makes two kinds of things — hands-on physical works she builds herself, and printable PDFs you can download and use right away.
