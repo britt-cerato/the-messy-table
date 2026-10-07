@@ -57,6 +57,7 @@ import imgVanGoghMatching from '../assets/products/van-gogh-matching.jpeg'
 import imgCubbyLabels2 from '../assets/products/cubby-labels-2.jpeg'
 import imgNameTags from '../assets/products/name-tags-2.jpeg'
 import imgNameTags2 from '../assets/products/name-tags.jpeg'
+import imgChristmasPuzzleMatching from '../assets/products/christmas-puzzle-matching.jpg'
 import imgWinterRhymingCards from '../assets/products/winter-rhyming-cards.jpg'
 import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jpg'
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
@@ -418,6 +419,17 @@ export const PRODUCTS: Product[] = [
     gallery: [imgWinterRhymingCards2, imgWinterRhymingCards3],
     description: 'Colourful mitten-shaped rhyming cards — children match each word pair by sound, practising phonemic awareness in a cozy winter theme. Includes 13 rhyming pairs across CVC word families.',
     details: ['13 rhyming pairs included', 'CVC word families (-at, -ag, -ap, -op, -en, -ed, -ig, -ug, -un, -ub, -eg, -od)', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
+  },
+  {
+    id: 'christmas-puzzle-matching',
+    name: 'Christmas Puzzle Matching',
+    price: '$5.00',
+    categories: ['printable'],
+    themes: ['winter'],
+    image: imgChristmasPuzzleMatching,
+    gallery: [],
+    description: 'Match the puzzle pairs in this festive Christmas activity! Children connect the two halves of each chevron-shaped card to make a match — Santa, reindeer, snowman, sleigh, Christmas tree, gingerbread man and more.',
+    details: ['12 matching pairs included', 'Chevron puzzle-edge cards for self-checking', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
   },
   // ── Classroom Setup ───────────────────────────────────────────
   {
