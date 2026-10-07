@@ -71,7 +71,7 @@ const websiteSchema = {
   },
 }
 
-function WavyDivider({ fill = '#faf6ef' }: { fill?: string }) {
+function WavyDivider() {
   return (
     <div className="section-divider-wavy" aria-hidden="true">
       <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" height="32">
