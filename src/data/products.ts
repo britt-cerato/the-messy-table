@@ -258,7 +258,7 @@ export const PRODUCTS: Product[] = [
     id: 'valentines-mason-jar-addition',
     name: "Valentine's Day Mason Jar Addition",
     price: '$12.00',
-    categories: ['math', 'seasonal'],
+    categories: ['math'],
     themes: ['valentines'],
     image: imgValentinesMasonJar,
     gallery: [],
