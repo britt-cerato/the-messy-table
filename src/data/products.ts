@@ -65,6 +65,7 @@ import imgAnimalThreePartFarmZoo from '../assets/products/animal-three-part-farm
 import imgColorMatchingPrintable from '../assets/products/color-matching-printable.jpg'
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-printable.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
+import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -511,13 +512,13 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'planting-diagraphs',
-    name: 'Planting Diagraphs Worksheet',
+    name: 'Planting Diagraphs Set',
     price: '$5.00',
     categories: ['language', 'printable'],
     image: imgPlantingDiagraphs,
-    gallery: [],
-    description: 'Practice ending diagraphs with this fun planting-themed worksheet! Children look at each picture, say the word, and colour the correct ending sound — ch, sh, or th. A great independent phonics work for early readers.',
-    details: ['12 picture cards with ch, sh, th choices', 'Ending diagraph practice', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    gallery: [imgPlantingDiagraphsCards],
+    description: 'Practice ending diagraphs with this planting-themed set! Includes a recording worksheet and a matching set of terracotta pot picture cards. Children say each word and colour (or sort) the correct ending sound — ch, sh, or th.',
+    details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
