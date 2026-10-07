@@ -63,7 +63,7 @@ import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jp
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
 import imgAnimalThreePartFarmZoo from '../assets/products/animal-three-part-farm-zoo.jpg'
 import imgColorMatchingPrintable from '../assets/products/color-matching-printable.jpg'
-import imgFlowerSortingPrintable from '../assets/products/flower-sorting-printable.jpg'
+import imgFlowerSortingPrintable from '../assets/products/flower-sorting-mat.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
