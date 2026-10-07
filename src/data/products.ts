@@ -326,7 +326,7 @@ export const PRODUCTS: Product[] = [
     id: 'identifying-number-to-object',
     name: 'Identifying Number to Object',
     price: '$5.00',
-    categories: ['math', 'seasonal', 'printable'],
+    categories: ['math', 'printable'],
     themes: ['st-patricks'],
     image: imgIdentifyingNumberToObject,
     gallery: [],
