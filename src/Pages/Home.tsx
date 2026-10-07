@@ -15,8 +15,6 @@ import doodleGlueStick from '../assets/doodles/doodle-glue-stick.svg'
 import heroPhoto1 from '../assets/products/halloween-counting-brew.jpg'
 import heroPhoto2 from '../assets/products/rainbow-letter-matching.jpg'
 import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
-import heroPhoto4 from '../assets/products/flower-sorting-mat.jpg'
-import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -93,6 +91,20 @@ function WavyDivider() {
   )
 }
 
+function TornDivider({ fromColor = '#faf6ef', toColor = '#f2ece0' }: { fromColor?: string; toColor?: string }) {
+  return (
+    <div className="torn-divider" aria-hidden="true">
+      <svg viewBox="0 0 1440 56" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" height="56">
+        <rect width="1440" height="56" fill={fromColor} />
+        <path
+          d="M0,56 L0,28 C36,22 72,34 108,26 C144,18 180,32 216,24 C252,16 288,30 324,22 C360,14 396,28 432,20 C468,12 504,26 540,18 C576,10 612,24 648,16 C684,8 720,22 756,14 C792,6 828,20 864,12 C900,4 936,18 972,10 C1008,2 1044,16 1080,8 C1116,0 1152,14 1188,20 C1224,26 1260,12 1296,18 C1332,24 1368,10 1404,16 C1420,18 1432,14 1440,16 L1440,56 Z"
+          fill={toColor}
+        />
+      </svg>
+    </div>
+  )
+}
+
 function Home() {
   const [openFaq, setOpenFaq] = useState<number | null>(null)
 
@@ -122,33 +134,22 @@ function Home() {
           <div className="polaroid polaroid--1 polaroid--blush">
             <img src={heroPhoto1} alt="" className="polaroid-img" loading="eager" />
           </div>
-          <div className="polaroid polaroid--2 polaroid--lavender">
+          <div className="polaroid polaroid--2 polaroid--mint">
             <img src={heroPhoto2} alt="" className="polaroid-img" loading="eager" />
           </div>
-          <div className="polaroid polaroid--3 polaroid--mint">
+          <div className="polaroid polaroid--3 polaroid--lavender">
             <img src={heroPhoto3} alt="" className="polaroid-img" loading="eager" />
           </div>
-          <div className="polaroid polaroid--4 polaroid--lavender">
-            <img src={heroPhoto4} alt="" className="polaroid-img" loading="lazy" />
-          </div>
-          <div className="polaroid polaroid--5 polaroid--blush">
-            <img src={heroPhoto5} alt="" className="polaroid-img" loading="lazy" />
-          </div>
         </div>
-        <img
-          src={doodleGlitter}
-          alt=""
-          aria-hidden="true"
-          className="hero-glitter"
-          style={{ top: '58%', left: '21%', width: '56px', opacity: 0.55 }}
-        />
-        <img
-          src={doodleSparkle}
-          alt=""
-          aria-hidden="true"
-          className="hero-glitter"
-          style={{ top: '32%', right: '21%', width: '38px', opacity: 0.65 }}
-        />
+        {/* doodles scattered across the hero */}
+        <img src={doodleScissors}   alt="" aria-hidden="true" className="hero-glitter" style={{ top: '18%',  left: '8%',   width: '48px', opacity: 0.5,  transform: 'rotate(25deg)' }} />
+        <img src={doodlePaperclip}  alt="" aria-hidden="true" className="hero-glitter" style={{ top: '62%',  left: '9%',   width: '34px', opacity: 0.45, transform: 'rotate(-10deg)' }} />
+        <img src={doodleFlower}     alt="" aria-hidden="true" className="hero-glitter" style={{ top: '14%',  right: '9%',  width: '40px', opacity: 0.5 }} />
+        <img src={doodleGlitter}    alt="" aria-hidden="true" className="hero-glitter" style={{ top: '68%',  right: '8%',  width: '44px', opacity: 0.5 }} />
+        <img src={doodleSparkle}    alt="" aria-hidden="true" className="hero-glitter" style={{ top: '30%',  left: '22%',  width: '32px', opacity: 0.6 }} />
+        <img src={doodleSparkle}    alt="" aria-hidden="true" className="hero-glitter" style={{ top: '20%',  right: '22%', width: '28px', opacity: 0.55, transform: 'rotate(45deg)' }} />
+        <img src={doodleCrayon}     alt="" aria-hidden="true" className="hero-glitter" style={{ bottom:'12%', left: '15%', width: '36px', opacity: 0.4,  transform: 'rotate(-20deg)' }} />
+        <img src={doodleGlueStick}  alt="" aria-hidden="true" className="hero-glitter" style={{ bottom:'10%', right:'14%', width: '36px', opacity: 0.42, transform: 'rotate(15deg)' }} />
         <div className="hero-card">
           <h2>Welcome to The Messy Table</h2>
           <p>Classroom works, craft ideas, and a little glitter for the kiddos you love.</p>
@@ -156,7 +157,7 @@ function Home() {
         </div>
       </section>
 
-      <WavyDivider />
+      <TornDivider fromColor="#faf6ef" toColor="#f2ece0" />
 
       {/* ── Who Is This For (Index Cards) ── */}
       <section className="home-audience-section" style={{ position: 'relative', overflow: 'hidden' }}>
@@ -217,27 +218,36 @@ function Home() {
 
       {/* ── What's in the Shop (Cut-Here) ── */}
       <section className="home-what-section" style={{ position: 'relative' }}>
-        <img src={doodleGlueStick} alt="" aria-hidden="true" className="hero-glitter" style={{ top: '18px', right: '6%', width: '38px', opacity: 0.38, transform: 'rotate(15deg)' }} />
-        <img src={doodleSparkle} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '24px', left: '5%', width: '32px', opacity: 0.42 }} />
-        <h2 className="section-title">What's in the Shop?</h2>
+        <img src={doodleGlitter} alt="" aria-hidden="true" className="hero-glitter" style={{ top: '18px', right: '5%', width: '40px', opacity: 0.42 }} />
+        <img src={doodlePaperclip} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '20px', left: '4%', width: '34px', opacity: 0.38, transform: 'rotate(-12deg)' }} />
+        <h2 className="section-title">✂ What's in the Shop?</h2>
         <p className="section-description">
           Kerri makes two kinds of things — hands-on physical works she builds herself, and printable PDFs you can download and use right away.
         </p>
-        <div className="cut-here-divider" aria-hidden="true">
-          <div className="cut-here-line" />
-          <span className="cut-here-scissors">✂</span>
-          <div className="cut-here-line" />
-        </div>
-        <div className="home-what-grid">
-          <div className="home-what-card">
-            <span className="home-what-icon">✂️</span>
-            <h3>Physical Works</h3>
-            <p>Kerri prints, cuts, and assembles these by hand. They arrive ready to put on the shelf — nomenclature cards, clip card sets, fine motor works, and more.</p>
+        <div className="home-what-split">
+          <div className="home-what-col">
+            <h3>✂️ Physical Works</h3>
+            <ul className="home-what-bullets">
+              <li>Handmade nomenclature card sets</li>
+              <li>Clip cards &amp; matching activities</li>
+              <li>Felt &amp; fine motor works</li>
+              <li>Seasonal classroom kits</li>
+            </ul>
           </div>
-          <div className="home-what-card">
-            <span className="home-what-icon">🖨️</span>
-            <h3>Printable Downloads</h3>
-            <p>Instant PDF downloads you print at home. Worksheets, write the room activities, and seasonal packs — yours to print as many times as you need.</p>
+          <div className="home-what-vertical-cut" aria-hidden="true">
+            <div className="cut-vertical-line" />
+            <span className="cut-vertical-scissors">✂</span>
+            <div className="cut-vertical-label">cut here</div>
+            <div className="cut-vertical-line" />
+          </div>
+          <div className="home-what-col">
+            <h3>🖨️ Printable Downloads</h3>
+            <ul className="home-what-bullets">
+              <li>Instant PDF downloads</li>
+              <li>Write the room activities</li>
+              <li>Tracing &amp; cutting worksheets</li>
+              <li>Seasonal activity packs</li>
+            </ul>
           </div>
         </div>
       </section>
@@ -245,7 +255,9 @@ function Home() {
       <WavyDivider />
 
       {/* ── Work Ideas (Masonry Pinterest Preview) ── */}
-      <section className="ideas">
+      <section className="ideas" style={{ position: 'relative' }}>
+        <img src={doodleFlower}    alt="" aria-hidden="true" className="hero-glitter" style={{ top: '24px', right: '4%', width: '42px', opacity: 0.44 }} />
+        <img src={doodleSparkle}  alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '24px', left: '3%', width: '30px', opacity: 0.48 }} />
         <div className="ideas-content">
           <h2>Work Ideas</h2>
           <p>Seasonal themes, holiday works, and inspiration for your classroom or home — straight from Kerri's shelf.</p>
@@ -274,7 +286,9 @@ function Home() {
       <WavyDivider />
 
       {/* ── Meet Kerri ── */}
-      <section className="meet-kerri-section">
+      <section className="meet-kerri-section" style={{ position: 'relative' }}>
+        <img src={doodleCrayon}   alt="" aria-hidden="true" className="hero-glitter" style={{ top: '20px', left: '3%', width: '38px', opacity: 0.38, transform: 'rotate(-25deg)' }} />
+        <img src={doodleGlueStick} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '20px', right: '4%', width: '36px', opacity: 0.4, transform: 'rotate(20deg)' }} />
         <div className="meet-kerri">
           <div className="meet-kerri-polaroid">
             <img src={kerriPhoto} alt="Kerri, founder of The Messy Table" className="meet-kerri-photo" loading="lazy" />
@@ -308,7 +322,9 @@ function Home() {
       <WavyDivider />
 
       {/* ── FAQ Accordion (Notebook Paper) ── */}
-      <section className="home-faq-section">
+      <section className="home-faq-section" style={{ position: 'relative' }}>
+        <img src={doodleScissors}  alt="" aria-hidden="true" className="hero-glitter" style={{ top: '24px', right: '5%', width: '44px', opacity: 0.38, transform: 'rotate(15deg)' }} />
+        <img src={doodleFlower}    alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '28px', left: '4%', width: '36px', opacity: 0.42 }} />
         <h2 className="section-title">Frequently Asked Questions</h2>
         <div className="faq-accordion">
           {HOME_FAQS.map((faq, i) => (
