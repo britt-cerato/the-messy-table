@@ -66,6 +66,7 @@ import imgColorMatchingPrintable from '../assets/products/color-matching-printab
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-printable.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
+import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -519,6 +520,16 @@ export const PRODUCTS: Product[] = [
     gallery: [imgPlantingDiagraphsCards],
     description: 'Practice ending diagraphs with this planting-themed set! Includes a recording worksheet and a matching set of terracotta pot picture cards. Children say each word and colour (or sort) the correct ending sound — ch, sh, or th.',
     details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+  },
+  {
+    id: 'growing-sounds',
+    name: 'Growing Sounds — Beginning & Ending Sound Cards',
+    price: '$5.00',
+    categories: ['language', 'printable'],
+    image: imgGrowingSounds,
+    gallery: [],
+    description: 'Sort beginning and ending sounds with these colourful flower pot cards! Each card shows two pictures — children say each word aloud and decide whether the target sound is at the beginning (B) or ending (E). A fun spring-themed phonics work.',
+    details: ['20 picture sorting cards across 4 pages', 'Beginning & ending sound sort (B/E)', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
