@@ -523,24 +523,14 @@ export const PRODUCTS: Product[] = [
     details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
   {
-    id: 'growing-sounds',
-    name: 'Growing Sounds — Beginning & Ending Sound Cards',
-    price: '$5.00',
-    categories: ['language', 'printable'],
-    image: imgGrowingSounds,
-    gallery: [],
-    description: 'Sort beginning and ending sounds with these colourful flower pot cards! Each card shows two pictures — children say each word aloud and decide whether the target sound is at the beginning (B) or ending (E). A fun spring-themed phonics work.',
-    details: ['20 picture sorting cards across 4 pages', 'Beginning & ending sound sort (B/E)', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-  },
-  {
     id: 'word-garden',
     name: 'Word Garden',
     price: '$5.00',
     categories: ['language', 'printable'],
     image: imgWordGarden,
-    gallery: [],
-    description: 'Say each word slowly and watch your words grow! This beautiful worksheet gives children 20 numbered boxes to stretch out and record their sounds — perfect for phonemic awareness and spelling practice.',
-    details: ['20 word boxes with drawing and writing space', 'Supports sound-by-sound spelling', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    gallery: [imgGrowingSounds],
+    description: 'Say each word slowly and watch your words grow! This set includes the Word Garden recording worksheet (20 numbered sound boxes) plus a full set of colourful flower pot picture cards for beginning & ending sound sorting.',
+    details: ['Word Garden worksheet included', 'Flower pot picture sorting cards (B/E sounds)', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
