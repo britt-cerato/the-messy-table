@@ -424,7 +424,7 @@ export const PRODUCTS: Product[] = [
     id: 'christmas-puzzle-matching',
     name: 'Christmas Puzzle Matching',
     price: '$5.00',
-    categories: ['printable'],
+    categories: ['printable', 'seasonal'],
     themes: ['winter'],
     image: imgChristmasPuzzleMatching,
     gallery: [],
