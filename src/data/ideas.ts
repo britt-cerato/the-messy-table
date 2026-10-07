@@ -13,6 +13,8 @@ import imgAppleLifeCycle from '../assets/products/apple-life-cycle.jpg'
 import imgHalloweenCountingBrew from '../assets/products/halloween-counting-brew.jpg'
 import imgDisguiseATurkey from '../assets/products/disguise-a-turkey.jpg'
 import imgPolarExpressSequencing from '../assets/products/polar-express-sequencing.jpg'
+import imgThankfulHands from '../assets/products/thankful-hands.jpg'
+import imgPlacematWeaving from '../assets/products/placemat-weaving.jpg'
 
 export interface IdeaSection {
   heading: string
@@ -1197,6 +1199,128 @@ export const IDEAS: Idea[] = [
       {
         question: 'Can I use this with a different book?',
         answer: 'The sequencing format works with any story that has a clear beginning, middle, and end. Create your own six-square worksheet with events from whatever book your class is reading.',
+      },
+    ],
+  },
+
+  {
+    slug: 'thankful-hands',
+    title: 'Thankful Hands: A Thanksgiving Handprint Art Project',
+    excerpt: 'Children decorate a paper plate border with colourful squares, then press a painted handprint in the centre — a Thanksgiving display piece that doubles as a writing prompt about what they are grateful for.',
+    date: '2026-10-07',
+    category: 'Seasonal',
+    image: imgThankfulHands,
+    relatedProductIds: [],
+    intro: 'Thankful Hands is a classic early childhood Thanksgiving project that combines fine motor art, colour mixing, and a meaningful social-emotional prompt — what are you thankful for? Each child makes their own paper plate, and when they are finished the whole collection goes up as a display that fills the hallway or classroom wall with colour and gratitude.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'Paper plates — one per child.',
+          'Different coloured construction paper cut into small squares for the border.',
+          'Scissors and a glue stick.',
+          'Different coloured paint and paintbrushes.',
+          'Large decorative letters spelling out THANKFUL HANDS for the display sign (or print and cut your own).',
+        ],
+      },
+      {
+        heading: 'How to Prepare',
+        paragraphs: [
+          'Before the activity, write each child\'s name on the back of a paper plate — this keeps the plates sorted during drying and makes labelling the display easy.',
+          'Pre-cut a supply of small construction paper squares in a range of colours and put them in a shared tray or bowl so children can choose freely.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Give each child their plate and invite them to choose coloured squares to glue around the edge, creating a mosaic border. Let them pick whatever colours they want — there is no wrong combination.',
+          'Once the border is done, have each child choose a paint colour for their handprint. Use a paintbrush to coat one hand evenly with the chosen colour.',
+          'Press the painted hand firmly in the centre of the plate and lift it straight up. Set the plate on a drying rack.',
+          'When the paint is dry, you can add a writing prompt line — "I am thankful for ___" — for children who are ready to write, or have them dictate their answer for you to write.',
+          'Arrange all the plates around the THANKFUL HANDS letters on a bulletin board or hallway wall for a display the whole school can enjoy.',
+        ],
+      },
+      {
+        heading: 'Why Children Love This Activity',
+        paragraphs: [
+          'Choosing their own colours for the border gives children real creative ownership, and the handprint in the centre makes each plate uniquely theirs. Children love seeing their work displayed alongside their classmates\' — it builds a sense of community as well as pride.',
+          'The gratitude prompt, however simple, introduces children to the idea that pausing to notice what we appreciate is something worth doing. Many families report that children bring this conversation home.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance can I prep this?',
+        answer: 'You can pre-cut the construction paper squares and label the plates a day or two ahead. The actual painting works best fresh — dried paint on the brush makes the handprint less crisp.',
+      },
+      {
+        question: 'What if a child\'s handprint smears?',
+        answer: 'It happens! Just let it dry fully, then do a second print on top. Two overlapping prints can look really effective. Remind children to press the whole palm down and lift straight up rather than dragging.',
+      },
+      {
+        question: 'How long does it take per child?',
+        answer: 'The border gluing takes about 5–10 minutes per child and can be done at a centre while you rotate children through the handprint step one at a time, which takes under two minutes each. The whole class can finish in a single session.',
+      },
+    ],
+  },
+
+  {
+    slug: 'placemat-weaving',
+    title: 'Placemat Weaving: A Fall Paper Weaving Activity',
+    excerpt: 'Children cut slits into a folded sheet of paper and weave coloured strips through in an over-under pattern — a hands-on fine motor project that produces a beautiful autumn placemat to take home.',
+    date: '2026-10-07',
+    category: 'Seasonal',
+    image: imgPlacematWeaving,
+    relatedProductIds: [],
+    intro: 'Paper weaving is one of those timeless early childhood crafts that looks impressive but is completely achievable for ages 3–6 with a little preparation and a clear demonstration. Using fall colours — orange, brown, yellow, and green — children create a woven placemat they can actually use on the table at home, which makes the finished product feel special and purposeful.',
+    sections: [
+      {
+        heading: 'What You\'ll Need',
+        paragraphs: [
+          'One sheet of construction paper per child for the base mat — let children choose their colour.',
+          'Pre-cut strips of construction paper in fall colours: orange, brown, yellow, and green. Cut enough so each child can choose six strips.',
+          'Scissors (for the teacher to demonstrate cuts, and for children who are ready to make their own).',
+          'A glue stick to secure the ends of the strips once weaving is complete.',
+        ],
+      },
+      {
+        heading: 'How to Prepare',
+        paragraphs: [
+          'Pre-cut the weaving strips in advance — aim for strips roughly an inch wide and long enough to cross the full width of the placemat paper.',
+          'Tip: make sure the strips are not the same colour as the child\'s base paper. If a child picks an orange base, steer them away from orange strips so the weave pattern actually shows up.',
+        ],
+      },
+      {
+        heading: 'How to Do the Activity',
+        paragraphs: [
+          'Have each child fold their base paper in half lengthways (hot-dog fold).',
+          'Starting from the folded edge, make five cuts across the paper, stopping about an inch from the open edge. The cuts should be evenly spaced. This creates the "slots" the strips will weave through.',
+          'Open the paper back out flat. Now the fun begins — show children how to weave a strip over the first slot, under the second, over the third, and so on, alternating all the way across.',
+          'When the first strip is in, have the child rotate the mat 180° and start the next strip from the other side, this time going under first. Alternating the starting direction makes the classic checkerboard weave pattern.',
+          'Continue until all six strips are woven in.',
+          'Dab a little glue stick along each end of every strip and press the ends flat against the base paper so nothing slips out.',
+        ],
+      },
+      {
+        heading: 'Why Weaving is Great for This Age',
+        paragraphs: [
+          'The over-under pattern requires children to track a sequence and hold a rule in mind — a great early patterning and logic exercise. At the same time, threading paper strips develops the hand coordination and bilateral integration that supports writing readiness.',
+          'Children who find the full over-under sequence tricky can start with a simpler in-out pattern or have a teacher guide their hand for the first row. Most children get it quickly once they see the physical logic of how the strip passes through.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: 'How wide should the cuts and strips be?',
+        answer: 'About one inch wide works well for ages 3–6 — wide enough to thread easily but narrow enough to fit several strips across the mat. For younger children, go wider (1.5 inches) so the weaving is easier to handle.',
+      },
+      {
+        question: 'What if the strips fall out before the glue is applied?',
+        answer: 'Hold the finished weave flat on the table and run the glue stick along the ends before the child moves it. It helps to have a teacher or helper hold the strips in place while the child applies the glue.',
+      },
+      {
+        question: 'Can we use different colours than fall colours?',
+        answer: 'Absolutely — the weaving technique works with any colour combination. Fall colours give it a seasonal theme perfect for October and November, but you could use winter colours in December or rainbow colours any time of year.',
       },
     ],
   },
