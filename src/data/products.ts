@@ -67,6 +67,8 @@ import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-car
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
 import imgWordGarden from '../assets/products/word-garden.png'
 import imgWinterCountingPuzzle from '../assets/products/winter-counting-puzzle.jpg'
+import imgFallWriteTheRoom from '../assets/products/fall-write-the-room-cards.jpg'
+import imgFallWriteTheRoomSheet from '../assets/products/fall-write-the-room-worksheet.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -308,6 +310,17 @@ export const PRODUCTS: Product[] = [
     gallery: [img7086],
     description: 'A practical life buttoning work with a Thanksgiving twist — a hand-sewn felt turkey with colourful feathers to button on and off. Builds fine motor skills while celebrating the season.',
     details: ['Hand-sewn felt turkey', 'Colourful removable feathers', 'Develops fine motor skills', 'Suits Pre-K to Kindergarten'],
+  },
+  {
+    id: 'fall-write-the-room',
+    name: 'Fall Write the Room',
+    price: '$5.00',
+    categories: ['language', 'seasonal', 'printable'],
+    themes: ['fall'],
+    image: imgFallWriteTheRoom,
+    gallery: [imgFallWriteTheRoomSheet],
+    description: 'Place the fall picture cards around the room and have children walk, find, and write each word on their recording sheet. Includes 12 autumn vocabulary words — turkey, scarecrow, pumpkin, acorn, cornucopia and more.',
+    details: ['12 picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Pre-K to Grade 1'],
   },
   {
     id: 'identifying-number-to-object',
