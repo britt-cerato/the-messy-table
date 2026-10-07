@@ -63,6 +63,7 @@ import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jp
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
 import imgAnimalThreePartFarmZoo from '../assets/products/animal-three-part-farm-zoo.jpg'
 import imgColorMatchingPrintable from '../assets/products/color-matching-printable.jpg'
+import imgFlowerSortingPrintable from '../assets/products/flower-sorting-printable.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -496,6 +497,16 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Match each solid color card to its real-world object — red apple, orange, yellow banana and more. A classic Montessori color matching work in a bright, printable format ready to use right away.',
     details: ['Colors included (red, orange, yellow & more)', 'Solid colour + object picture pairs', 'Printable PDF — instant download', 'Suits Toddler to Pre-K'],
+  },
+  {
+    id: 'flower-sorting-printable',
+    name: 'Flower Sorting (Printable)',
+    price: '$5.00',
+    categories: ['nomenclature', 'printable'],
+    image: imgFlowerSortingPrintable,
+    gallery: [],
+    description: 'Sort flower parts into stems, petals, and leaves with this hands-on printable work. Includes a sorting mat and a full set of cut-and-sort picture cards — a beautiful way to explore plant science.',
+    details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
   },
 ]
 
