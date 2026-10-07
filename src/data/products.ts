@@ -61,6 +61,8 @@ import imgNameTags2 from '../assets/products/name-tags.jpeg'
 import imgWinterRhymingCards from '../assets/products/winter-rhyming-cards.jpg'
 import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jpg'
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
+import imgAnimalThreePartFarmZoo from '../assets/products/animal-three-part-farm-zoo.jpg'
+import imgColorMatchingPrintable from '../assets/products/color-matching-printable.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
 export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
@@ -208,7 +210,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'write-the-room-summer',
     name: 'Write the Room — Summer',
-    price: '$12.00',
+    price: '$5.00',
     categories: ['language', 'printable'],
     image: img7092,
     gallery: [],
@@ -218,7 +220,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'spring-worksheets',
     name: 'Spring Worksheets',
-    price: '$12.00',
+    price: '$5.00',
     categories: ['language', 'printable'],
     themes: ['spring'],
     image: img7134new,
@@ -318,7 +320,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'identifying-number-to-object',
     name: 'Identifying Number to Object',
-    price: '$12.00',
+    price: '$5.00',
     categories: ['math', 'seasonal', 'printable'],
     themes: ['st-patricks'],
     image: imgIdentifyingNumberToObject,
@@ -340,7 +342,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'st-patricks-day-worksheets',
     name: "St. Patrick's Day Worksheets",
-    price: '$10.00',
+    price: '$5.00',
     categories: ['seasonal', 'printable'],
     themes: ['st-patricks'],
     image: img7094,
@@ -384,7 +386,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'write-the-room-spring',
     name: 'Write the Room — Spring',
-    price: '$12.00',
+    price: '$5.00',
     categories: ['language', 'printable'],
     themes: ['spring'],
     image: imgWriteTheRoomSpring,
@@ -395,7 +397,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'i-love-to-read-write-the-room',
     name: 'I Love to Read! Write the Room',
-    price: '$12.00',
+    price: '$5.00',
     categories: ['language', 'printable'],
     image: imgWriteTheRoomRead,
     gallery: [],
@@ -438,7 +440,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'earth-day-write-the-room',
     name: 'Earth Day Write the Room',
-    price: '$12.00',
+    price: '$5.00',
     categories: ['language', 'seasonal', 'printable'],
     image: imgEarthDayWriteTheRoom,
     gallery: [],
@@ -474,6 +476,26 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'A beautiful art matching work featuring the paintings of Vincent Van Gogh. Children match identical scallop-edged cards — a quiet, focused activity that builds visual discrimination and introduces great works of art.',
     details: ['Scallop-edged art cards', 'Features Van Gogh paintings', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
+  },
+  {
+    id: 'animal-three-part-farm-zoo',
+    name: 'Animal Three Part Matching (Farm & Zoo)',
+    price: '$5.00',
+    categories: ['nomenclature', 'printable'],
+    image: imgAnimalThreePartFarmZoo,
+    gallery: [],
+    description: 'Match each adult animal to its young in this farm and zoo three-part matching work. Includes horses & foals, cows & calves, sheep & lambs, and more — a beautiful way to build animal vocabulary and nature knowledge.',
+    details: ['Farm & zoo animal pairs included', 'Parent & baby matching', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+  },
+  {
+    id: 'color-matching-printable',
+    name: 'Color Matching (Printable)',
+    price: '$5.00',
+    categories: ['nomenclature', 'printable'],
+    image: imgColorMatchingPrintable,
+    gallery: [],
+    description: 'Match each solid color card to its real-world object — red apple, orange, yellow banana and more. A classic Montessori color matching work in a bright, printable format ready to use right away.',
+    details: ['Colors included (red, orange, yellow & more)', 'Solid colour + object picture pairs', 'Printable PDF — instant download', 'Suits Toddler to Pre-K'],
   },
 ]
 
