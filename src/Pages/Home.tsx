@@ -1,30 +1,61 @@
+import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { PRODUCTS } from '../data/products'
-import heroImg from '../assets/products/messy-table-collage-lavender.jpg'
-import heroImgMobile from '../assets/products/messy-table-collage-lavender-mobile.jpg'
+import { IDEAS } from '../data/ideas'
+import kerriPhoto from '../assets/kerri-about.jpg'
+import heroCollage from '../assets/products/messy-table-collage-lavender.jpg'
+import doodleGlitter from '../assets/doodles/doodle-glitter.svg'
+import doodleSparkle from '../assets/doodles/doodle-sparkle.svg'
+import heroPhoto1 from '../assets/products/halloween-counting-brew.jpg'
+import heroPhoto2 from '../assets/products/rainbow-letter-matching.jpg'
+import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
+import heroPhoto4 from '../assets/products/flower-sorting-mat.jpg'
+import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
 
+const PREVIEW_IDEAS = IDEAS.filter((i) => i.image).slice(0, 6)
+
 const SITE_URL = 'https://themessytable.org'
+
+const HOME_FAQS = [
+  {
+    q: 'Are these physical items or digital downloads?',
+    a: 'Both! Some products are printable PDFs (instant download), and others are physical works that Kerri hand-assembles and ships to you. Each listing clearly says which type it is.',
+  },
+  {
+    q: 'What ages are these materials for?',
+    a: 'Most works are designed for Pre-K through Grade 1 (ages 3–7). Some activities suit older children too. Each product listing includes the recommended age range.',
+  },
+  {
+    q: 'How do I get my digital download after purchase?',
+    a: "After you place your order, Kerri will email the PDF directly to you. Just check your inbox — it'll be ready to print right away!",
+  },
+  {
+    q: 'Can I print a PDF more than once?',
+    a: "Yes! Once you purchase a printable, it's yours to print as many times as you need for your own home or classroom use.",
+  },
+  {
+    q: 'How long does shipping take on physical items?',
+    a: "Physical works are made to order and typically ship within 3–5 business days. You'll receive tracking information as soon as your order is on its way.",
+  },
+  {
+    q: 'Can I use these with a whole class?',
+    a: "Absolutely — classroom use is very welcome! Just please don't share, redistribute, or resell the digital files. Each teacher should have their own copy.",
+  },
+]
 
 const orgSchema = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'The Messy Table',
   url: SITE_URL,
-  description: 'Handmade Montessori-inspired classroom works and craft materials for teachers and homeschool families, made by Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire.',
-  founder: {
-    '@type': 'Person',
-    name: 'Kerri',
-    jobTitle: 'Montessori Educator',
-  },
-  address: {
-    '@type': 'PostalAddress',
-    addressRegion: 'NH',
-    addressCountry: 'US',
-  },
+  description:
+    'Handmade Montessori-inspired classroom works and craft materials for teachers and homeschool families, made by Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire.',
+  founder: { '@type': 'Person', name: 'Kerri', jobTitle: 'Montessori Educator' },
+  address: { '@type': 'PostalAddress', addressRegion: 'NH', addressCountry: 'US' },
   sameAs: [],
 }
 
@@ -35,15 +66,31 @@ const websiteSchema = {
   url: SITE_URL,
   potentialAction: {
     '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: `${SITE_URL}/shop?q={search_term_string}`,
-    },
+    target: { '@type': 'EntryPoint', urlTemplate: `${SITE_URL}/shop?q={search_term_string}` },
     'query-input': 'required name=search_term_string',
   },
 }
 
+function WavyDivider({ fill = '#faf6ef' }: { fill?: string }) {
+  return (
+    <div className="section-divider-wavy" aria-hidden="true">
+      <svg viewBox="0 0 1440 32" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" height="32">
+        <path
+          d="M0,16 C180,4 360,28 540,16 C720,4 900,28 1080,16 C1260,4 1440,28 1440,16"
+          fill="none"
+          stroke="#c3b1e1"
+          strokeWidth="2"
+          strokeLinecap="round"
+          opacity="0.5"
+        />
+      </svg>
+    </div>
+  )
+}
+
 function Home() {
+  const [openFaq, setOpenFaq] = useState<number | null>(null)
+
   return (
     <div>
       <Helmet>
@@ -55,7 +102,7 @@ function Home() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="The Messy Table" />
-        <meta property="og:image" content={`${SITE_URL}${heroImg}`} />
+        <meta property="og:image" content={`${SITE_URL}${heroCollage}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Handmade Montessori Materials | The Messy Table" />
         <meta name="twitter:description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
@@ -63,22 +110,55 @@ function Home() {
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
       </Helmet>
+
+      {/* ── Hero: Scattered Polaroids ── */}
       <section className="hero">
-        <div className="hero-content">
+        <div className="hero-polaroids" aria-hidden="true">
+          <div className="polaroid polaroid--1 polaroid--blush">
+            <img src={heroPhoto1} alt="" className="polaroid-img" loading="eager" />
+          </div>
+          <div className="polaroid polaroid--2 polaroid--lavender">
+            <img src={heroPhoto2} alt="" className="polaroid-img" loading="eager" />
+          </div>
+          <div className="polaroid polaroid--3 polaroid--mint">
+            <img src={heroPhoto3} alt="" className="polaroid-img" loading="eager" />
+          </div>
+          <div className="polaroid polaroid--4 polaroid--lavender">
+            <img src={heroPhoto4} alt="" className="polaroid-img" loading="lazy" />
+          </div>
+          <div className="polaroid polaroid--5 polaroid--blush">
+            <img src={heroPhoto5} alt="" className="polaroid-img" loading="lazy" />
+          </div>
+        </div>
+        <img
+          src={doodleGlitter}
+          alt=""
+          aria-hidden="true"
+          className="hero-glitter"
+          style={{ top: '58%', left: '21%', width: '56px', opacity: 0.55 }}
+        />
+        <img
+          src={doodleSparkle}
+          alt=""
+          aria-hidden="true"
+          className="hero-glitter"
+          style={{ top: '32%', right: '21%', width: '38px', opacity: 0.65 }}
+        />
+        <div className="hero-card">
           <h2>Welcome to The Messy Table</h2>
           <p>Classroom works, craft ideas, and a little glitter for the kiddos you love.</p>
           <Link to="/shop" className="hero-button">Shop Now</Link>
         </div>
-        <div className="hero-image-wrap">
-          <picture>
-            <source media="(max-width: 768px)" srcSet={heroImgMobile} />
-            <img src={heroImg} alt="Kerri's handmade Montessori works" className="hero-image" />
-          </picture>
-        </div>
       </section>
+
+      <WavyDivider />
+
+      {/* ── Who Is This For (Index Cards) ── */}
       <section className="home-audience-section">
         <h2 className="section-title">Who is this for?</h2>
-        <p className="section-description">Whether you're managing a classroom of 22 or learning alongside one curious kid at home, there's something here for you.</p>
+        <p className="section-description">
+          Whether you're managing a classroom of 22 or learning alongside one curious kid at home, there's something here for you.
+        </p>
         <div className="home-audience-grid">
           <Link to="/for-teachers" className="home-audience-card home-audience-card--teachers">
             <span className="home-audience-icon">🍎</span>
@@ -95,21 +175,40 @@ function Home() {
         </div>
       </section>
 
+      <WavyDivider />
+
+      {/* ── Featured Products (Kraft Gift Tags) ── */}
       <section className="products">
         <h2 className="section-title">Featured Products</h2>
         <div className="products-grid">
           {featured.map((product) => (
-            <Link to={`/shop/${product.id}`} key={product.id} className="product-card">
-              <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
-              <h3>{product.name}</h3>
-              <p>{product.price}</p>
-            </Link>
+            <div key={product.id} className="product-card-wrap">
+              <Link to={`/shop/${product.id}`} className="product-card">
+                <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
+                <h3>{product.name}</h3>
+                <p>{product.price}</p>
+                <span className={`product-badge ${product.categories.includes('printable') ? 'product-badge--printable' : 'product-badge--physical'}`}>
+                  {product.categories.includes('printable') ? 'Printable' : 'Ships to you'}
+                </span>
+              </Link>
+            </div>
           ))}
         </div>
       </section>
+
+      <WavyDivider />
+
+      {/* ── What's in the Shop (Cut-Here) ── */}
       <section className="home-what-section">
         <h2 className="section-title">What's in the Shop?</h2>
-        <p className="section-description">Kerri makes two kinds of things — hands-on physical works she builds herself, and printable PDFs you can download and use right away.</p>
+        <p className="section-description">
+          Kerri makes two kinds of things — hands-on physical works she builds herself, and printable PDFs you can download and use right away.
+        </p>
+        <div className="cut-here-divider" aria-hidden="true">
+          <div className="cut-here-line" />
+          <span className="cut-here-scissors">✂</span>
+          <div className="cut-here-line" />
+        </div>
         <div className="home-what-grid">
           <div className="home-what-card">
             <span className="home-what-icon">✂️</span>
@@ -124,41 +223,92 @@ function Home() {
         </div>
       </section>
 
+      <WavyDivider />
+
+      {/* ── Work Ideas (Masonry Pinterest Preview) ── */}
       <section className="ideas">
         <div className="ideas-content">
           <h2>Work Ideas</h2>
           <p>Seasonal themes, holiday works, and inspiration for your classroom or home — straight from Kerri's shelf.</p>
-          <Link to="/ideas" className="ideas-button">Explore Work Ideas</Link>
+          {PREVIEW_IDEAS.length > 0 && (
+            <div className="ideas-masonry">
+              {PREVIEW_IDEAS.map((idea) => (
+                <Link key={idea.slug} to={`/ideas/${idea.slug}`} className="idea-masonry-card">
+                  <img
+                    src={idea.image}
+                    alt={idea.title}
+                    className="idea-masonry-img"
+                    loading="lazy"
+                  />
+                  <div className="idea-masonry-body">
+                    <div className="idea-masonry-category">{idea.category}</div>
+                    <div className="idea-masonry-title">{idea.title}</div>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          )}
+          <Link to="/ideas" className="ideas-button">Explore All Work Ideas</Link>
         </div>
       </section>
 
+      <WavyDivider />
+
+      {/* ── Meet Kerri ── */}
+      <section className="meet-kerri-section">
+        <div className="meet-kerri">
+          <div className="meet-kerri-polaroid">
+            <img src={kerriPhoto} alt="Kerri, founder of The Messy Table" className="meet-kerri-photo" loading="lazy" />
+          </div>
+          <div className="meet-kerri-content">
+            <h2>Meet Kerri</h2>
+            <p className="meet-kerri-bio">
+              Kerri is a Montessori-trained educator based in Southern New Hampshire who started The Messy Table
+              because she kept making things she couldn't find anywhere else. Every card is cut by hand, every felt
+              work is sewn with care, and every printable is tested with real kids first. If it lives on her shelf,
+              it makes it here.
+            </p>
+            <div className="meet-kerri-values">
+              <div className="meet-kerri-value">
+                <span className="meet-kerri-value-icon">🏔</span>
+                Handmade in New Hampshire
+              </div>
+              <div className="meet-kerri-value">
+                <span className="meet-kerri-value-icon">⬇️</span>
+                Instant PDF downloads
+              </div>
+              <div className="meet-kerri-value">
+                <span className="meet-kerri-value-icon">🖐</span>
+                Designed for little hands
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <WavyDivider />
+
+      {/* ── FAQ Accordion (Notebook Paper) ── */}
       <section className="home-faq-section">
         <h2 className="section-title">Frequently Asked Questions</h2>
-        <div className="faq-grid">
-          <div className="home-faq-item">
-            <h3>Are these physical items or digital downloads?</h3>
-            <p>Both! Some products are printable PDFs (instant download), and others are physical works that Kerri hand-assembles and ships to you. Each listing clearly says which type it is.</p>
-          </div>
-          <div className="home-faq-item">
-            <h3>What ages are these materials for?</h3>
-            <p>Most works are designed for Pre-K through Grade 1 (ages 3–7). Some activities suit older children too. Each product listing includes the recommended age range.</p>
-          </div>
-          <div className="home-faq-item">
-            <h3>How do I get my digital download after purchase?</h3>
-            <p>After you place your order, Kerri will email the PDF directly to you. Just check your inbox — it'll be ready to print right away!</p>
-          </div>
-          <div className="home-faq-item">
-            <h3>Can I print a PDF more than once?</h3>
-            <p>Yes! Once you purchase a printable, it's yours to print as many times as you need for your own home or classroom use.</p>
-          </div>
-          <div className="home-faq-item">
-            <h3>How long does shipping take on physical items?</h3>
-            <p>Physical works are made to order and typically ship within 3–5 business days. You'll receive tracking information as soon as your order is on its way.</p>
-          </div>
-          <div className="home-faq-item">
-            <h3>Can I use these with a whole class?</h3>
-            <p>Absolutely — classroom use is very welcome! Just please don't share, redistribute, or resell the digital files. Each teacher should have their own copy.</p>
-          </div>
+        <div className="faq-accordion">
+          {HOME_FAQS.map((faq, i) => (
+            <div key={i} className="faq-accordion-item">
+              <button
+                className={`faq-accordion-q${openFaq === i ? ' open' : ''}`}
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                aria-expanded={openFaq === i}
+              >
+                {faq.q}
+                <span className="faq-accordion-arrow">▾</span>
+              </button>
+              {openFaq === i && (
+                <div className="faq-accordion-a">
+                  <p>{faq.a}</p>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </section>
     </div>
