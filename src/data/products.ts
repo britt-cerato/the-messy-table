@@ -83,6 +83,8 @@ export interface Product {
   gallery: string[]
   description: string
   details: string[]
+  /** Worksheets inside a pack, listed on the shop card */
+  includes?: string[]
 }
 
 export const PRODUCTS: Product[] = [
@@ -355,6 +357,7 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: "A St. Patrick's Day maths worksheet pack — Shamrock Math, Rainbow Addition, St. Patrick's Day Graphing, Clover Skip Counting and more.",
     details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    includes: ['Clover Skip Counting by 10s', 'Rainbow Addition', 'Shamrock Math', 'Color 5+2 & Color 3+6'],
   },
   {
     id: 'dress-up-snowman',
@@ -526,6 +529,7 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Ladybug Vowels, Bale of Vowels and Writing Prompts. Print at home and use right away.',
     details: ['4 worksheets included', 'Covers blends, short & long vowels and writing', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    includes: ['Birdhouse Blends', 'Ladybug Vowels', 'Bale of Vowels', 'Writing Prompts'],
   },
   {
     id: 'planting-diagraphs',
