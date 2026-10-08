@@ -59,8 +59,6 @@ import imgChristmasPuzzleMatching from '../assets/products/christmas-puzzle-matc
 import imgWinterRhymingCards from '../assets/products/winter-rhyming-cards.jpg'
 import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jpg'
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
-import imgAnimalThreePartFarmZoo from '../assets/products/animal-three-part-farm-zoo.jpg'
-import imgColorMatchingPrintable from '../assets/products/color-matching-printable.jpg'
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-mat.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
@@ -71,7 +69,8 @@ import imgFallWriteTheRoom from '../assets/products/fall-write-the-room-cards.jp
 import imgFallWriteTheRoomSheet from '../assets/products/fall-write-the-room-worksheet.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
-export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
+export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter' | 'summer'
+export type Season = 'fall' | 'winter' | 'spring' | 'summer'
 
 export interface Product {
   id: string
@@ -140,7 +139,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'human-development-cards',
     name: 'Human Development Three Part Cards',
-    price: '$18.00',
+    price: '$10.00',
     categories: ['nomenclature'],
     image: imgHumanDevelopmentCards,
     gallery: [img7078, img7079],
@@ -151,7 +150,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'animal-parent-baby-matching',
     name: 'Animal Parent & Baby Matching Cards',
-    price: '$18.00',
+    price: '$5.00',
     categories: ['nomenclature'],
     image: imgAnimalParentBabyMatching,
     gallery: [imgAnimalParentBabyMatching2, imgAnimalParentBabyMatching3],
@@ -161,7 +160,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'color-matching',
     name: 'Color Matching Cards',
-    price: '$15.00',
+    price: '$5.00',
     categories: ['nomenclature'],
     image: imgColorMatching,
     gallery: [imgColorMatching2, imgColorMatching3],
@@ -171,7 +170,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'dinosaur-three-part-matching',
     name: 'Dinosaur Three Part Matching Cards',
-    price: '$18.00',
+    price: '$10.00',
     categories: ['nomenclature'],
     image: imgDinosaurThreePartMatching,
     gallery: [imgDinosaurThreePartMatching2, imgDinosaurThreePartMatching3],
@@ -217,11 +216,12 @@ export const PRODUCTS: Product[] = [
     id: 'write-the-room-summer',
     name: 'Write the Room — Summer',
     price: '$5.00',
-    categories: ['language', 'printable'],
+    categories: ['language'],
+    themes: ['summer'],
     image: img7092,
     gallery: [],
     description: 'Place picture cards around the room and have children find and write each word on their recording sheet. A summer-themed favourite that gets kiddos moving!',
-    details: ['14 picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['14 picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   // ── Math ──────────────────────────────────────────────────────
   {
@@ -314,19 +314,19 @@ export const PRODUCTS: Product[] = [
   {
     id: 'fall-write-the-room',
     name: 'Fall Write the Room',
-    price: '$5.00',
-    categories: ['language', 'seasonal', 'printable'],
+    price: '$10.00',
+    categories: ['seasonal'],
     themes: ['fall'],
     image: imgFallWriteTheRoom,
     gallery: [imgFallWriteTheRoomSheet],
     description: 'Place the fall picture cards around the room and have children walk, find, and write each word on their recording sheet. Includes 12 autumn vocabulary words — turkey, scarecrow, pumpkin, acorn, cornucopia and more.',
-    details: ['12 picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Pre-K to Grade 1'],
+    details: ['12 picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
     id: 'identifying-number-to-object',
     name: 'Identifying Number to Object',
     price: '$5.00',
-    categories: ['math', 'printable'],
+    categories: ['math'],
     themes: ['st-patricks'],
     image: imgIdentifyingNumberToObject,
     gallery: [],
@@ -337,7 +337,7 @@ export const PRODUCTS: Product[] = [
     id: 'rainbow-letter-matching',
     name: 'Rainbow Letter Matching',
     price: '$12.00',
-    categories: ['language', 'seasonal'],
+    categories: ['seasonal'],
     themes: ['st-patricks'],
     image: imgRainbowLetterMatching,
     gallery: [],
@@ -348,12 +348,12 @@ export const PRODUCTS: Product[] = [
     id: 'st-patricks-day-worksheets',
     name: "St. Patrick's Day Worksheets",
     price: '$5.00',
-    categories: ['seasonal', 'printable'],
+    categories: ['seasonal'],
     themes: ['st-patricks'],
     image: img7094,
     gallery: [],
     description: "A St. Patrick's Day maths worksheet pack — Shamrock Math, Rainbow Addition, St. Patrick's Day Graphing, Clover Skip Counting and more.",
-    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
     id: 'dress-up-snowman',
@@ -369,8 +369,8 @@ export const PRODUCTS: Product[] = [
   {
     id: 'build-a-snowman',
     name: 'Build a Snowman Alphabet Work',
-    price: '$20.00',
-    categories: ['language', 'seasonal'],
+    price: '$15.00',
+    categories: ['seasonal'],
     themes: ['winter'],
     image: imgBuildASnowman,
     gallery: [imgBuildASnowman2],
@@ -392,28 +392,28 @@ export const PRODUCTS: Product[] = [
     id: 'write-the-room-spring',
     name: 'Write the Room — Spring',
     price: '$5.00',
-    categories: ['language', 'printable'],
+    categories: ['language'],
     themes: ['spring'],
     image: imgWriteTheRoomSpring,
     gallery: [],
     description: 'A spring-themed write the room activity! Place picture cards around the classroom, then children walk around, find each card, and write the word on their recording sheet. A fun way to get kiddos moving and practising spelling at the same time.',
-    details: ['14 spring picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['14 spring picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
     id: 'i-love-to-read-write-the-room',
     name: 'I Love to Read! Write the Room',
     price: '$5.00',
-    categories: ['language', 'printable'],
+    categories: ['language'],
     image: imgWriteTheRoomRead,
     gallery: [],
     description: 'Children find each picture card around the room, read the word, and draw a matching picture in the box on their recording sheet. A lovely activity for building reading confidence and visual comprehension.',
-    details: ['12 picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+    details: ['12 picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
     id: 'winter-rhyming-cards',
     name: 'Winter Rhyming Cards',
     price: '$15.00',
-    categories: ['language', 'seasonal'],
+    categories: ['seasonal'],
     themes: ['winter'],
     image: imgWinterRhymingCards,
     gallery: [imgWinterRhymingCards2, imgWinterRhymingCards3],
@@ -424,23 +424,23 @@ export const PRODUCTS: Product[] = [
     id: 'christmas-puzzle-matching',
     name: 'Christmas Puzzle Matching',
     price: '$5.00',
-    categories: ['printable', 'seasonal'],
+    categories: ['seasonal'],
     themes: ['winter'],
     image: imgChristmasPuzzleMatching,
     gallery: [],
     description: 'Match the puzzle pairs in this festive Christmas activity! Children connect the two halves of each chevron-shaped card to make a match — Santa, reindeer, snowman, sleigh, Christmas tree, gingerbread man and more.',
-    details: ['12 matching pairs included', 'Chevron puzzle-edge cards for self-checking', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+    details: ['12 matching pairs included', 'Chevron puzzle-edge cards for self-checking', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
     id: 'winter-counting-puzzle',
     name: 'Winter Counting Number Puzzle',
     price: '$5.00',
-    categories: ['printable', 'seasonal'],
+    categories: ['seasonal'],
     themes: ['winter'],
     image: imgWinterCountingPuzzle,
     gallery: [],
     description: 'Cut the strips and sort them in counting order! Three winter-themed puzzle pages — snowflakes (0–6), winter clothes (7–11), and a polar bear with snowballs (12–16). A hands-on way to practise counting and number sequencing.',
-    details: ['3 puzzle pages included', 'Counts 0 through 16', 'Cut-and-sort activity', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+    details: ['3 puzzle pages included', 'Counts 0 through 16', 'Cut-and-sort activity', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   // ── Classroom Setup ───────────────────────────────────────────
   {
@@ -468,11 +468,12 @@ export const PRODUCTS: Product[] = [
     id: 'earth-day-write-the-room',
     name: 'Earth Day Write the Room',
     price: '$5.00',
-    categories: ['language', 'seasonal', 'printable'],
+    categories: ['seasonal'],
+    themes: ['spring'],
     image: imgEarthDayWriteTheRoom,
     gallery: [],
     description: 'An Earth Day write the room activity! Children walk around the room finding picture cards, then write the matching word on their recording sheet. A great way to build vocabulary while celebrating our planet.',
-    details: ['Earth Day themed picture cards', 'Recording sheet included', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['Earth Day themed picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
     id: 'animal-tracks-booklet',
@@ -505,26 +506,6 @@ export const PRODUCTS: Product[] = [
     details: ['Scallop-edged art cards', 'Features Van Gogh paintings', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
-    id: 'animal-three-part-farm-zoo',
-    name: 'Animal Three Part Matching (Farm & Zoo)',
-    price: '$5.00',
-    categories: ['nomenclature', 'printable'],
-    image: imgAnimalThreePartFarmZoo,
-    gallery: [],
-    description: 'Match each adult animal to its young in this farm and zoo three-part matching work. Includes horses & foals, cows & calves, sheep & lambs, and more — a beautiful way to build animal vocabulary and nature knowledge.',
-    details: ['Farm & zoo animal pairs included', 'Parent & baby matching', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
-  },
-  {
-    id: 'color-matching-printable',
-    name: 'Color Matching (Printable)',
-    price: '$5.00',
-    categories: ['nomenclature', 'printable'],
-    image: imgColorMatchingPrintable,
-    gallery: [],
-    description: 'Match each solid color card to its real-world object — red apple, orange, yellow banana and more. A classic Montessori color matching work in a bright, printable format ready to use right away.',
-    details: ['Colors included (red, orange, yellow & more)', 'Solid colour + object picture pairs', 'Printable PDF — instant download', 'Suits Toddler to Pre-K'],
-  },
-  {
     id: 'flower-sorting-printable',
     name: 'Flower Sorting (Printable)',
     price: '$5.00',
@@ -537,22 +518,22 @@ export const PRODUCTS: Product[] = [
   {
     id: 'planting-diagraphs',
     name: 'Planting Diagraphs Set',
-    price: '$5.00',
-    categories: ['language', 'printable'],
+    price: '$10.00',
+    categories: ['language'],
     image: imgPlantingDiagraphs,
     gallery: [imgPlantingDiagraphsCards],
     description: 'Practice ending diagraphs with this planting-themed set! Includes a recording worksheet and a matching set of terracotta pot picture cards. Children say each word and colour (or sort) the correct ending sound — ch, sh, or th.',
-    details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
     id: 'word-garden',
     name: 'Word Garden',
     price: '$5.00',
-    categories: ['language', 'printable'],
+    categories: ['language'],
     image: imgWordGarden,
     gallery: [imgGrowingSounds],
     description: 'Say each word slowly and watch your words grow! This set includes the Word Garden recording worksheet (20 numbered sound boxes) plus a full set of colourful flower pot picture cards for beginning & ending sound sorting.',
-    details: ['Word Garden worksheet included', 'Flower pot picture sorting cards (B/E sounds)', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['Word Garden worksheet included', 'Flower pot picture sorting cards (B/E sounds)', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
@@ -564,6 +545,39 @@ export const CATEGORIES: { id: Category; label: string; sectionTitle: string; de
   { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags, and classroom organization materials to help your space feel warm, welcoming, and ready for learning.' },
   { id: 'printable', label: 'Printable Downloads', sectionTitle: 'Printable Downloads', description: 'Instant PDF downloads you print at home or at a print shop — ready to use right away. No waiting for shipping!' },
 ]
+
+// Shop season pages. Seasons are listed in calendar order starting with fall;
+// months are 0-based (January = 0) and decide which season is "in season now".
+export const SEASONS: { id: Season; label: string; emoji: string; months: number[]; description: string }[] = [
+  { id: 'fall', label: 'Fall', emoji: '🍂', months: [8, 9, 10], description: 'Halloween, Thanksgiving, and cosy autumn works for September through November.' },
+  { id: 'winter', label: 'Winter', emoji: '❄️', months: [11, 0, 1], description: "Snowmen, mittens, Christmas, and Valentine's Day works for December through February." },
+  { id: 'spring', label: 'Spring', emoji: '🌷', months: [2, 3, 4], description: "Flowers, Earth Day, and St. Patrick's Day works for March through May." },
+  { id: 'summer', label: 'Summer', emoji: '☀️', months: [5, 6, 7], description: 'Sunny, get-up-and-move works for June through August.' },
+]
+
+// Holidays fold into the season they fall in, so each season page shows
+// every work for that time of year.
+const THEME_SEASON: Record<Theme, Season> = {
+  fall: 'fall',
+  winter: 'winter',
+  valentines: 'winter',
+  spring: 'spring',
+  'st-patricks': 'spring',
+  summer: 'summer',
+}
+
+export const HOLIDAY_LABELS: Partial<Record<Theme, string>> = {
+  valentines: "Valentine's Day",
+  'st-patricks': "St. Patrick's Day",
+}
+
+export function getSeason(id: string | undefined) {
+  return SEASONS.find((s) => s.id === id)
+}
+
+export function getSeasonProducts(season: Season): Product[] {
+  return PRODUCTS.filter((p) => p.themes?.some((t) => THEME_SEASON[t] === season))
+}
 
 export function getProduct(id: string): Product | undefined {
   return PRODUCTS.find((p) => p.id === id)

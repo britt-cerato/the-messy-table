@@ -41,6 +41,26 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://themessytable.org/shop/season/fall</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/season/winter</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/season/spring</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/season/summer</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://themessytable.org/shop/animal-nomenclature</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -106,11 +126,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://themessytable.org/shop/spring-worksheets</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://themessytable.org/shop/tally-marks-clip-cards</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -147,6 +162,11 @@
   </url>
   <url>
     <loc>https://themessytable.org/shop/thanksgiving-buttoning</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/fall-write-the-room</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -196,6 +216,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://themessytable.org/shop/christmas-puzzle-matching</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/shop/winter-counting-puzzle</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://themessytable.org/shop/cubby-labels</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -222,16 +252,6 @@
   </url>
   <url>
     <loc>https://themessytable.org/shop/van-gogh-matching</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://themessytable.org/shop/animal-three-part-farm-zoo</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://themessytable.org/shop/color-matching-printable</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -347,6 +367,26 @@
   </url>
   <url>
     <loc>https://themessytable.org/ideas/snowman-letter-tracing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/disguise-a-turkey</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/polar-express-sequencing</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/thankful-hands</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/ideas/placemat-weaving</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
