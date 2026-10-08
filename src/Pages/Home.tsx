@@ -279,7 +279,7 @@ function Home() {
                     className="idea-masonry-img"
                     loading="lazy"
                     style={idea.slug === 'it-looks-like-spilled-milk'
-                      ? { height: 190, objectFit: 'cover', objectPosition: 'left center' }
+                      ? { objectPosition: 'left center' }
                       : undefined}
                   />
                   <div className="idea-masonry-body">
