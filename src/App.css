@@ -53,7 +53,8 @@ body {
   align-items: center;
   padding: 18px 48px;
   background-color: var(--cream-dark);
-  border-bottom: 1px solid rgba(244,167,185,0.3);
+  position: relative;
+  z-index: 5;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -62,7 +63,47 @@ body {
   }
 }
 
-.nav-brand a { text-decoration: none; }
+/* Torn-paper edge shared by the header, page title bands and footer.
+   The shape is a mask, so each edge takes its section's own colour. */
+:root {
+  --torn-edge: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 16' preserveAspectRatio='none'%3E%3Cpath d='M0 0H1440V7L1440 7L1431 8L1419 8L1408 12L1383 5L1361 12L1339 12L1315 3L1301 11L1273 11L1250 6L1240 9L1222 6L1194 14L1184 8L1167 6L1152 5L1138 8L1116 11L1093 9L1066 12L1052 9L1030 14L1015 5L990 12L968 8L954 9L938 3L913 5L898 11L874 3L853 12L834 14L815 3L803 14L785 5L773 14L748 11L728 11L716 3L693 14L679 11L664 12L651 5L632 14L612 14L586 9L558 5L541 6L524 9L503 14L475 14L455 12L428 14L412 3L384 5L357 5L336 8L323 6L296 9L268 5L254 12L235 6L224 8L213 12L185 3L168 5L157 12L145 8L133 12L110 5L99 8L73 3L52 5L25 5L14 12L0 11Z'/%3E%3C/svg%3E");
+}
+
+.navbar::after,
+.page-hero::after,
+.footer::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 14px;
+  pointer-events: none;
+  -webkit-mask: var(--torn-edge) center / 100% 100% no-repeat;
+  mask: var(--torn-edge) center / 100% 100% no-repeat;
+}
+
+.navbar::after { top: 100%; background-color: var(--cream-dark); }
+
+.nav-brand a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.nav-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--mint);
+  transform: rotate(-12deg);
+  flex-shrink: 0;
+}
+
+.nav-logo-mark img { height: 26px; width: auto; }
 
 .nav-brand h1 {
   font-family: 'Caveat', cursive;
@@ -427,8 +468,39 @@ body {
   padding: 64px 48px;
   background-color: var(--cream);
   text-align: center;
+  position: relative;
 
   @media (max-width: 600px) { padding: 48px 24px; }
+}
+
+/* Faint sparkles and doodles in the empty side margins, like the home page.
+   Only on wide screens, where they can't overlap the product grid. */
+@media (min-width: 1180px) {
+  .products::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.4;
+    background-repeat: no-repeat;
+    background-image:
+      url('./assets/doodles/doodle-sparkle.svg'),
+      url('./assets/doodles/doodle-crayon.svg'),
+      url('./assets/doodles/doodle-glitter.svg'),
+      url('./assets/doodles/doodle-sparkle.svg');
+    background-size: 28px, 26px, 40px, 22px;
+    background-position: 5% 12%, 4% 70%, 95% 28%, 96% 86%;
+  }
+
+  .products:nth-of-type(odd)::before {
+    background-image:
+      url('./assets/doodles/doodle-glitter.svg'),
+      url('./assets/doodles/doodle-sparkle.svg'),
+      url('./assets/doodles/doodle-flower.svg'),
+      url('./assets/doodles/doodle-glue-stick.svg');
+    background-size: 38px, 24px, 34px, 24px;
+    background-position: 4% 22%, 6% 80%, 95% 14%, 96% 66%;
+  }
 }
 
 .products-grid {
@@ -1038,7 +1110,9 @@ body {
 
 /* ── Footer ───────────────────────────────────────────── */
 
-.footer { background-color: var(--brown); }
+.footer { background-color: var(--brown); position: relative; }
+
+.footer::before { bottom: 100%; background-color: var(--brown); transform: scaleY(-1); }
 
 .footer-newsletter {
   padding: 48px 48px 40px;
@@ -1163,9 +1237,37 @@ body {
   padding: 56px 48px;
   background-color: var(--cream-dark);
   text-align: center;
+  position: relative;
+  z-index: 1;
 
   @media (max-width: 600px) { padding: 40px 24px; }
 }
+
+.page-hero > * { position: relative; z-index: 1; }
+
+/* Faint scrapbook doodles in the corners of every page title band */
+.page-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.45;
+  background-image:
+    url('./assets/doodles/doodle-scissors.svg'),
+    url('./assets/doodles/doodle-sparkle.svg'),
+    url('./assets/doodles/doodle-flower.svg'),
+    url('./assets/doodles/doodle-paperclip.svg');
+  background-repeat: no-repeat;
+  background-size: 44px, 26px, 38px, 30px;
+  background-position: 7% 30%, 18% 78%, 92% 26%, 84% 80%;
+
+  @media (max-width: 600px) {
+    background-size: 30px, 18px, 26px, 0;
+    background-position: 4% 14%, 10% 88%, 96% 12%, 0 0;
+  }
+}
+
+.page-hero::after { top: 100%; background-color: var(--cream-dark); }
 
 .page-hero h2 {
   font-family: 'Playfair Display', serif;

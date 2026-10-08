@@ -10,6 +10,7 @@ import FAQ from './Pages/FAQ'
 import Contact from './Pages/Contact'
 import ForTeachers from './Pages/ForTeachers'
 import ForHomeschool from './Pages/ForHomeschool'
+import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
 
 function ScrollToTop() {
@@ -53,7 +54,12 @@ function App() {
       <div className="app">
         <nav className="navbar">
           <div className="nav-brand">
-            <Link to="/"><h1>The Messy Table</h1></Link>
+            <Link to="/">
+              <span className="nav-logo-mark" aria-hidden="true">
+                <img src={doodleCrayon} alt="" />
+              </span>
+              <h1>The Messy Table</h1>
+            </Link>
           </div>
           <div className="nav-right">
             <ul className="nav-links">
