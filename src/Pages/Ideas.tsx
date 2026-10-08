@@ -42,7 +42,7 @@ const THEMES = [
     title: 'Fall & Halloween',
     description: 'Spooky counting, patterning, and fine motor works perfect for October shelves.',
     image: fallImg,
-    shopLink: '/shop?theme=fall',
+    shopLink: '/shop/season/fall',
   },
   {
     title: "Valentine's Day",
@@ -54,13 +54,13 @@ const THEMES = [
     title: 'Spring',
     description: 'Fresh flower matching, language works, and crafts to welcome the new season.',
     image: springImg,
-    shopLink: '/shop?theme=spring',
+    shopLink: '/shop/season/spring',
   },
   {
     title: 'Winter',
     description: 'Cosy sequencing, storytelling, and hands-on works for the winter months.',
     image: winterImg,
-    shopLink: '/shop?theme=winter',
+    shopLink: '/shop/season/winter',
   },
   {
     title: "St. Patrick's Day",

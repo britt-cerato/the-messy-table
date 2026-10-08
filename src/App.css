@@ -1225,6 +1225,78 @@ body {
 
 .ideas-coming-soon { font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--brown-mid); margin-top: 48px; text-align: center; }
 
+/* ── Shop by Season ───────────────────────────────────── */
+
+.season-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  max-width: 760px;
+  margin: 0 auto 40px;
+
+  @media (max-width: 480px) { grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; }
+}
+
+.season-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 18px 12px;
+  background-color: var(--off-white);
+  border: 1px solid var(--cream-dark);
+  border-radius: 14px;
+  text-decoration: none;
+  box-shadow: 1px 2px 8px rgba(91,74,63,0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.season-tile-now {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--terracotta);
+}
+
+@media (max-width: 480px) {
+  .season-tile { padding: 14px 6px; }
+  .season-tile-emoji { font-size: 24px; }
+  .season-tile-label { font-size: 16px; }
+  .season-tile-count { font-size: 11px; text-align: center; }
+}
+
+.season-tile:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(91,74,63,0.1); }
+
+.season-tile-emoji { font-size: 30px; line-height: 1; }
+
+.season-tile-label {
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  color: var(--brown);
+}
+
+.season-tile-count {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  color: var(--brown-mid);
+}
+
+.product-tag {
+  display: inline-block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--brown);
+  background-color: var(--cream-dark);
+  border-radius: 999px;
+  padding: 3px 10px;
+  margin-bottom: 6px;
+}
+
 /* ── Ideas List ───────────────────────────────────────── */
 
 .ideas-list {

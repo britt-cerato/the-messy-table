@@ -30,6 +30,11 @@ const STATIC_ROUTES = [
   '/ideas',
   '/for-teachers',
   '/for-homeschool',
+  // Season pages — keep in sync with SEASONS in src/data/products.ts
+  '/shop/season/fall',
+  '/shop/season/winter',
+  '/shop/season/spring',
+  '/shop/season/summer',
 ]
 
 // Dynamic routes — derive from data files

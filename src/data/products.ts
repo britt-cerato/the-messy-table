@@ -69,7 +69,8 @@ import imgFallWriteTheRoom from '../assets/products/fall-write-the-room-cards.jp
 import imgFallWriteTheRoomSheet from '../assets/products/fall-write-the-room-worksheet.jpg'
 
 export type Category = 'nomenclature' | 'language' | 'math' | 'seasonal' | 'classroom-setup' | 'printable'
-export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter'
+export type Theme = 'valentines' | 'st-patricks' | 'fall' | 'spring' | 'winter' | 'summer'
+export type Season = 'fall' | 'winter' | 'spring' | 'summer'
 
 export interface Product {
   id: string
@@ -216,6 +217,7 @@ export const PRODUCTS: Product[] = [
     name: 'Write the Room — Summer',
     price: '$5.00',
     categories: ['language'],
+    themes: ['summer'],
     image: img7092,
     gallery: [],
     description: 'Place picture cards around the room and have children find and write each word on their recording sheet. A summer-themed favourite that gets kiddos moving!',
@@ -467,6 +469,7 @@ export const PRODUCTS: Product[] = [
     name: 'Earth Day Write the Room',
     price: '$5.00',
     categories: ['seasonal'],
+    themes: ['spring'],
     image: imgEarthDayWriteTheRoom,
     gallery: [],
     description: 'An Earth Day write the room activity! Children walk around the room finding picture cards, then write the matching word on their recording sheet. A great way to build vocabulary while celebrating our planet.',
@@ -542,6 +545,39 @@ export const CATEGORIES: { id: Category; label: string; sectionTitle: string; de
   { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags, and classroom organization materials to help your space feel warm, welcoming, and ready for learning.' },
   { id: 'printable', label: 'Printable Downloads', sectionTitle: 'Printable Downloads', description: 'Instant PDF downloads you print at home or at a print shop — ready to use right away. No waiting for shipping!' },
 ]
+
+// Shop season pages. Seasons are listed in calendar order starting with fall;
+// months are 0-based (January = 0) and decide which season is "in season now".
+export const SEASONS: { id: Season; label: string; emoji: string; months: number[]; description: string }[] = [
+  { id: 'fall', label: 'Fall', emoji: '🍂', months: [8, 9, 10], description: 'Halloween, Thanksgiving, and cosy autumn works for September through November.' },
+  { id: 'winter', label: 'Winter', emoji: '❄️', months: [11, 0, 1], description: "Snowmen, mittens, Christmas, and Valentine's Day works for December through February." },
+  { id: 'spring', label: 'Spring', emoji: '🌷', months: [2, 3, 4], description: "Flowers, Earth Day, and St. Patrick's Day works for March through May." },
+  { id: 'summer', label: 'Summer', emoji: '☀️', months: [5, 6, 7], description: 'Sunny, get-up-and-move works for June through August.' },
+]
+
+// Holidays fold into the season they fall in, so each season page shows
+// every work for that time of year.
+const THEME_SEASON: Record<Theme, Season> = {
+  fall: 'fall',
+  winter: 'winter',
+  valentines: 'winter',
+  spring: 'spring',
+  'st-patricks': 'spring',
+  summer: 'summer',
+}
+
+export const HOLIDAY_LABELS: Partial<Record<Theme, string>> = {
+  valentines: "Valentine's Day",
+  'st-patricks': "St. Patrick's Day",
+}
+
+export function getSeason(id: string | undefined) {
+  return SEASONS.find((s) => s.id === id)
+}
+
+export function getSeasonProducts(season: Season): Product[] {
+  return PRODUCTS.filter((p) => p.themes?.some((t) => THEME_SEASON[t] === season))
+}
 
 export function getProduct(id: string): Product | undefined {
   return PRODUCTS.find((p) => p.id === id)

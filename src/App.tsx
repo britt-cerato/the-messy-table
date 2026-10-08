@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import Home from './Pages/Home'
-import Shop from './Pages/Shop'
+import Shop, { SeasonShop } from './Pages/Shop'
 import About from './Pages/About'
 import Ideas from './Pages/Ideas'
 import IdeaPost from './Pages/IdeaPost'
@@ -76,6 +76,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/shop/season/:season" element={<SeasonShop />} />
           <Route path="/shop/:id" element={<Product />} />
           <Route path="/about" element={<About />} />
           <Route path="/ideas" element={<Ideas />} />

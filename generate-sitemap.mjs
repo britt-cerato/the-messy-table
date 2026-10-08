@@ -37,6 +37,13 @@ const productRoutes = [...productsArrayText.matchAll(/^\s+id:\s+'([^']+)'/gm)].m
   priority: '0.8',
 }))
 
+// Season pages — keep in sync with SEASONS in src/data/products.ts
+const seasonRoutes = ['fall', 'winter', 'spring', 'summer'].map((season) => ({
+  path: `/shop/season/${season}`,
+  changefreq: 'monthly',
+  priority: '0.8',
+}))
+
 const ideasText = fs.readFileSync(path.join(__dirname, 'src/data/ideas.ts'), 'utf8')
 const ideaRoutes = [...ideasText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) => ({
   path: `/ideas/${m[1]}`,
@@ -44,7 +51,7 @@ const ideaRoutes = [...ideasText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) =>
   priority: '0.8',
 }))
 
-const ALL_ROUTES = [...STATIC_ROUTES, ...productRoutes, ...ideaRoutes]
+const ALL_ROUTES = [...STATIC_ROUTES, ...seasonRoutes, ...productRoutes, ...ideaRoutes]
 
 const urlEntries = ALL_ROUTES.map(
   ({ path: routePath, changefreq, priority }) => `  <url>
