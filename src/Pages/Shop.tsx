@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Link, Navigate, useParams, useSearchParams } from 'react-router-dom'
 import {
@@ -11,7 +10,6 @@ import {
   type Product,
   type Theme,
 } from '../data/products'
-import QuickViewModal from '../components/QuickViewModal'
 
 const THEME_LABELS: Record<string, string> = {
   valentines: "Valentine's Day",
@@ -36,18 +34,16 @@ const itemListSchema = {
 
 function ProductCard({
   product,
-  onQuickView,
   tag,
   showFormat = false,
 }: {
   product: Product
-  onQuickView: (p: Product) => void
   tag?: string
   showFormat?: boolean
 }) {
   const isPrintable = product.categories.includes('printable')
   return (
-    <div className={`product-card-wrap${showFormat ? ' product-card-wrap--badged' : ''}`}>
+    <div className="product-card-wrap">
       <Link to={`/shop/${product.id}`} className="product-card">
         <div className="product-image-wrap">
           <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
@@ -61,13 +57,6 @@ function ProductCard({
           </span>
         )}
       </Link>
-      <button
-        className="quick-view-btn"
-        onClick={() => onQuickView(product)}
-        aria-label={`Quick view ${product.name}`}
-      >
-        Quick View
-      </button>
     </div>
   )
 }
@@ -100,7 +89,6 @@ function SeasonTiles() {
 
 export function SeasonShop() {
   const { season: seasonId } = useParams()
-  const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null)
   const season = getSeason(seasonId)
   if (!season) return <Navigate to="/shop" replace />
 
@@ -146,7 +134,7 @@ export function SeasonShop() {
           {items.map((product) => {
             const holiday = product.themes?.map((t) => HOLIDAY_LABELS[t]).find(Boolean)
             return (
-              <ProductCard key={product.id} product={product} tag={holiday} showFormat onQuickView={setQuickViewProduct} />
+              <ProductCard key={product.id} product={product} tag={holiday} showFormat />
             )
           })}
         </div>
@@ -154,9 +142,6 @@ export function SeasonShop() {
           <Link to="/shop" style={{ color: 'var(--text-muted)', fontSize: '14px' }}>← Back to all products</Link>
         </p>
       </section>
-      {quickViewProduct && (
-        <QuickViewModal product={quickViewProduct} onClose={() => setQuickViewProduct(null)} />
-      )}
     </div>
   )
 }
@@ -164,7 +149,6 @@ export function SeasonShop() {
 function Shop() {
   const [searchParams] = useSearchParams()
   const theme = searchParams.get('theme')
-  const [quickViewProduct, setQuickViewProduct] = useState<Product | null>(null)
 
   if (theme && getSeason(theme)) {
     return <Navigate to={`/shop/season/${theme}`} replace />
@@ -192,16 +176,13 @@ function Shop() {
         <section className="products">
           <div className="products-grid">
             {items.map((product) => (
-              <ProductCard key={product.id} product={product} onQuickView={setQuickViewProduct} />
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
           <p style={{ textAlign: 'center', marginTop: '16px' }}>
             <Link to="/shop" style={{ color: 'var(--text-muted)', fontSize: '14px' }}>← Back to all products</Link>
           </p>
         </section>
-        {quickViewProduct && (
-          <QuickViewModal product={quickViewProduct} onClose={() => setQuickViewProduct(null)} />
-        )}
       </div>
     )
   }
@@ -237,15 +218,12 @@ function Shop() {
             {cat.id === 'seasonal' && <SeasonTiles />}
             <div className="products-grid">
               {items.map((product) => (
-                <ProductCard key={product.id} product={product} onQuickView={setQuickViewProduct} />
+                <ProductCard key={product.id} product={product} />
               ))}
             </div>
           </section>
         )
       })}
-      {quickViewProduct && (
-        <QuickViewModal product={quickViewProduct} onClose={() => setQuickViewProduct(null)} />
-      )}
     </div>
   )
 }
