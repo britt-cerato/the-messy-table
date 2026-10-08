@@ -60,6 +60,7 @@ import imgWinterRhymingCards from '../assets/products/winter-rhyming-cards.jpg'
 import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jpg'
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-mat.jpg'
+import imgSpringWorksheets from '../assets/products/spring-worksheets.jpeg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
@@ -82,6 +83,8 @@ export interface Product {
   gallery: string[]
   description: string
   details: string[]
+  /** Worksheets inside a pack, listed on the shop card */
+  includes?: string[]
 }
 
 export const PRODUCTS: Product[] = [
@@ -348,12 +351,13 @@ export const PRODUCTS: Product[] = [
     id: 'st-patricks-day-worksheets',
     name: "St. Patrick's Day Worksheets",
     price: '$5.00',
-    categories: ['seasonal'],
+    categories: ['printable'],
     themes: ['st-patricks'],
     image: img7094,
     gallery: [],
     description: "A St. Patrick's Day maths worksheet pack — Shamrock Math, Rainbow Addition, St. Patrick's Day Graphing, Clover Skip Counting and more.",
-    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
+    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    includes: ['Clover Skip Counting by 10s', 'Rainbow Addition', 'Shamrock Math', 'Color 5+2 & Color 3+6'],
   },
   {
     id: 'dress-up-snowman',
@@ -514,6 +518,18 @@ export const PRODUCTS: Product[] = [
     gallery: [],
     description: 'Sort flower parts into stems, petals, and leaves with this hands-on printable work. Includes a sorting mat and a full set of cut-and-sort picture cards — a beautiful way to explore plant science.',
     details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+  },
+  {
+    id: 'spring-worksheets',
+    name: 'Spring Worksheets',
+    price: '$5.00',
+    categories: ['printable'],
+    themes: ['spring'],
+    image: imgSpringWorksheets,
+    gallery: [],
+    description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Ladybug Vowels, Bale of Vowels and Writing Prompts. Print at home and use right away.',
+    details: ['4 worksheets included', 'Covers blends, short & long vowels and writing', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    includes: ['Birdhouse Blends', 'Ladybug Vowels', 'Bale of Vowels', 'Writing Prompts'],
   },
   {
     id: 'planting-diagraphs',

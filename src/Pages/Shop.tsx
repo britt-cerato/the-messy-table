@@ -50,6 +50,9 @@ function ProductCard({
         </div>
         {tag && <span className="product-tag">{tag}</span>}
         <h3>{product.name}</h3>
+        {product.includes && (
+          <p className="product-includes">Includes: {product.includes.join(' · ')}</p>
+        )}
         <p>{product.price}</p>
         {showFormat && (
           <span className={`product-badge ${isPrintable ? 'product-badge--printable' : 'product-badge--physical'}`}>
