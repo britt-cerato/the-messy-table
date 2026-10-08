@@ -516,6 +516,10 @@ body {
 .product-badge--printable { background: var(--mint); color: #2e6b3e; }
 .product-badge--physical  { background: #e8b09a; color: #7a3d22; }
 
+/* Cards with a format badge are taller, so keep Quick View on the photo
+   instead of letting it drift up over the name and price. */
+.product-card-wrap--badged .quick-view-btn { bottom: auto; top: 168px; }
+
 /* Quick View Button */
 .quick-view-btn {
   position: absolute;

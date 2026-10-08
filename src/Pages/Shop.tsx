@@ -34,9 +34,20 @@ const itemListSchema = {
   })),
 }
 
-function ProductCard({ product, onQuickView, tag }: { product: Product; onQuickView: (p: Product) => void; tag?: string }) {
+function ProductCard({
+  product,
+  onQuickView,
+  tag,
+  showFormat = false,
+}: {
+  product: Product
+  onQuickView: (p: Product) => void
+  tag?: string
+  showFormat?: boolean
+}) {
+  const isPrintable = product.categories.includes('printable')
   return (
-    <div className="product-card-wrap">
+    <div className={`product-card-wrap${showFormat ? ' product-card-wrap--badged' : ''}`}>
       <Link to={`/shop/${product.id}`} className="product-card">
         <div className="product-image-wrap">
           <img src={product.image} alt={product.name} className="product-image" loading="lazy" />
@@ -44,6 +55,11 @@ function ProductCard({ product, onQuickView, tag }: { product: Product; onQuickV
         {tag && <span className="product-tag">{tag}</span>}
         <h3>{product.name}</h3>
         <p>{product.price}</p>
+        {showFormat && (
+          <span className={`product-badge ${isPrintable ? 'product-badge--printable' : 'product-badge--physical'}`}>
+            {isPrintable ? 'Printable' : 'Ships to you'}
+          </span>
+        )}
       </Link>
       <button
         className="quick-view-btn"
@@ -130,7 +146,7 @@ export function SeasonShop() {
           {items.map((product) => {
             const holiday = product.themes?.map((t) => HOLIDAY_LABELS[t]).find(Boolean)
             return (
-              <ProductCard key={product.id} product={product} tag={holiday} onQuickView={setQuickViewProduct} />
+              <ProductCard key={product.id} product={product} tag={holiday} showFormat onQuickView={setQuickViewProduct} />
             )
           })}
         </div>
