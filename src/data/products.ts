@@ -149,7 +149,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'animal-parent-baby-matching',
     name: 'Animal Parent & Baby Matching Cards',
-    price: '$18.00',
+    price: '$5.00',
     categories: ['nomenclature'],
     image: imgAnimalParentBabyMatching,
     gallery: [imgAnimalParentBabyMatching2, imgAnimalParentBabyMatching3],
