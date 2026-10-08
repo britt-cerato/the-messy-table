@@ -56,14 +56,14 @@ function ProductCard({ product, onQuickView, tag }: { product: Product; onQuickV
   )
 }
 
-// Seasons that have enough works to be worth a tile, starting with the one
-// we're in now so the most useful season is always first.
+// Seasons that have at least one work, starting with the one we're in now
+// so the most useful season is always first.
 function seasonsFromNow() {
   const month = new Date().getMonth()
   const start = Math.max(0, SEASONS.findIndex((s) => s.months.includes(month)))
   return [...SEASONS.slice(start), ...SEASONS.slice(0, start)]
     .map((season) => ({ season, count: getSeasonProducts(season.id).length }))
-    .filter(({ count }) => count >= 2)
+    .filter(({ count }) => count > 0)
 }
 
 function SeasonTiles() {
@@ -74,7 +74,7 @@ function SeasonTiles() {
         <Link key={season.id} to={`/shop/season/${season.id}`} className="season-tile">
           <span className="season-tile-emoji" aria-hidden="true">{season.emoji}</span>
           <span className="season-tile-label">{season.label}</span>
-          <span className="season-tile-count">{count} works</span>
+          <span className="season-tile-count">{count} {count === 1 ? 'work' : 'works'}</span>
           {i === 0 && <span className="season-tile-now">In season now</span>}
         </Link>
       ))}

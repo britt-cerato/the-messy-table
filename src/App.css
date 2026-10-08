@@ -1234,7 +1234,7 @@ body {
   max-width: 760px;
   margin: 0 auto 40px;
 
-  @media (max-width: 480px) { grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); gap: 8px; }
+  @media (max-width: 480px) { grid-template-columns: repeat(2, 1fr); gap: 10px; }
 }
 
 .season-tile {
