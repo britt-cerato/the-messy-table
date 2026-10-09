@@ -61,6 +61,9 @@ import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jp
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-mat.jpg'
 import imgSpringWorksheets from '../assets/products/spring-worksheets.jpeg'
+import imgBaleOfVowelsPreview from '../assets/products/bale-of-vowels-preview.jpg'
+import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
+import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
@@ -525,11 +528,22 @@ export const PRODUCTS: Product[] = [
     price: '$5.00',
     categories: ['printable'],
     themes: ['spring'],
-    image: imgSpringWorksheets,
-    gallery: [],
+    image: imgBaleOfVowelsPreview,
+    gallery: [imgBirdhouseBlendsPreview, imgSpringWorksheets],
     description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Ladybug Vowels, Bale of Vowels and Writing Prompts. Print at home and use right away.',
     details: ['4 worksheets included', 'Covers blends, short & long vowels and writing', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
     includes: ['Birdhouse Blends', 'Ladybug Vowels', 'Bale of Vowels', 'Writing Prompts'],
+  },
+  {
+    id: 'sight-word-practice',
+    name: 'Sight Word Practice — Level 1: My First Words',
+    price: '$5.00',
+    categories: ['printable'],
+    image: imgSightWordPractice,
+    gallery: [],
+    description: 'Read it, write it, build it! Children read each sight word, write it in the middle column, then build it with letters — a simple, hands-on routine for learning the first ten words every early reader needs.',
+    details: ['10 first sight words: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Use letter tiles, magnetic letters or stamps to build (letters not included — tiles shown in photo)', 'Tip: laminate it or use a sheet protector for dry-erase practice', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+    includes: ['a', 'and', 'I', 'it', 'in', 'is', 'me', 'my', 'the', 'to'],
   },
   {
     id: 'planting-diagraphs',
