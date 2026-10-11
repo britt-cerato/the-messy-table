@@ -61,7 +61,8 @@ import imgWinterRhymingCards2 from '../assets/products/winter-rhyming-cards-2.jp
 import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jpg'
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-mat.jpg'
 import imgSpringWorksheets from '../assets/products/spring-worksheets.jpeg'
-import imgBaleOfVowelsPreview from '../assets/products/bale-of-vowels-preview.jpg'
+import imgBalesOfVowelsPreview from '../assets/products/kerri-bales-of-vowels-preview.jpg'
+import imgCloverSkipCountingPreview from '../assets/products/clover-skip-counting-preview.jpg'
 import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
@@ -357,7 +358,7 @@ export const PRODUCTS: Product[] = [
     categories: ['printable'],
     themes: ['st-patricks'],
     image: img7094,
-    gallery: [],
+    gallery: [imgCloverSkipCountingPreview],
     description: "A St. Patrick's Day maths worksheet pack — Shamrock Math, Rainbow Addition, St. Patrick's Day Graphing, Clover Skip Counting and more.",
     details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
     includes: ['Clover Skip Counting by 10s', 'Rainbow Addition', 'Shamrock Math', 'Color 5+2 & Color 3+6'],
@@ -528,11 +529,11 @@ export const PRODUCTS: Product[] = [
     price: '$5.00',
     categories: ['printable'],
     themes: ['spring'],
-    image: imgBaleOfVowelsPreview,
+    image: imgBalesOfVowelsPreview,
     gallery: [imgBirdhouseBlendsPreview, imgSpringWorksheets],
-    description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Ladybug Vowels, Bale of Vowels and Writing Prompts. Print at home and use right away.',
+    description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Ladybug Vowels, Bales of Vowels and Writing Prompts. Print at home and use right away.',
     details: ['4 worksheets included', 'Covers blends, short & long vowels and writing', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
-    includes: ['Birdhouse Blends', 'Ladybug Vowels', 'Bale of Vowels', 'Writing Prompts'],
+    includes: ['Birdhouse Blends', 'Ladybug Vowels', 'Bales of Vowels', 'Writing Prompts'],
   },
   {
     id: 'sight-word-practice',
