@@ -62,6 +62,7 @@ import imgWinterRhymingCards3 from '../assets/products/winter-rhyming-cards-3.jp
 import imgFlowerSortingPrintable from '../assets/products/flower-sorting-mat.jpg'
 import imgSpringWorksheets from '../assets/products/spring-worksheets.jpeg'
 import imgBalesOfVowelsPreview from '../assets/products/kerri-bales-of-vowels-preview.jpg'
+import imgBalesOfVowelsCardsPreview from '../assets/products/kerri-bales-of-vowels-cards-preview.jpg'
 import imgCloverSkipCountingPreview from '../assets/products/clover-skip-counting-preview.jpg'
 import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
@@ -530,7 +531,7 @@ export const PRODUCTS: Product[] = [
     categories: ['printable'],
     themes: ['spring'],
     image: imgBalesOfVowelsPreview,
-    gallery: [imgBirdhouseBlendsPreview, imgSpringWorksheets],
+    gallery: [imgBalesOfVowelsCardsPreview, imgBirdhouseBlendsPreview, imgSpringWorksheets],
     description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Ladybug Vowels, Bales of Vowels and Writing Prompts. Print at home and use right away.',
     details: ['4 worksheets included', 'Covers blends, short & long vowels and writing', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
     includes: ['Birdhouse Blends', 'Ladybug Vowels', 'Bales of Vowels', 'Writing Prompts'],
