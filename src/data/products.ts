@@ -374,7 +374,7 @@ export const PRODUCTS: Product[] = [
     image: img7094,
     gallery: [imgCloverSkipCountingPreview],
     description: "St. Patrick's Day math worksheets, including Shamrock Math, Rainbow Addition and Clover Skip Counting by 10s.",
-    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF, instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
     includes: ['Clover Skip Counting by 10s', 'Rainbow Addition', 'Shamrock Math', 'Color 5+2 & Color 3+6'],
   },
   {
@@ -535,7 +535,7 @@ export const PRODUCTS: Product[] = [
     image: imgFlowerSortingPrintable,
     gallery: [],
     description: "Sort flower pictures into stems, petals and leaves. Comes with a sorting mat and cut-out picture cards.",
-    details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF, instant download', 'Suits Pre-K to Kindergarten'],
+    details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF, emailed to you', 'Suits Pre-K to Kindergarten'],
   },
   {
     id: 'spring-worksheets',
@@ -546,7 +546,7 @@ export const PRODUCTS: Product[] = [
     image: imgShortOrLongVowelsPreview,
     gallery: [imgBirdhouseBlendsPreview, imgSpringWorksheets],
     description: 'Spring worksheets for blends, short and long vowels, and writing. Print them at home.',
-    details: ['3 worksheets included', 'Blends, short & long vowels and writing', 'Printable PDF, instant download', 'Suits Kindergarten to Grade 1'],
+    details: ['3 worksheets included', 'Blends, short & long vowels and writing', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
     includes: ['Birdhouse Blends', 'Short or Long Vowels', 'Writing Prompts'],
   },
   {
@@ -557,7 +557,7 @@ export const PRODUCTS: Product[] = [
     image: imgSightWordPractice,
     gallery: [imgSightWordPracticeLevelsPreview],
     description: 'Read the word, write the word, then build the word with letter tiles. There are 6 levels with 10 words on each page, so kids can move up as they learn.',
-    details: ['6 levels, 60 sight words', 'Level 1: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Build with letter tiles, magnetic letters or stamps (letters not included)', 'Laminate it or put it in a sheet protector to use with a dry erase marker', 'Printable PDF, instant download', 'Suits Pre-K to Grade 1'],
+    details: ['6 levels, 60 sight words', 'Level 1: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Build with letter tiles, magnetic letters or stamps (letters not included)', 'Laminate it or put it in a sheet protector to use with a dry erase marker', 'Printable PDF, emailed to you', 'Suits Pre-K to Grade 1'],
     includes: ['Level 1: My First Words', 'Level 2: Building Words', 'Level 3: Growing Readers', 'Level 4: New Adventures', 'Level 5: Superstar', 'Level 6: Rockstars'],
   },
   {

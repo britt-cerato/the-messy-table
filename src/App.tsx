@@ -29,7 +29,7 @@ function NewsletterForm() {
   }
 
   if (subscribed) {
-    return <p className="footer-newsletter-subscribed">You're in! Check your inbox soon. 🎉</p>
+    return <p className="footer-newsletter-subscribed">Thanks for signing up. Watch your inbox. 🎉</p>
   }
 
   return (
@@ -95,13 +95,13 @@ function App() {
         <footer className="footer">
           <div className="footer-newsletter">
             <h4>The Monthly Mess</h4>
-            <p>One crafty email a month: seasonal work ideas, a free printable, and first dibs on new kits.</p>
+            <p>One email a month with seasonal work ideas, a free printable, and first dibs on new kits.</p>
             <NewsletterForm />
           </div>
           <div className="footer-inner">
             <div className="footer-brand">
               <h3>The Messy Table</h3>
-              <p>Handmade with love for teachers everywhere.</p>
+              <p>Handmade classroom works from a New Hampshire teacher.</p>
               <p>P.O. Box 56 · Milford, NH 03055-0056</p>
             </div>
             <ul className="footer-links">

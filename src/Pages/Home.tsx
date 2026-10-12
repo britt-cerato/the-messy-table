@@ -28,27 +28,27 @@ const SITE_URL = 'https://themessytable.org'
 const HOME_FAQS = [
   {
     q: 'Are these physical items or digital downloads?',
-    a: 'Both! Some products are printable PDFs (instant download), and others are physical works that Kerri hand-assembles and ships to you. Each listing clearly says which type it is.',
+    a: 'Both. Some are printable PDFs that Kerri emails to you. Others are physical works she puts together by hand and mails to you. Each listing says which one it is.',
   },
   {
     q: 'What ages are these materials for?',
-    a: 'Most works are designed for Pre-K through Grade 1 (ages 3–7). Some activities suit older children too. Each product listing includes the recommended age range.',
+    a: 'Most works are for Pre-K through Grade 1 (ages 3–7). Some work for older kids too. Each listing has the age range.',
   },
   {
     q: 'How do I get my digital download after purchase?',
-    a: "After you place your order, Kerri will email the PDF directly to you. Just check your inbox — it'll be ready to print right away!",
+    a: "After you order, Kerri emails the PDF to you. Check your inbox and print it.",
   },
   {
     q: 'Can I print a PDF more than once?',
-    a: "Yes! Once you purchase a printable, it's yours to print as many times as you need for your own home or classroom use.",
+    a: "Yes. Once you buy a printable, you can print it as many times as you need for your own home or classroom.",
   },
   {
     q: 'How long does shipping take on physical items?',
-    a: "Physical works are made to order and typically ship within 3–5 business days. You'll receive tracking information as soon as your order is on its way.",
+    a: "Physical works are made to order and usually ship in 3–5 business days. You'll get tracking info when your order ships.",
   },
   {
     q: 'Can I use these with a whole class?',
-    a: "Absolutely — classroom use is very welcome! Just please don't share, redistribute, or resell the digital files. Each teacher should have their own copy.",
+    a: "Yes, use them with your whole class. Please don't share or resell the digital files. Each teacher needs their own copy.",
   },
 ]
 
@@ -58,7 +58,7 @@ const orgSchema = {
   name: 'The Messy Table',
   url: SITE_URL,
   description:
-    'Handmade Montessori-inspired classroom works and craft materials for teachers and homeschool families, made by Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire.',
+    'Handmade Montessori-inspired classroom works and craft materials for teachers and homeschool families. Made by Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire.',
   founder: { '@type': 'Person', name: 'Kerri', jobTitle: 'Montessori Educator' },
   address: { '@type': 'PostalAddress', addressRegion: 'NH', addressCountry: 'US' },
   sameAs: [],
@@ -114,17 +114,17 @@ function Home() {
     <div>
       <Helmet>
         <title>Handmade Montessori Materials | The Messy Table</title>
-        <meta name="description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
+        <meta name="description" content="Handmade Montessori classroom works by Kerri: nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
         <link rel="canonical" href={SITE_URL} />
         <meta property="og:title" content="Handmade Montessori Materials | The Messy Table" />
-        <meta property="og:description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
+        <meta property="og:description" content="Handmade Montessori classroom works by Kerri: nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={SITE_URL} />
         <meta property="og:site_name" content="The Messy Table" />
         <meta property="og:image" content={`${SITE_URL}${heroCollage}`} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Handmade Montessori Materials | The Messy Table" />
-        <meta name="twitter:description" content="Handmade Montessori classroom works by Kerri — nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
+        <meta name="twitter:description" content="Handmade Montessori classroom works by Kerri: nomenclature cards, math works, write the room, and seasonal activities for Pre-K to Grade 2." />
         <meta name="google-site-verification" content="hFgkrmtEqX8PHDfHHf0isj5rk6s9dtROYtYfnHKMYbQ" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
@@ -160,8 +160,8 @@ function Home() {
         <img src={doodleGlueStick}  alt="" aria-hidden="true" className="hero-glitter" style={{ bottom:'10%', right:'14%', width: '36px', opacity: 0.42, transform: 'rotate(15deg)' }} />
         <div className="hero-card">
           <h2>Welcome to The Messy Table</h2>
-          <p>Classroom works, craft ideas, and a little glitter for the kiddos you love.</p>
-          <Link to="/shop" className="hero-button">Shop Now</Link>
+          <p>Hands-on classroom works and easy craft ideas, made by a teacher. Some glitter involved.</p>
+          <Link to="/shop" className="hero-button">Visit the Shop</Link>
         </div>
       </section>
 
@@ -173,14 +173,14 @@ function Home() {
         <img src={doodlePaperclip} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '16px', left: '4%', width: '36px', opacity: 0.4, transform: 'rotate(-15deg)' }} />
         <h2 className="section-title">Who is this for?</h2>
         <p className="section-description">
-          Whether you're managing a classroom of 22 or learning alongside one curious kid at home, there's something here for you.
+          Kerri makes works for classroom teachers and for families learning at home.
         </p>
         <div className="home-audience-grid">
           <Link to="/for-teachers" className="home-audience-card home-audience-card--teachers">
             <span className="audience-label audience-label--teachers">for teachers</span>
-            <p className="audience-headline">Classroom-ready projects &amp; seasonal craft ideas.</p>
+            <p className="audience-headline">Works for your classroom shelf, plus seasonal crafts.</p>
             <ul className="audience-bullets">
-              <li>Easy prep, bulk materials available</li>
+              <li>Quick prep, bulk orders available</li>
               <li>Printable guides &amp; lesson plans</li>
               <li>Made for Pre-K to Grade 2</li>
             </ul>
@@ -188,11 +188,11 @@ function Home() {
           </Link>
           <Link to="/for-homeschool" className="home-audience-card home-audience-card--homeschool">
             <span className="audience-label audience-label--homeschool">for homeschool parents</span>
-            <p className="audience-headline">Open-ended activities for curious kids.</p>
+            <p className="audience-headline">Hands-on activities for learning at home.</p>
             <ul className="audience-bullets">
               <li>Montessori-inspired, screen-free play</li>
-              <li>Gentle learning &amp; creative exploration</li>
-              <li>No classroom setup required</li>
+              <li>Matching, sorting, counting &amp; crafts</li>
+              <li>No special shelves needed</li>
             </ul>
             <div className="audience-icons">🏡 🌿</div>
           </Link>
@@ -230,7 +230,7 @@ function Home() {
         <img src={doodlePaperclip} alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '20px', left: '4%', width: '34px', opacity: 0.38, transform: 'rotate(-12deg)' }} />
         <h2 className="section-title">✂ What's in the Shop?</h2>
         <p className="section-description">
-          Kerri makes two kinds of things — hands-on physical works she builds herself, and printable PDFs you can download and use right away.
+          Kerri makes two kinds of things: physical works she puts together herself, and printable PDFs she emails to you.
         </p>
         <div className="home-what-split">
           <div className="home-what-col">
@@ -251,7 +251,7 @@ function Home() {
           <div className="home-what-col">
             <h3>🖨️ Printable Downloads</h3>
             <ul className="home-what-bullets">
-              <li>Instant PDF downloads</li>
+              <li>PDFs emailed to you</li>
               <li>Write the room activities</li>
               <li>Tracing &amp; cutting worksheets</li>
               <li>Seasonal activity packs</li>
@@ -268,7 +268,7 @@ function Home() {
         <img src={doodleSparkle}  alt="" aria-hidden="true" className="hero-glitter" style={{ bottom: '24px', left: '3%', width: '30px', opacity: 0.48 }} />
         <div className="ideas-content">
           <h2>Work Ideas</h2>
-          <p>Seasonal themes, holiday works, and inspiration for your classroom or home — straight from Kerri's shelf.</p>
+          <p>Seasonal and holiday works from Kerri's shelf, for your classroom or home.</p>
           {PREVIEW_IDEAS.length > 0 && (
             <div className="ideas-masonry">
               {PREVIEW_IDEAS.map((idea) => (
@@ -290,7 +290,7 @@ function Home() {
               ))}
             </div>
           )}
-          <Link to="/ideas" className="ideas-button">Explore All Work Ideas</Link>
+          <Link to="/ideas" className="ideas-button">See All Work Ideas</Link>
         </div>
       </section>
 
@@ -307,10 +307,10 @@ function Home() {
           <div className="meet-kerri-content">
             <h2>Meet Kerri</h2>
             <p className="meet-kerri-bio">
-              Kerri is a Montessori-trained educator based in Southern New Hampshire who started The Messy Table
-              because she kept making things she couldn't find anywhere else. Every card is cut by hand, every felt
-              work is sewn with care, and every printable is tested with real kids first. If it lives on her shelf,
-              it makes it here.
+              Kerri is a Montessori-trained educator in Southern New Hampshire. She started The Messy Table
+              because she kept making things she couldn't find anywhere else. She cuts the cards by hand, sews the
+              felt works herself, and tries every printable with real kids first. If it's on her shelf, it ends up
+              here.
             </p>
             <div className="meet-kerri-values">
               <div className="meet-kerri-value">
@@ -319,7 +319,7 @@ function Home() {
               </div>
               <div className="meet-kerri-value">
                 <span className="meet-kerri-value-icon">⬇️</span>
-                Instant PDF downloads
+                PDFs emailed to you
               </div>
               <div className="meet-kerri-value">
                 <span className="meet-kerri-value-icon">🖐</span>

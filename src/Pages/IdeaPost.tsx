@@ -145,7 +145,7 @@ function IdeaPost() {
               >
                 <img
                   src={product.image}
-                  alt={`${product.name} — Montessori ${product.categories[0]} work`}
+                  alt={`${product.name}, Montessori ${product.categories[0]} work`}
                   className="product-image"
                   loading="lazy"
                 />

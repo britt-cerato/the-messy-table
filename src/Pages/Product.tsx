@@ -88,7 +88,7 @@ function Product() {
         <div className="product-page-images">
           <img
             src={allImages[activeImage]}
-            alt={`${product.name} — Montessori ${product.categories[0]} work`}
+            alt={`${product.name}, Montessori ${product.categories[0]} work`}
             className="product-page-image"
             loading="eager"
           />
@@ -128,8 +128,8 @@ function Product() {
                 Order Now
               </a>
               <p className="product-page-note">
-                This item is made to order — clicking "Order Now" will open an email to Kerri so she
-                can get your personalization details (name, illustration choice) before arranging
+                This item is made to order. Clicking "Order Now" opens an email to Kerri. She'll ask
+                for your personalization details (name, illustration choice) and then set up
                 payment. 💛
               </p>
             </>
@@ -138,8 +138,8 @@ function Product() {
               <BuyNowButton product={product} />
               <p className="product-page-note">
                 {product.categories.includes('printable')
-                  ? 'Pay securely with PayPal — Kerri will email you the PDF straight away, ready to print at home! 🖨️'
-                  : "Pay securely with PayPal — you'll enter your shipping address at checkout, and Kerri will get your order ready to ship! 💛"}
+                  ? 'Pay securely with PayPal. Kerri will email you the PDF so you can print it at home. 🖨️'
+                  : "Pay securely with PayPal and enter your shipping address at checkout. Kerri will get your order ready to ship. 💛"}
               </p>
             </>
           )}

@@ -98,7 +98,7 @@ export function SeasonShop() {
   const items = getSeasonProducts(season.id)
   const pageUrl = `${SITE_URL}/shop/season/${season.id}`
   const title = `${season.label} Montessori Works | The Messy Table`
-  const description = `Handmade Montessori ${season.label.toLowerCase()} works for Pre-K to Grade 2 — ${season.description.charAt(0).toLowerCase()}${season.description.slice(1)}`
+  const description = `Handmade Montessori ${season.label.toLowerCase()} works for Pre-K to Grade 2: ${season.description.charAt(0).toLowerCase()}${season.description.slice(1)}`
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -164,7 +164,7 @@ function Shop() {
       <div>
         <Helmet>
           <title>{label} Montessori Works — The Messy Table</title>
-          <meta name="description" content={`Handmade Montessori works for ${label.toLowerCase()} — made by Kerri, a Montessori educator in Southern NH. Perfect for Pre-K to Grade 2 classrooms and homeschool families.`} />
+          <meta name="description" content={`Handmade Montessori works for ${label.toLowerCase()}, made by Kerri, a Montessori educator in Southern NH. For Pre-K to Grade 2 classrooms and homeschool families.`} />
           <link rel="canonical" href={`${SITE_URL}/shop?theme=${theme}`} />
           <meta property="og:title" content={`${label} Montessori Works — The Messy Table`} />
           <meta property="og:description" content={`Handmade Montessori works for ${label.toLowerCase()} from Kerri's classroom.`} />
@@ -194,21 +194,21 @@ function Shop() {
     <div>
       <Helmet>
         <title>Shop Montessori Materials | The Messy Table</title>
-        <meta name="description" content="Browse handmade Montessori classroom works for Pre-K through Grade 2 — nomenclature cards, math works, write the room, and seasonal activities." />
+        <meta name="description" content="Handmade Montessori classroom works for Pre-K through Grade 2: nomenclature cards, math works, write the room, and seasonal activities." />
         <link rel="canonical" href={`${SITE_URL}/shop`} />
         <meta property="og:title" content="Shop Montessori Materials | The Messy Table" />
-        <meta property="og:description" content="Browse handmade Montessori classroom works for Pre-K through Grade 2 — nomenclature cards, math works, write the room, and seasonal activities." />
+        <meta property="og:description" content="Handmade Montessori classroom works for Pre-K through Grade 2: nomenclature cards, math works, write the room, and seasonal activities." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/shop`} />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Shop Handmade Montessori Materials — The Messy Table" />
-        <meta name="twitter:description" content="Browse handmade Montessori classroom works and printable activities for Pre-K through Grade 2. Nomenclature cards, math works, write the room, and seasonal activities." />
+        <meta name="twitter:description" content="Handmade Montessori classroom works and printables for Pre-K through Grade 2: nomenclature cards, math works, write the room, and seasonal activities." />
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
       <section className="page-hero">
         <h2>Shop</h2>
-        <p>Classroom materials, craft kits and hands-on works made with love.</p>
+        <p>Classroom materials, craft kits, and hands-on works, made by Kerri in New Hampshire.</p>
       </section>
 
       {CATEGORIES.map((cat) => {

@@ -24,10 +24,10 @@ function Contact() {
     <div>
       <Helmet>
         <title>Contact Kerri | The Messy Table</title>
-        <meta name="description" content="Get in touch with Kerri at The Messy Table — for custom orders, questions about products, or just to say hello." />
+        <meta name="description" content="Email or write to Kerri at The Messy Table about custom orders, product questions, or anything else." />
         <link rel="canonical" href="https://themessytable.org/contact" />
         <meta property="og:title" content="Contact Kerri | The Messy Table" />
-        <meta property="og:description" content="Get in touch with Kerri at The Messy Table — for custom orders, questions about handmade Montessori materials, or just to say hello." />
+        <meta property="og:description" content="Email or write to Kerri at The Messy Table about custom orders or questions about her handmade Montessori materials." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/contact" />
         <meta property="og:site_name" content="The Messy Table" />
@@ -38,7 +38,7 @@ function Contact() {
       </Helmet>
       <section className="page-hero">
         <h2>Get in Touch</h2>
-        <p>Questions, custom orders, or just want to say hi? Kerri would love to hear from you!</p>
+        <p>Send Kerri an email about questions, custom orders, or anything else.</p>
       </section>
       <section className="contact-content">
         <div className="contact-card">
@@ -50,7 +50,7 @@ function Contact() {
             <span className="contact-label">Mail</span>
             <span className="contact-link">P.O. Box 56, Milford, NH 03055-0056</span>
           </div>
-          <p className="contact-note">Kerri typically responds within 1–2 business days.</p>
+          <p className="contact-note">Kerri usually writes back within 1–2 business days.</p>
         </div>
       </section>
     </div>

@@ -40,37 +40,37 @@ const IDEA_IMAGES: Record<string, string> = {
 const THEMES = [
   {
     title: 'Fall & Halloween',
-    description: 'Spooky counting, patterning, and fine motor works perfect for October shelves.',
+    description: 'Counting, patterning, and fine motor works for your October shelf.',
     image: fallImg,
     shopLink: '/shop/season/fall',
   },
   {
     title: "Valentine's Day",
-    description: 'Sweet phonics and word building works to celebrate February in the classroom.',
+    description: 'Phonics and word building works for February.',
     image: valentinesImg,
     shopLink: '/shop?theme=valentines',
   },
   {
     title: 'Spring',
-    description: 'Fresh flower matching, language works, and crafts to welcome the new season.',
+    description: 'Flower matching, language works, and crafts for spring.',
     image: springImg,
     shopLink: '/shop/season/spring',
   },
   {
     title: 'Winter',
-    description: 'Cosy sequencing, storytelling, and hands-on works for the winter months.',
+    description: 'Sequencing, storytelling, and hands-on works for the winter months.',
     image: winterImg,
     shopLink: '/shop/season/winter',
   },
   {
     title: "St. Patrick's Day",
-    description: 'Lucky maths and fun seasonal worksheets to bring a little green to your shelf.',
+    description: 'Math works and seasonal worksheets for March.',
     image: stPatricksImg,
     shopLink: '/shop?theme=st-patricks',
   },
   {
     title: 'Easy Crafts',
-    description: 'Simple, mess-friendly crafts kiddos love — no fancy supplies required.',
+    description: 'Simple crafts that are OK to get messy. No special supplies needed.',
     image: craftsImg,
     shopLink: '/shop',
   },
@@ -81,20 +81,20 @@ function Ideas() {
     <div>
       <Helmet>
         <title>Work Ideas &amp; Montessori Activity Guides | The Messy Table</title>
-        <meta name="description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf — nomenclature, CVC words, math, and art." />
+        <meta name="description" content="Free Montessori activity guides and seasonal work ideas from Kerri's classroom: nomenclature, CVC words, math, and art." />
         <link rel="canonical" href="https://themessytable.org/ideas" />
         <meta property="og:title" content="Work Ideas & Montessori Activity Guides | The Messy Table" />
-        <meta property="og:description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf — nomenclature, CVC words, math, and art." />
+        <meta property="og:description" content="Free Montessori activity guides and seasonal work ideas from Kerri's classroom: nomenclature, CVC words, math, and art." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/ideas" />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Work Ideas & Montessori Activity Guides | The Messy Table" />
-        <meta name="twitter:description" content="Free Montessori activity guides, seasonal work ideas, and classroom inspiration from Kerri's shelf." />
+        <meta name="twitter:description" content="Free Montessori activity guides and seasonal work ideas from Kerri's classroom." />
       </Helmet>
       <section className="page-hero">
         <h2>Work Ideas</h2>
-        <p>Seasonal themes and work inspiration from Kerri's classroom.</p>
+        <p>Seasonal themes and work ideas from Kerri's classroom.</p>
       </section>
 
       <section className="products">
@@ -115,7 +115,7 @@ function Ideas() {
 
       <section className="products">
         <h2 className="section-title">Guides & Activities</h2>
-        <p className="section-description">Step-by-step activity guides, crafts, and classroom ideas from Kerri.</p>
+        <p className="section-description">Step-by-step activity guides, crafts, and classroom ideas.</p>
         <div className="ideas-list">
           {IDEAS.map((idea) => (
             <Link to={`/ideas/${idea.slug}`} key={idea.slug} className="idea-list-card">
