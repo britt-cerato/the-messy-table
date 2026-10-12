@@ -25,6 +25,7 @@ const STATIC_ROUTES = [
   { path: '/faq', changefreq: 'monthly', priority: '0.5' },
   { path: '/for-teachers', changefreq: 'monthly', priority: '0.7' },
   { path: '/for-homeschool', changefreq: 'monthly', priority: '0.7' },
+  { path: '/monthly-mess', changefreq: 'monthly', priority: '0.7' },
 ]
 
 // Products import image files, which plain Node can't load — read the source
@@ -51,7 +52,14 @@ const ideaRoutes = [...ideasText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) =>
   priority: '0.8',
 }))
 
-const ALL_ROUTES = [...STATIC_ROUTES, ...seasonRoutes, ...productRoutes, ...ideaRoutes]
+const messText = fs.readFileSync(path.join(__dirname, 'src/data/monthlyMess.ts'), 'utf8')
+const messRoutes = [...messText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) => ({
+  path: `/monthly-mess/${m[1]}`,
+  changefreq: 'monthly',
+  priority: '0.7',
+}))
+
+const ALL_ROUTES = [...STATIC_ROUTES, ...seasonRoutes, ...productRoutes, ...ideaRoutes, ...messRoutes]
 
 const urlEntries = ALL_ROUTES.map(
   ({ path: routePath, changefreq, priority }) => `  <url>

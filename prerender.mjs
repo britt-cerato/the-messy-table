@@ -30,6 +30,7 @@ const STATIC_ROUTES = [
   '/ideas',
   '/for-teachers',
   '/for-homeschool',
+  '/monthly-mess',
   // Season pages — keep in sync with SEASONS in src/data/products.ts
   '/shop/season/fall',
   '/shop/season/winter',
@@ -61,7 +62,11 @@ if (ideasModule) {
   ideaRoutes = slugMatches.map((m) => `/ideas/${m[1]}`)
 }
 
-const ALL_ROUTES = [...STATIC_ROUTES, ...productRoutes, ...ideaRoutes]
+// Monthly Mess issues
+const messText = fs.readFileSync(path.join(__dirname, 'src/data/monthlyMess.ts'), 'utf8')
+const messRoutes = [...messText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) => `/monthly-mess/${m[1]}`)
+
+const ALL_ROUTES = [...STATIC_ROUTES, ...productRoutes, ...ideaRoutes, ...messRoutes]
 
 console.log(`\n[prerender] Will pre-render ${ALL_ROUTES.length} routes`)
 console.log('[prerender] Routes:', ALL_ROUTES.join(', '), '\n')

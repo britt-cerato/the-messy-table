@@ -1060,6 +1060,7 @@ body {
   flex-shrink: 0;
 }
 
+a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 .footer-newsletter-btn:hover { background-color: #e896ab; }
 .footer-newsletter-subscribed { font-family: 'DM Sans', sans-serif; font-size: 14px; color: var(--mint); }
 
@@ -1150,6 +1151,7 @@ body {
 
 .page-hero::after { top: 100%; background-color: var(--cream-dark); }
 
+.page-hero h1,
 .page-hero h2 {
   font-family: 'Playfair Display', serif;
   font-size: 40px;

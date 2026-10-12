@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Home from './Pages/Home'
 import Shop, { SeasonShop } from './Pages/Shop'
 import About from './Pages/About'
@@ -10,6 +10,7 @@ import FAQ from './Pages/FAQ'
 import Contact from './Pages/Contact'
 import ForTeachers from './Pages/ForTeachers'
 import ForHomeschool from './Pages/ForHomeschool'
+import { MonthlyMessList, MonthlyMessIssue } from './Pages/MonthlyMess'
 import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
 
@@ -17,34 +18,6 @@ function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return null
-}
-
-function NewsletterForm() {
-  const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (email.trim()) setSubscribed(true)
-  }
-
-  if (subscribed) {
-    return <p className="footer-newsletter-subscribed">Thanks for signing up. Watch your inbox. 🎉</p>
-  }
-
-  return (
-    <form className="footer-newsletter-form" onSubmit={handleSubmit}>
-      <input
-        className="footer-newsletter-input"
-        type="email"
-        placeholder="your@email.com"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        required
-      />
-      <button className="footer-newsletter-btn" type="submit">Join</button>
-    </form>
-  )
 }
 
 function App() {
@@ -91,12 +64,14 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/for-teachers" element={<ForTeachers />} />
           <Route path="/for-homeschool" element={<ForHomeschool />} />
+          <Route path="/monthly-mess" element={<MonthlyMessList />} />
+          <Route path="/monthly-mess/:slug" element={<MonthlyMessIssue />} />
         </Routes>
         <footer className="footer">
           <div className="footer-newsletter">
             <h4>The Monthly Mess</h4>
-            <p>One email a month with seasonal work ideas, a free printable, and first dibs on new kits.</p>
-            <NewsletterForm />
+            <p>Once a month, Kerri shares what's on her shelf, seasonal work ideas and what's new in the shop.</p>
+            <Link to="/monthly-mess" className="footer-newsletter-btn">Read this month's →</Link>
           </div>
           <div className="footer-inner">
             <div className="footer-brand">
@@ -107,6 +82,7 @@ function App() {
             <ul className="footer-links">
               <li><Link to="/shop">Shop</Link></li>
               <li><Link to="/ideas">Work Ideas</Link></li>
+              <li><Link to="/monthly-mess">The Monthly Mess</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/contact">Contact</Link></li>
