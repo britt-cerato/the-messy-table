@@ -121,6 +121,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://themessytable.org/shop/bales-of-vowels</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://themessytable.org/shop/write-the-room-summer</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
