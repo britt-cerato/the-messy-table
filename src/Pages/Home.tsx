@@ -32,7 +32,7 @@ const HOME_FAQS = [
   },
   {
     q: 'What ages are these materials for?',
-    a: 'Most works are for Pre-K through Grade 1 (ages 3–7). Some work for older kids too. Each listing has the age range.',
+    a: 'Most works are for Pre-K through Grade 2 (ages 3–8). Some work for older kids too. Each listing has the age range.',
   },
   {
     q: 'How do I get my digital download after purchase?',
