@@ -103,7 +103,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgAnimalNomenclatureFrog,
     gallery: [imgAnimalNomenclatureLadybug, imgAnimalNomenclatureHorse],
-    description: 'Three-part nomenclature card sets for learning the parts of a frog and ladybug. Includes picture cards, label cards, and control cards — perfect for independent Montessori work.',
+    description: "Three-part cards for learning the parts of a frog and a ladybug. Comes with picture cards, label cards and control cards.",
     details: ['Two sets: Frog & Ladybug', 'Three-part cards per set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
   },
   {
@@ -113,7 +113,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgPenguinNomenclature,
     gallery: [img7121, img7119],
-    description: 'Three-part nomenclature cards for learning the parts of a penguin — head, bill, tail, webbed feet and more. A favourite for winter and animal units.',
+    description: "Three-part cards for learning the parts of a penguin, like the head, bill, tail and webbed feet. Great for a winter or animal unit.",
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2', 'Great for science shelves'],
   },
   {
@@ -123,7 +123,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgEnglishBridleNomenclature,
     gallery: [img7126],
-    description: 'Three-part nomenclature cards for learning the parts of an English bridle — noseband, browband, cheekpieces, throatlatch and more. Perfect for horse lovers.',
+    description: "Three-part cards for learning the parts of an English bridle: noseband, browband, cheekpieces, throatlatch and more. For your horse lovers.",
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Grade 1 and up', 'Great for equestrian or animal units'],
   },
   {
@@ -133,7 +133,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgAnimalNomenclatureHorse,
     gallery: [],
-    description: 'Three-part nomenclature cards for learning the parts of a horse — a classic Montessori work for animal lovers. Includes picture cards, label cards, and control cards.',
+    description: "Three-part cards for learning the parts of a horse. Comes with picture cards, label cards and control cards.",
     details: ['Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2', 'Great for science and animal units'],
   },
   {
@@ -143,7 +143,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: img7075,
     gallery: [img7076, img7077],
-    description: 'Three-part matching cards featuring Van Gogh masterpieces — Starry Night, Irises, Almond Blossom and more. A beautiful way to introduce children to fine art.',
+    description: "Three-part cards with Van Gogh paintings, including Starry Night, Irises and Almond Blossom. An easy way to bring some art into the classroom.",
     details: ['Three-part card set', '12 paintings included', 'Printed & hand-assembled', 'Suits Pre-K to Grade 3'],
   },
   {
@@ -153,7 +153,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgHumanDevelopmentCards,
     gallery: [img7078, img7079],
-    description: 'Three-part nomenclature cards tracing human development from fertilisation to 40 weeks. A thoughtful, accurate resource for science and life cycles.',
+    description: "Three-part cards that follow a baby's development from fertilization to 40 weeks. Good for science and life cycle units.",
     details: ['Three-part card set', 'Covers zygote through 40-week fetus', 'Printed & hand-assembled', 'Suits Grade 1 and up'],
   },
 
@@ -164,7 +164,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgAnimalParentBabyMatching,
     gallery: [imgAnimalParentBabyMatching2, imgAnimalParentBabyMatching3],
-    description: 'Three-part matching cards pairing animals with their young — from farm favourites like Horse & Foal and Pig & Piglet to zoo animals like Lion & Whelp and Elephant & Calves. Children learn both animal names and their baby names.',
+    description: "Three-part cards that match animal parents with their babies. Farm animals like Horse & Foal and Pig & Piglet, and zoo animals like Lion & Whelp and Elephant & Calves. Kids learn the name of each animal and its baby.",
     details: ['16 animal pairs', 'Farm & zoo animals', 'Printed & hand-assembled', 'Suits Pre-K to Grade 2'],
   },
   {
@@ -174,7 +174,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgColorMatching,
     gallery: [imgColorMatching2, imgColorMatching3],
-    description: 'Bright, simple color matching cards pairing a solid color tile with a real-world object in that color — red apple, orange, yellow banana, green kiwi, blue blueberries, purple grapes. A perfect early learning work.',
+    description: "Match each color card to a real object in that color: red apple, orange, yellow banana, green kiwi, blue blueberries and purple grapes. A good first matching work.",
     details: ['6 colors included', 'Real photo objects', 'Printed & hand-assembled', 'Suits Toddler to Pre-K'],
   },
   {
@@ -184,7 +184,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgDinosaurThreePartMatching,
     gallery: [imgDinosaurThreePartMatching2, imgDinosaurThreePartMatching3],
-    description: 'Three-part matching cards featuring 15 dinosaurs — T-Rex, Triceratops, Velociraptor, Stegosaurus, Spinosaurus and more. A dinosaur lover\'s dream for Montessori shelves.',
+    description: "Three-part cards with 15 dinosaurs, including T-Rex, Triceratops, Velociraptor, Stegosaurus and Spinosaurus. For your dinosaur lovers.",
     details: ['15 dinosaurs included', 'Three-part card set', 'Printed & hand-assembled', 'Suits Pre-K to Grade 3'],
   },
 
@@ -197,7 +197,7 @@ export const PRODUCTS: Product[] = [
     themes: ['valentines'],
     image: img7123,
     gallery: [],
-    description: "CVC word building cards with a Valentine's heart theme. Children build and read short vowel words — a sweet way to practise phonics in February.",
+    description: "Valentine's heart CVC cards. Kids build and read short vowel words.",
     details: ['30+ CVC word cards', 'Short vowel families', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -208,7 +208,7 @@ export const PRODUCTS: Product[] = [
     themes: ['spring'],
     image: img7113_1,
     gallery: [img7113, img7114, img7111],
-    description: 'Match card to object with beautiful spring flowers — daffodil, sunflower, tulip, rose, orchid, lotus, hibiscus and more. Pairs perfectly with real flower objects.',
+    description: "Match cards to objects with spring flowers: daffodil, sunflower, tulip, rose, orchid, lotus, hibiscus and more. Works well with real flowers too.",
     details: ['8 flower matching cards', 'Includes picture & label cards', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
@@ -241,7 +241,7 @@ export const PRODUCTS: Product[] = [
     themes: ['summer'],
     image: img7092,
     gallery: [],
-    description: 'Place picture cards around the room and have children find and write each word on their recording sheet. A summer-themed favourite that gets kiddos moving!',
+    description: "Put the picture cards up around the room. Kids find each one and write the word on their recording sheet. A summer favorite that gets them up and moving.",
     details: ['14 picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   // ── Math ──────────────────────────────────────────────────────
@@ -252,7 +252,7 @@ export const PRODUCTS: Product[] = [
     categories: ['math'],
     image: img7130,
     gallery: [],
-    description: 'Count the tally marks on each bird card and clip the correct number. A fun, hands-on way to practise tally marks and counting.',
+    description: "Count the tally marks on each bird card and clip the right number.",
     details: ['15 clip cards', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 2'],
   },
   {
@@ -262,8 +262,8 @@ export const PRODUCTS: Product[] = [
     categories: ['math'],
     image: img7164,
     gallery: [],
-    description: 'A Montessori-inspired colour-coded bead stair for learning numbers 1–10. Each number has its own colour, helping children visualise quantity and build number sense.',
-    details: ['Numbers 1–10', 'Colour-coded by number', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
+    description: "A Montessori bead stair for numbers 1–10. Each number has its own color, so kids can see how much each number is.",
+    details: ['Numbers 1–10', 'Color-coded by number', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
     id: 'ten-frames-clip-cards',
@@ -272,7 +272,7 @@ export const PRODUCTS: Product[] = [
     categories: ['math'],
     image: img7129,
     gallery: [],
-    description: 'Count the dots on the ten frame and clip the correct number. Rainbow-themed cards covering numbers 11–20 — perfect for building number sense beyond 10.',
+    description: "Count the dots on the ten frame and clip the right number. Rainbow cards for numbers 11–20.",
     details: ['Numbers 11–20', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -283,7 +283,7 @@ export const PRODUCTS: Product[] = [
     themes: ['valentines'],
     image: imgValentinesMasonJar,
     gallery: [],
-    description: "Addition equation cards with an adorable Valentine's mason jar theme. Children solve the equation and write the sum in the answer box — a sweet way to practise addition facts in February.",
+    description: "Valentine's mason jar addition cards. Kids solve the problem and write the answer in the box.",
     details: ['Addition facts included', 'Answer box on each card', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -294,7 +294,7 @@ export const PRODUCTS: Product[] = [
     themes: ['fall'],
     image: img7088,
     gallery: [],
-    description: 'Count the fall objects and clip the correct number. Autumn-themed clip cards with pumpkins, apples, leaves and more — a cosy seasonal math work.',
+    description: "Count the fall objects and clip the right number. Clip cards with pumpkins, apples, leaves and more.",
     details: ['Numbers 1–5', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
 
@@ -307,7 +307,7 @@ export const PRODUCTS: Product[] = [
     themes: ['fall'],
     image: img7084,
     gallery: [],
-    description: 'Sort spooky Halloween objects onto numbered pumpkin cards 1–10. Spiders, bats, skulls, ghosts and more make counting irresistibly fun in October.',
+    description: "Sort Halloween objects onto pumpkin cards numbered 1–10. Spiders, bats, skulls, ghosts and more.",
     details: ['Pumpkin number cards 1–10', 'Small counting objects needed (e.g. pom poms, buttons, gems)', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -318,7 +318,7 @@ export const PRODUCTS: Product[] = [
     themes: ['fall'],
     image: img7090,
     gallery: [],
-    description: 'Complete the pattern using spooky Halloween objects — ghosts, skulls, spiders and pumpkins. A hands-on patterning work that kiddos beg to do in October.',
+    description: "Finish the pattern with Halloween objects like ghosts, skulls, spiders and pumpkins.",
     details: ['Pattern strips included', 'Objects not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -329,8 +329,8 @@ export const PRODUCTS: Product[] = [
     themes: ['fall'],
     image: img7087,
     gallery: [img7086],
-    description: 'A practical life buttoning work with a Thanksgiving twist — a hand-sewn felt turkey with colourful feathers to button on and off. Builds fine motor skills while celebrating the season.',
-    details: ['Hand-sewn felt turkey', 'Colourful removable feathers', 'Develops fine motor skills', 'Suits Pre-K to Kindergarten'],
+    description: "A hand-sewn felt turkey with colorful feathers that button on and off. Good practice for little fingers.",
+    details: ['Hand-sewn felt turkey', 'Colorful removable feathers', 'Fine motor practice', 'Suits Pre-K to Kindergarten'],
   },
   {
     id: 'fall-write-the-room',
@@ -340,7 +340,7 @@ export const PRODUCTS: Product[] = [
     themes: ['fall'],
     image: imgFallWriteTheRoom,
     gallery: [imgFallWriteTheRoomSheet],
-    description: 'Place the fall picture cards around the room and have children walk, find, and write each word on their recording sheet. Includes 12 autumn vocabulary words — turkey, scarecrow, pumpkin, acorn, cornucopia and more.',
+    description: "Put the fall picture cards up around the room. Kids walk around, find each one and write the word on their recording sheet. 12 fall words, like turkey, scarecrow, pumpkin, acorn and cornucopia.",
     details: ['12 picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
@@ -362,7 +362,7 @@ export const PRODUCTS: Product[] = [
     themes: ['st-patricks'],
     image: imgRainbowLetterMatching,
     gallery: [],
-    description: "A rainbow-themed letter matching work where children clip clothespins labelled with letters around the arc of a colourful rainbow. Perfect for St. Patrick's Day or any time you want to make alphabet practice irresistible.",
+    description: "Clip the letter clothespins onto the matching letters around the rainbow. Good for St. Patrick's Day or any time of year.",
     details: ['All 26 letters included', 'Clothespins not included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -373,8 +373,8 @@ export const PRODUCTS: Product[] = [
     themes: ['st-patricks'],
     image: img7094,
     gallery: [imgCloverSkipCountingPreview],
-    description: "A St. Patrick's Day maths worksheet pack — Shamrock Math, Rainbow Addition, St. Patrick's Day Graphing, Clover Skip Counting and more.",
-    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    description: "St. Patrick's Day math worksheets, including Shamrock Math, Rainbow Addition and Clover Skip Counting by 10s.",
+    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF, instant download', 'Suits Kindergarten to Grade 1'],
     includes: ['Clover Skip Counting by 10s', 'Rainbow Addition', 'Shamrock Math', 'Color 5+2 & Color 3+6'],
   },
   {
@@ -385,7 +385,7 @@ export const PRODUCTS: Product[] = [
     themes: ['winter'],
     image: imgDressUpSnowman,
     gallery: [imgDressUpSnowman2],
-    description: 'Mix and match hats, scarves, and buttons to dress up a snowman! Children use the reference card to recreate the outfit or create their own. A fun and imaginative winter work for Pre-K and Kindergarten.',
+    description: "Dress up a snowman with hats, scarves and buttons. Kids copy the outfit on a reference card or make up their own.",
     details: ['Snowman mat included', 'Multiple outfit cards', 'Hats, scarves & button pieces', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -396,7 +396,7 @@ export const PRODUCTS: Product[] = [
     themes: ['winter'],
     image: imgBuildASnowman,
     gallery: [imgBuildASnowman2],
-    description: 'Match picture cards to the correct beginning letter on the snowman board. Children sort all 26 letters using picture oval cards — a hands-on alphabet work with a cosy winter twist.',
+    description: "Match picture cards to their beginning letter on the snowman board. Kids sort pictures for all 26 letters.",
     details: ['All 26 letters included', 'Picture sorting oval cards', 'Snowman sorting board', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -407,7 +407,7 @@ export const PRODUCTS: Product[] = [
     themes: ['winter'],
     image: img7139,
     gallery: [],
-    description: "A sequencing and retelling work based on Jan Brett's \"The Mitten.\" Includes hand-cut animal characters and a felt mitten for hands-on storytelling.",
+    description: "Sequence and retell Jan Brett's \"The Mitten\" with hand-cut animals and a felt mitten.",
     details: ['Hand-cut animal characters', 'Felt mitten included', 'Based on Jan Brett\'s "The Mitten"', 'Suits Pre-K to Grade 1'],
   },
   {
@@ -418,7 +418,7 @@ export const PRODUCTS: Product[] = [
     themes: ['spring'],
     image: imgWriteTheRoomSpring,
     gallery: [],
-    description: 'A spring-themed write the room activity! Place picture cards around the classroom, then children walk around, find each card, and write the word on their recording sheet. A fun way to get kiddos moving and practising spelling at the same time.',
+    description: "Put the spring picture cards up around the room. Kids find each card and write the word on their recording sheet.",
     details: ['14 spring picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -428,7 +428,7 @@ export const PRODUCTS: Product[] = [
     categories: ['language'],
     image: imgWriteTheRoomRead,
     gallery: [],
-    description: 'Children find each picture card around the room, read the word, and draw a matching picture in the box on their recording sheet. A lovely activity for building reading confidence and visual comprehension.',
+    description: "Kids find each picture card around the room, read the word and draw a picture of it in the box on their recording sheet.",
     details: ['12 picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -439,7 +439,7 @@ export const PRODUCTS: Product[] = [
     themes: ['winter'],
     image: imgWinterRhymingCards,
     gallery: [imgWinterRhymingCards2, imgWinterRhymingCards3],
-    description: 'Colourful mitten-shaped rhyming cards — children match each word pair by sound, practising phonemic awareness in a cozy winter theme. Includes 13 rhyming pairs across CVC word families.',
+    description: "Mitten rhyming cards. Kids match the words that rhyme. 13 rhyming pairs from CVC word families.",
     details: ['13 rhyming pairs included', 'CVC word families (-at, -ag, -ap, -op, -en, -ed, -ig, -ug, -un, -ub, -eg, -od)', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -450,7 +450,7 @@ export const PRODUCTS: Product[] = [
     themes: ['winter'],
     image: imgChristmasPuzzleMatching,
     gallery: [],
-    description: 'Match the puzzle pairs in this festive Christmas activity! Children connect the two halves of each chevron-shaped card to make a match — Santa, reindeer, snowman, sleigh, Christmas tree, gingerbread man and more.',
+    description: "Christmas puzzle cards. Kids put the two halves of each card together: Santa, reindeer, snowman, sleigh, Christmas tree, gingerbread man and more.",
     details: ['12 matching pairs included', 'Chevron puzzle-edge cards for self-checking', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   {
@@ -461,7 +461,7 @@ export const PRODUCTS: Product[] = [
     themes: ['winter'],
     image: imgWinterCountingPuzzle,
     gallery: [],
-    description: 'Cut the strips and sort them in counting order! Three winter-themed puzzle pages — snowflakes (0–6), winter clothes (7–11), and a polar bear with snowballs (12–16). A hands-on way to practise counting and number sequencing.',
+    description: "Cut the strips and put them in counting order. Three winter puzzle pages: snowflakes (0–6), winter clothes (7–11) and a polar bear with snowballs (12–16).",
     details: ['3 puzzle pages included', 'Counts 0 through 16', 'Cut-and-sort activity', 'Printed & hand-assembled', 'Suits Pre-K to Kindergarten'],
   },
   // ── Classroom Setup ───────────────────────────────────────────
@@ -472,7 +472,7 @@ export const PRODUCTS: Product[] = [
     categories: ['classroom-setup'],
     image: imgCubbyLabels,
     gallery: [imgCubbyLabels2],
-    description: 'Personalised cubby labels made to order with each child\'s name and a cute illustrated plant. A beautiful way to make every student feel at home in your classroom.',
+    description: "Cubby labels made to order with each child's name and a plant picture.",
     details: ['Custom names per label', 'Choice of plant illustration', 'Printed & hand-cut', 'Contact Kerri to place a custom order'],
   },
   {
@@ -482,8 +482,8 @@ export const PRODUCTS: Product[] = [
     categories: ['classroom-setup'],
     image: imgNameTags,
     gallery: [imgNameTags2],
-    description: 'Personalised desk name tags made to order — featuring each child\'s name, a watercolour illustration, the full alphabet, and a number line. A functional and beautiful addition to any classroom.',
-    details: ['Custom names per tag', 'Alphabet & number line included', 'Watercolour illustration', 'Contact Kerri to place a custom order'],
+    description: "Desk name tags made to order with each child's name, a watercolor picture, the alphabet and a number line.",
+    details: ['Custom names per tag', 'Alphabet & number line included', 'Watercolor illustration', 'Contact Kerri to place a custom order'],
   },
 
   {
@@ -494,7 +494,7 @@ export const PRODUCTS: Product[] = [
     themes: ['spring'],
     image: imgEarthDayWriteTheRoom,
     gallery: [],
-    description: 'An Earth Day write the room activity! Children walk around the room finding picture cards, then write the matching word on their recording sheet. A great way to build vocabulary while celebrating our planet.',
+    description: "An Earth Day write the room. Kids walk around the room to find the picture cards and write each word on their recording sheet.",
     details: ['Earth Day themed picture cards', 'Recording sheet included', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -504,7 +504,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgAnimalTracksBooklet,
     gallery: [],
-    description: 'A printed and bound "Footprints of Forest Animals" booklet — a beautiful non-fiction reader that introduces children to the tracks left by woodland creatures. Great for science shelves and nature study.',
+    description: "A printed, bound \"Footprints of Forest Animals\" booklet. A nonfiction reader about the tracks forest animals leave behind.",
     details: ['Printed & ring-bound', 'Forest animals included', 'Suits Pre-K to Grade 1', 'Great paired with the Animal Tracks Matching Work'],
   },
   {
@@ -514,7 +514,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgAnimalTracksMatching,
     gallery: [],
-    description: 'Children match each animal photo card to its corresponding track card — a hands-on science work that builds observation skills and nature vocabulary. Includes forest animals like moose, deer, raccoon, and more.',
+    description: "Match each animal photo card to its track card. Forest animals like moose, deer, raccoon and more.",
     details: ['Animal photo + track card pairs', 'Self-correcting design', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
@@ -524,7 +524,7 @@ export const PRODUCTS: Product[] = [
     categories: ['nomenclature'],
     image: imgVanGoghMatching,
     gallery: [],
-    description: 'A beautiful art matching work featuring the paintings of Vincent Van Gogh. Children match identical scallop-edged cards — a quiet, focused activity that builds visual discrimination and introduces great works of art.',
+    description: "Match the Van Gogh painting cards. Each scallop-edged card has a twin to find.",
     details: ['Scallop-edged art cards', 'Features Van Gogh paintings', 'Printed & hand-assembled', 'Suits Pre-K to Grade 1'],
   },
   {
@@ -534,8 +534,8 @@ export const PRODUCTS: Product[] = [
     categories: ['printable'],
     image: imgFlowerSortingPrintable,
     gallery: [],
-    description: 'Sort flower parts into stems, petals, and leaves with this hands-on printable work. Includes a sorting mat and a full set of cut-and-sort picture cards — a beautiful way to explore plant science.',
-    details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
+    description: "Sort flower pictures into stems, petals and leaves. Comes with a sorting mat and cut-out picture cards.",
+    details: ['Sorting mat with 3 categories (stems, petals, leaves)', 'Cut-out sorting cards included', 'Printable PDF, instant download', 'Suits Pre-K to Kindergarten'],
   },
   {
     id: 'spring-worksheets',
@@ -551,7 +551,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'sight-word-practice',
-    name: 'Sight Word Practice — Levels 1–6',
+    name: 'Sight Word Practice (Levels 1–6)',
     price: '$5.00',
     categories: ['printable'],
     image: imgSightWordPractice,
@@ -567,7 +567,7 @@ export const PRODUCTS: Product[] = [
     categories: ['language'],
     image: imgPlantingDiagraphs,
     gallery: [imgPlantingDiagraphsCards],
-    description: 'Practice ending diagraphs with this planting-themed set! Includes a recording worksheet and a matching set of terracotta pot picture cards. Children say each word and colour (or sort) the correct ending sound — ch, sh, or th.',
+    description: "A worksheet and a set of flower pot picture cards for ending sounds. Kids say each word and color or sort the ending sound: ch, sh or th.",
     details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -577,27 +577,27 @@ export const PRODUCTS: Product[] = [
     categories: ['language'],
     image: imgWordGarden,
     gallery: [imgGrowingSounds],
-    description: 'Say each word slowly and watch your words grow! This set includes the Word Garden recording worksheet (20 numbered sound boxes) plus a full set of colourful flower pot picture cards for beginning & ending sound sorting.',
+    description: "Say each word slowly and write the sounds in the boxes. Comes with the Word Garden worksheet (20 numbered sound boxes) and flower pot picture cards for sorting beginning and ending sounds.",
     details: ['Word Garden worksheet included', 'Flower pot picture sorting cards (B/E sounds)', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
 ]
 
 export const CATEGORIES: { id: Category; label: string; sectionTitle: string; description: string }[] = [
-  { id: 'nomenclature', label: 'Nomenclature', sectionTitle: 'Nomenclature', description: 'Picture cards, label cards, and control cards — children match the word to the image and check their own work. Great for science, art, and vocabulary.' },
-  { id: 'language', label: 'Language', sectionTitle: 'Language Works', description: 'Hands-on phonics, word building, and reading activities for Pre-K through Grade 1.' },
-  { id: 'math', label: 'Math', sectionTitle: 'Math Works', description: 'Concrete math activities that build number sense, counting, and early arithmetic skills.' },
-  { id: 'seasonal', label: 'Seasonal', sectionTitle: 'Seasonal Works', description: 'Holiday and seasonal activities that keep the shelf fresh and kiddos excited all year long.' },
-  { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags, and classroom organization materials to help your space feel warm, welcoming, and ready for learning.' },
-  { id: 'printable', label: 'Printable Downloads', sectionTitle: 'Printable Downloads', description: 'Instant PDF downloads you print at home or at a print shop — ready to use right away. No waiting for shipping!' },
+  { id: 'nomenclature', label: 'Nomenclature', sectionTitle: 'Nomenclature', description: 'Picture cards, label cards and control cards. Kids match the word to the picture and check their own work.' },
+  { id: 'language', label: 'Language', sectionTitle: 'Language Works', description: 'Phonics, word building and reading works for Pre-K through Grade 1.' },
+  { id: 'math', label: 'Math', sectionTitle: 'Math Works', description: 'Hands-on math for counting, numbers and early adding.' },
+  { id: 'seasonal', label: 'Seasonal', sectionTitle: 'Seasonal Works', description: 'Holiday and seasonal works to change out on your shelves all year.' },
+  { id: 'classroom-setup', label: 'Classroom Setup', sectionTitle: 'Classroom Setup', description: 'Cubby labels, name tags and other things to get your classroom set up.' },
+  { id: 'printable', label: 'Printable Downloads', sectionTitle: 'Printable Downloads', description: 'PDFs you print at home or at a print shop. Nothing to wait for in the mail.' },
 ]
 
 // Shop season pages. Seasons are listed in calendar order starting with fall;
 // months are 0-based (January = 0) and decide which season is "in season now".
 export const SEASONS: { id: Season; label: string; emoji: string; months: number[]; description: string }[] = [
-  { id: 'fall', label: 'Fall', emoji: '🍂', months: [8, 9, 10], description: 'Halloween, Thanksgiving, and cosy autumn works for September through November.' },
-  { id: 'winter', label: 'Winter', emoji: '❄️', months: [11, 0, 1], description: "Snowmen, mittens, Christmas, and Valentine's Day works for December through February." },
-  { id: 'spring', label: 'Spring', emoji: '🌷', months: [2, 3, 4], description: "Flowers, Earth Day, and St. Patrick's Day works for March through May." },
-  { id: 'summer', label: 'Summer', emoji: '☀️', months: [5, 6, 7], description: 'Sunny, get-up-and-move works for June through August.' },
+  { id: 'fall', label: 'Fall', emoji: '🍂', months: [8, 9, 10], description: 'Halloween, Thanksgiving and fall works for September through November.' },
+  { id: 'winter', label: 'Winter', emoji: '❄️', months: [11, 0, 1], description: "Snowmen, mittens, Christmas and Valentine's Day works for December through February." },
+  { id: 'spring', label: 'Spring', emoji: '🌷', months: [2, 3, 4], description: "Flowers, Earth Day and St. Patrick's Day works for March through May." },
+  { id: 'summer', label: 'Summer', emoji: '☀️', months: [5, 6, 7], description: 'Summer works for June through August.' },
 ]
 
 // Holidays fold into the season they fall in, so each season page shows
