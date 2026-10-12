@@ -67,6 +67,7 @@ import imgShortOrLongVowelsPreview from '../assets/products/short-or-long-vowels
 import imgCloverSkipCountingPreview from '../assets/products/clover-skip-counting-preview.jpg'
 import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
+import imgSightWordPracticeLevelsPreview from '../assets/products/sight-word-practice-levels-preview.jpg'
 import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
 import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
@@ -550,14 +551,14 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 'sight-word-practice',
-    name: 'Sight Word Practice — Level 1: My First Words',
+    name: 'Sight Word Practice — Levels 1–6',
     price: '$5.00',
     categories: ['printable'],
     image: imgSightWordPractice,
-    gallery: [],
-    description: 'Read it, write it, build it! Children read each sight word, write it in the middle column, then build it with letters — a simple, hands-on routine for learning the first ten words every early reader needs.',
-    details: ['10 first sight words: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Use letter tiles, magnetic letters or stamps to build (letters not included — tiles shown in photo)', 'Tip: laminate it or use a sheet protector for dry-erase practice', 'Printable PDF — instant download', 'Suits Pre-K to Kindergarten'],
-    includes: ['a', 'and', 'I', 'it', 'in', 'is', 'me', 'my', 'the', 'to'],
+    gallery: [imgSightWordPracticeLevelsPreview],
+    description: 'Read it, write it, build it! Children read each sight word, write it in the middle column, then build it with letters — a simple, hands-on routine for learning sight words. Six levels of ten words each take early readers from their very first words all the way up to "Rockstars".',
+    details: ['6 levels · 60 sight words in all', 'Level 1: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Use letter tiles, magnetic letters or stamps to build (letters not included — tiles shown in photo)', 'Tip: laminate it or use a sheet protector for dry-erase practice', 'Printable PDF — instant download', 'Suits Pre-K to Grade 1'],
+    includes: ['Level 1: My First Words', 'Level 2: Building Words', 'Level 3: Growing Readers', 'Level 4: New Adventures', 'Level 5: Superstar', 'Level 6: Rockstars'],
   },
   {
     id: 'planting-diagraphs',
