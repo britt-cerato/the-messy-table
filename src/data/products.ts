@@ -68,8 +68,8 @@ import imgCloverSkipCountingPreview from '../assets/products/clover-skip-countin
 import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
 import imgSightWordPracticeLevelsPreview from '../assets/products/sight-word-practice-levels-preview.jpg'
-import imgPlantingDiagraphs from '../assets/products/planting-diagraphs.jpg'
-import imgPlantingDiagraphsCards from '../assets/products/planting-diagraphs-cards.jpg'
+import imgPlantingDigraphs from '../assets/products/planting-digraphs.jpg'
+import imgPlantingDigraphsCards from '../assets/products/planting-digraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
 import imgWordGarden from '../assets/products/word-garden.png'
 import imgWinterCountingPuzzle from '../assets/products/winter-counting-puzzle.jpg'
@@ -561,13 +561,13 @@ export const PRODUCTS: Product[] = [
     includes: ['Level 1: My First Words', 'Level 2: Building Words', 'Level 3: Growing Readers', 'Level 4: New Adventures', 'Level 5: Superstar', 'Level 6: Rockstars'],
   },
   {
-    id: 'planting-diagraphs',
-    name: 'Planting Diagraphs Set',
+    id: 'planting-digraphs',
+    name: 'Planting Digraphs Set',
     price: '$10.00',
     categories: ['language'],
-    image: imgPlantingDiagraphs,
-    gallery: [imgPlantingDiagraphsCards],
-    description: "A worksheet and a set of flower pot picture cards for ending sounds. Kids say each word and color or sort the ending sound: ch, sh or th.",
+    image: imgPlantingDigraphs,
+    gallery: [imgPlantingDigraphsCards],
+    description: "A worksheet and a set of flower pot picture cards for ending digraphs. Kids say each word and color or sort the ending sound: ch, sh or th.",
     details: ['Worksheet + picture card set included', '12 pictures covering ch, sh, and th endings', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
