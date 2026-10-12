@@ -77,7 +77,7 @@ function FAQ() {
       </Helmet>
 
       <section className="page-hero">
-        <h2>Frequently Asked Questions</h2>
+        <h1>Frequently Asked Questions</h1>
         <p>Shipping, ages, custom orders, and returns.</p>
       </section>
 

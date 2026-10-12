@@ -159,7 +159,7 @@ function Home() {
         <img src={doodleCrayon}     alt="" aria-hidden="true" className="hero-glitter" style={{ bottom:'12%', left: '15%', width: '36px', opacity: 0.4,  transform: 'rotate(-20deg)' }} />
         <img src={doodleGlueStick}  alt="" aria-hidden="true" className="hero-glitter" style={{ bottom:'10%', right:'14%', width: '36px', opacity: 0.42, transform: 'rotate(15deg)' }} />
         <div className="hero-card">
-          <h2>Welcome to The Messy Table</h2>
+          <h1>Welcome to The Messy Table</h1>
           <p>Hands-on classroom works and easy craft ideas, made by a teacher. Some glitter involved.</p>
           <Link to="/shop" className="hero-button">Visit the Shop</Link>
         </div>

@@ -41,6 +41,11 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://themessytable.org/monthly-mess</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://themessytable.org/shop/season/fall</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -404,5 +409,10 @@
     <loc>https://themessytable.org/ideas/placemat-weaving</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://themessytable.org/monthly-mess/october-2026</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>

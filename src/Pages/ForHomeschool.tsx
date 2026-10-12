@@ -26,7 +26,7 @@ function ForHomeschool() {
       <section className="page-hero audience-hero audience-hero--homeschool">
         <div className="audience-hero-content">
           <p className="audience-hero-eyebrow">For Homeschool Families</p>
-          <h2>You don't need a classroom for Montessori. A table works fine.</h2>
+          <h1>You don't need a classroom for Montessori. A table works fine.</h1>
           <p>I'm Kerri, a Montessori educator. I think kids learn best with real materials at a real table, next to someone who loves them. I make things that work at home, with one child or four.</p>
         </div>
       </section>

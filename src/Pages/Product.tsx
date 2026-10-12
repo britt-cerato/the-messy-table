@@ -14,8 +14,9 @@ function Product() {
       <div className="product-not-found">
         <Helmet>
           <title>Product Not Found — The Messy Table</title>
+          <meta name="robots" content="noindex" />
         </Helmet>
-        <h2>Product not found</h2>
+        <h1>Product not found</h1>
         <Link to="/shop" className="back-link">← Back to Shop</Link>
       </div>
     )
@@ -24,14 +25,24 @@ function Product() {
   const allImages = [product.image, ...product.gallery]
   const pageUrl = `https://themessytable.org/shop/${product.id}`
   const ageDetail = product.details.find((d) => d.toLowerCase().includes('suits') || d.toLowerCase().includes('ages'))
-  const pageTitle = `${product.name} — Handmade Montessori ${product.categories[0].charAt(0).toUpperCase() + product.categories[0].slice(1).replace(/-/g, ' ')} Work | The Messy Table`
-  const pageDescription = `${product.description}${ageDetail ? ` ${ageDetail}.` : ''} Handmade Montessori-inspired material by Kerri, a Montessori educator in Southern NH.`
+  // Keep titles ≤60 and descriptions ≤160 characters so Google shows them in full
+  const longTitle = `${product.name} | Handmade Montessori | The Messy Table`
+  const pageTitle = longTitle.length <= 60 ? longTitle : `${product.name} | The Messy Table`
+  const baseDescription = `${product.description}${ageDetail ? ` ${ageDetail}.` : ''}`
+  const withMaker = `${baseDescription} Handmade by Kerri in New Hampshire.`
+  const pageDescription = withMaker.length <= 160
+    ? withMaker
+    : baseDescription.length <= 160
+      ? baseDescription
+      : `${baseDescription.slice(0, 157).replace(/\s+\S*$/, '')}…`
 
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: product.name,
     description: product.description,
+    image: allImages.map((img) => `https://themessytable.org${img}`),
+    url: pageUrl,
     brand: { '@type': 'Brand', name: 'The Messy Table' },
     additionalProperty: product.details.map((d) => ({
       '@type': 'PropertyValue',
@@ -42,7 +53,7 @@ function Product() {
       price: product.price.replace('$', ''),
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
-      url: `https://themessytable.org/products/${product.id}`,
+      url: pageUrl,
       seller: {
         '@type': 'Organization',
         name: 'The Messy Table',
@@ -109,7 +120,7 @@ function Product() {
         </div>
 
         <div className="product-page-info">
-          <h2>{product.name}</h2>
+          <h1>{product.name}</h1>
           <p className="product-page-price">{product.price}</p>
           <p className="product-page-description">{product.description}</p>
 

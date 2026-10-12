@@ -56,6 +56,7 @@ export function MonthlyMessIssue() {
       <div className="product-not-found">
         <Helmet>
           <title>Not Found | The Messy Table</title>
+          <meta name="robots" content="noindex" />
         </Helmet>
         <h2>We couldn't find that month</h2>
         <Link to="/monthly-mess" className="back-link">← Back to The Monthly Mess</Link>

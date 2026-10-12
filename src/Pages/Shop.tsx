@@ -128,7 +128,7 @@ export function SeasonShop() {
         <script type="application/ld+json">{JSON.stringify(schema)}</script>
       </Helmet>
       <section className="page-hero">
-        <h2>{season.emoji} {season.label}</h2>
+        <h1>{season.emoji} {season.label}</h1>
         <p>{season.description}</p>
       </section>
       <section className="products">
@@ -173,7 +173,7 @@ function Shop() {
           <meta property="og:site_name" content="The Messy Table" />
         </Helmet>
         <section className="page-hero">
-          <h2>{label}</h2>
+          <h1>{label}</h1>
           <p>Handmade works for {label.toLowerCase()} from Kerri's classroom.</p>
         </section>
         <section className="products">
@@ -207,7 +207,7 @@ function Shop() {
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
       </Helmet>
       <section className="page-hero">
-        <h2>Shop</h2>
+        <h1>Shop</h1>
         <p>Classroom materials, craft kits, and hands-on works, made by Kerri in New Hampshire.</p>
       </section>
 

@@ -37,7 +37,7 @@ function Contact() {
         <script type="application/ld+json">{JSON.stringify(localBusinessSchema)}</script>
       </Helmet>
       <section className="page-hero">
-        <h2>Get in Touch</h2>
+        <h1>Get in Touch</h1>
         <p>Send Kerri an email about questions, custom orders, or anything else.</p>
       </section>
       <section className="contact-content">

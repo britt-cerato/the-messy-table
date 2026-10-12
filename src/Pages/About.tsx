@@ -47,7 +47,7 @@ function About() {
         <script type="application/ld+json">{JSON.stringify(aboutPageSchema)}</script>
       </Helmet>
       <section className="page-hero">
-        <h2>About Kerri</h2>
+        <h1>About Kerri</h1>
         <p>The teacher who makes everything at The Messy Table.</p>
       </section>
       <section className="about-content">

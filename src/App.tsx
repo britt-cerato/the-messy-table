@@ -11,6 +11,7 @@ import Contact from './Pages/Contact'
 import ForTeachers from './Pages/ForTeachers'
 import ForHomeschool from './Pages/ForHomeschool'
 import { MonthlyMessList, MonthlyMessIssue } from './Pages/MonthlyMess'
+import NotFound from './Pages/NotFound'
 import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
 
@@ -31,7 +32,7 @@ function App() {
               <span className="nav-logo-mark" aria-hidden="true">
                 <img src={doodleCrayon} alt="" />
               </span>
-              <h1>The Messy Table</h1>
+              <span className="nav-brand-name">The Messy Table</span>
             </Link>
           </div>
           <div className="nav-right">
@@ -66,6 +67,7 @@ function App() {
           <Route path="/for-homeschool" element={<ForHomeschool />} />
           <Route path="/monthly-mess" element={<MonthlyMessList />} />
           <Route path="/monthly-mess/:slug" element={<MonthlyMessIssue />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <footer className="footer">
           <div className="footer-newsletter">

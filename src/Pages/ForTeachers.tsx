@@ -26,7 +26,7 @@ function ForTeachers() {
       <section className="page-hero audience-hero audience-hero--teachers">
         <div className="audience-hero-content">
           <p className="audience-hero-eyebrow">For Classroom Teachers</p>
-          <h2>You don't have time to make everything from scratch. I can help with that.</h2>
+          <h1>You don't have time to make everything from scratch. I can help with that.</h1>
           <p>I'm Kerri, a Montessori-trained educator. I've spent years rotating shelves, hunting for materials, and keeping 20+ kids busy at once. I make the works so you don't have to.</p>
         </div>
       </section>

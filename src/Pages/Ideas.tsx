@@ -93,7 +93,7 @@ function Ideas() {
         <meta name="twitter:description" content="Free Montessori activity guides and seasonal work ideas from Kerri's classroom." />
       </Helmet>
       <section className="page-hero">
-        <h2>Work Ideas</h2>
+        <h1>Work Ideas</h1>
         <p>Seasonal themes and work ideas from Kerri's classroom.</p>
       </section>
 
