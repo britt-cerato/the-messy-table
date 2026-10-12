@@ -12,7 +12,7 @@ const localBusinessSchema = {
     postOfficeBoxNumber: '56',
     addressLocality: 'Milford',
     addressRegion: 'NH',
-    postalCode: '03055',
+    postalCode: '03055-0056',
     addressCountry: 'US',
   },
   areaServed: ['NH', 'US'],
@@ -48,7 +48,7 @@ function Contact() {
           </div>
           <div className="contact-item">
             <span className="contact-label">Mail</span>
-            <span className="contact-link">PO Box 56, Milford, NH 03055</span>
+            <span className="contact-link">P.O. Box 56, Milford, NH 03055-0056</span>
           </div>
           <p className="contact-note">Kerri typically responds within 1–2 business days.</p>
         </div>
