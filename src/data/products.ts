@@ -230,7 +230,7 @@ export const PRODUCTS: Product[] = [
     themes: ['spring'],
     image: imgBalesOfVowelsCardsPreview,
     gallery: [imgBalesOfVowelsPreview],
-    description: 'Long vowel practice with a farmyard twist! Children pick a hay bale picture card, say the word, colour the missing vowel — a or i — and write the whole word on their recording sheet. Twelve silent-e words: cake, kite, vase, safe, dime, wave, fire, game, pile, vine, tape and bike.',
+    description: 'Pick a hay bale card, say the word and color in the missing vowel, a or i. Then write the word on the recording sheet. Words: cake, kite, vase, safe, dime, wave, fire, game, pile, vine, tape and bike.',
     details: ['12 numbered hay bale picture cards', 'Recording sheet included', 'Long a & long i (silent e) words', 'Printed & hand-assembled', 'Suits Kindergarten to Grade 1'],
   },
   {
@@ -545,8 +545,8 @@ export const PRODUCTS: Product[] = [
     themes: ['spring'],
     image: imgShortOrLongVowelsPreview,
     gallery: [imgBirdhouseBlendsPreview, imgSpringWorksheets],
-    description: 'A spring printable worksheet pack for early readers and writers — Birdhouse Blends, Short or Long Vowels and Writing Prompts. Print at home and use right away.',
-    details: ['3 worksheets included', 'Covers blends, short & long vowels and writing', 'Printable PDF — instant download', 'Suits Kindergarten to Grade 1'],
+    description: 'Spring worksheets for blends, short and long vowels, and writing. Print them at home.',
+    details: ['3 worksheets included', 'Blends, short & long vowels and writing', 'Printable PDF, instant download', 'Suits Kindergarten to Grade 1'],
     includes: ['Birdhouse Blends', 'Short or Long Vowels', 'Writing Prompts'],
   },
   {
@@ -556,8 +556,8 @@ export const PRODUCTS: Product[] = [
     categories: ['printable'],
     image: imgSightWordPractice,
     gallery: [imgSightWordPracticeLevelsPreview],
-    description: 'Read it, write it, build it! Children read each sight word, write it in the middle column, then build it with letters — a simple, hands-on routine for learning sight words. Six levels of ten words each take early readers from their very first words all the way up to "Rockstars".',
-    details: ['6 levels · 60 sight words in all', 'Level 1: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Use letter tiles, magnetic letters or stamps to build (letters not included — tiles shown in photo)', 'Tip: laminate it or use a sheet protector for dry-erase practice', 'Printable PDF — instant download', 'Suits Pre-K to Grade 1'],
+    description: 'Read the word, write the word, then build the word with letter tiles. There are 6 levels with 10 words on each page, so kids can move up as they learn.',
+    details: ['6 levels, 60 sight words', 'Level 1: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Build with letter tiles, magnetic letters or stamps (letters not included)', 'Laminate it or put it in a sheet protector to use with a dry erase marker', 'Printable PDF, instant download', 'Suits Pre-K to Grade 1'],
     includes: ['Level 1: My First Words', 'Level 2: Building Words', 'Level 3: Growing Readers', 'Level 4: New Adventures', 'Level 5: Superstar', 'Level 6: Rockstars'],
   },
   {
