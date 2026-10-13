@@ -17,6 +17,7 @@ import heroPhoto2 from '../assets/products/rainbow-letter-matching.jpg'
 import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
 import heroPhoto4 from '../assets/products/flower-sorting-mat.jpg'
 import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
+import { SOCIAL_PROFILES } from '../data/social'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -61,7 +62,7 @@ const orgSchema = {
     'Handmade Montessori-inspired classroom works and craft materials for teachers and homeschool families. Made by Kerri, a Montessori educator with 5 years of experience in Southern New Hampshire.',
   founder: { '@type': 'Person', name: 'Kerri', jobTitle: 'Montessori Educator' },
   address: { '@type': 'PostalAddress', addressRegion: 'NH', addressCountry: 'US' },
-  sameAs: [],
+  sameAs: SOCIAL_PROFILES,
 }
 
 const websiteSchema = {

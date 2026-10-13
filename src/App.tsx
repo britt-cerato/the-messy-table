@@ -12,6 +12,8 @@ import ForTeachers from './Pages/ForTeachers'
 import ForHomeschool from './Pages/ForHomeschool'
 import { MonthlyMessList, MonthlyMessIssue } from './Pages/MonthlyMess'
 import NotFound from './Pages/NotFound'
+import PinterestIcon from './components/PinterestIcon'
+import { PINTEREST_URL } from './data/social'
 import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
 
@@ -81,6 +83,9 @@ function App() {
               <h3>The Messy Table</h3>
               <p>Handmade classroom works from a New Hampshire teacher.</p>
               <p>P.O. Box 56 · Milford, NH 03055-0056</p>
+              <a href={PINTEREST_URL} className="footer-social" target="_blank" rel="noopener noreferrer">
+                <PinterestIcon /> Follow on Pinterest
+              </a>
             </div>
             <ul className="footer-links">
               <li><Link to="/shop">Shop</Link></li>
