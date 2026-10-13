@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async'
+import { PINTEREST_URL, SOCIAL_PROFILES } from '../data/social'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -16,7 +17,7 @@ const localBusinessSchema = {
     addressCountry: 'US',
   },
   areaServed: ['NH', 'US'],
-  sameAs: [],
+  sameAs: SOCIAL_PROFILES,
 }
 
 function Contact() {
@@ -49,6 +50,10 @@ function Contact() {
           <div className="contact-item">
             <span className="contact-label">Mail</span>
             <span className="contact-link">P.O. Box 56, Milford, NH 03055-0056</span>
+          </div>
+          <div className="contact-item">
+            <span className="contact-label">Pinterest</span>
+            <a href={PINTEREST_URL} className="contact-link" target="_blank" rel="noopener noreferrer">@themessytablenh</a>
           </div>
           <p className="contact-note">Kerri usually writes back within 1–2 business days.</p>
         </div>
