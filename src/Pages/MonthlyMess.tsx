@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { Link, useParams } from 'react-router-dom'
-import { MONTHLY_MESS, getMessIssue } from '../data/monthlyMess'
+import { MONTHLY_MESS, getMessIssue, type MessIssue as MessIssueType } from '../data/monthlyMess'
 import { getIdea, type Idea } from '../data/ideas'
 import { PRODUCTS } from '../data/products'
 
@@ -9,6 +9,8 @@ const LIST_TITLE = 'The Monthly Mess: Kerri\'s Monthly Update | The Messy Table'
 const LIST_DESCRIPTION = 'A monthly update from Kerri: what is on her classroom shelf, seasonal work ideas, and what is new in the shop.'
 
 export function MonthlyMessList() {
+  const [latest, ...past] = MONTHLY_MESS
+
   return (
     <div>
       <Helmet>
@@ -25,25 +27,46 @@ export function MonthlyMessList() {
         <meta name="twitter:description" content={LIST_DESCRIPTION} />
       </Helmet>
       <section className="page-hero">
-        <h1>The Monthly Mess</h1>
-        <p>What's on Kerri's shelf each month, plus what's new in the shop.</p>
+        <h1>The Monthly Mess Newsletter</h1>
+        <p>Kerri's newsletter, once a month: new works, seasonal activities and what's coming up. Past issues are saved below.</p>
       </section>
 
       <section className="products">
+        <h2 className="section-title">This Month</h2>
         <div className="ideas-list">
-          {MONTHLY_MESS.map((issue) => (
-            <Link to={`/monthly-mess/${issue.slug}`} key={issue.slug} className="idea-list-card">
-              <div className="idea-list-text">
-                <span className="idea-list-category">{issue.month}</span>
-                <h2 className="idea-list-title">{issue.title}</h2>
-                <p className="idea-list-excerpt">{issue.excerpt}</p>
-                <span className="idea-list-read-more">Read this month →</span>
-              </div>
-            </Link>
-          ))}
+          <IssueCard issue={latest} cta="Read this month →" />
         </div>
       </section>
+
+      <section className="products">
+        <h2 className="section-title">Past Newsletters</h2>
+        {past.length > 0 ? (
+          <div className="ideas-list">
+            {past.map((issue) => (
+              <IssueCard issue={issue} cta="Read it →" key={issue.slug} />
+            ))}
+          </div>
+        ) : (
+          <p className="section-description">Past newsletters will show up here each month.</p>
+        )}
+      </section>
     </div>
+  )
+}
+
+function IssueCard({ issue, cta }: { issue: MessIssueType; cta: string }) {
+  return (
+    <Link to={`/monthly-mess/${issue.slug}`} className="idea-list-card">
+      {issue.image && (
+        <img src={issue.image} alt={issue.imageAlt ?? issue.title} className="idea-list-image" loading="lazy" />
+      )}
+      <div className="idea-list-text">
+        <span className="idea-list-category">{issue.month}</span>
+        <h3 className="idea-list-title">{issue.title}</h3>
+        <p className="idea-list-excerpt">{issue.excerpt}</p>
+        <span className="idea-list-read-more">{cta}</span>
+      </div>
+    </Link>
   )
 }
 

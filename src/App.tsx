@@ -40,6 +40,7 @@ function App() {
               <li><NavLink to="/" end>Home</NavLink></li>
               <li><NavLink to="/shop">Shop</NavLink></li>
               <li><NavLink to="/ideas">Work Ideas</NavLink></li>
+              <li><NavLink to="/monthly-mess">Newsletter</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
               <li><NavLink to="/faq">FAQ</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
