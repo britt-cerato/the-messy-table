@@ -1763,3 +1763,23 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
   line-height: 1.7;
   color: var(--text-medium);
 }
+
+/* Monthly Mess newsletter page */
+.mess-newsletter-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(90, 74, 74, 0.1);
+  margin-bottom: 2rem;
+}
+.mess-items { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; }
+.mess-item-title {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+.mess-item-title a { color: var(--text-dark); text-decoration: underline; text-decoration-color: var(--soft-lavender); text-underline-offset: 3px; }
+.mess-items p { font-family: 'DM Sans', sans-serif; line-height: 1.7; color: var(--text-dark); }

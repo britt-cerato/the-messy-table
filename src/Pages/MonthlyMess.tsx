@@ -70,7 +70,7 @@ export function MonthlyMessIssue() {
   const products = issue.productIds
     .map((id) => PRODUCTS.find((p) => p.id === id))
     .filter(Boolean) as typeof PRODUCTS
-  const heroImage = ideas.find((i) => i.image)?.image
+  const heroImage = issue.image ?? ideas.find((i) => i.image)?.image
 
   const schema = {
     '@context': 'https://schema.org',
@@ -116,14 +116,39 @@ export function MonthlyMessIssue() {
           <p className="idea-post-byline">By Kerri</p>
         </header>
 
+        {issue.image && (
+          <a href={issue.image} target="_blank" rel="noopener noreferrer" aria-label="Open the newsletter full size">
+          <img
+            src={issue.image}
+            alt={issue.imageAlt ?? issue.title}
+            className="mess-newsletter-image"
+            width={1200}
+            height={1553}
+            loading="eager"
+          />
+          </a>
+        )}
+
         <p className="idea-post-intro">{issue.intro}</p>
 
         {issue.sections.map((section) => (
           <section key={section.heading} className="idea-post-section">
             <h2 className="idea-post-section-heading">{section.heading}</h2>
-            {section.paragraphs.map((para, i) => (
+            {section.paragraphs?.map((para, i) => (
               <p key={i}>{para}</p>
             ))}
+            {section.items && (
+              <ul className="mess-items">
+                {section.items.map((item) => (
+                  <li key={item.title}>
+                    <h3 className="mess-item-title">
+                      {item.link ? <Link to={item.link}>{item.title}</Link> : item.title}
+                    </h3>
+                    {item.text && <p>{item.text}</p>}
+                  </li>
+                ))}
+              </ul>
+            )}
           </section>
         ))}
       </article>

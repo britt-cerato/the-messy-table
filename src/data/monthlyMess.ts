@@ -4,9 +4,18 @@
 // (by product id) you want to feature. The sitemap and pre-render pick up
 // new entries automatically.
 
+import imgOctober2026 from '../assets/monthly-mess/october-2026-newsletter.jpg'
+
+export interface MessItem {
+  title: string
+  text?: string
+  link?: string
+}
+
 export interface MessSection {
   heading: string
-  paragraphs: string[]
+  paragraphs?: string[]
+  items?: MessItem[]
 }
 
 export interface MessIssue {
@@ -15,6 +24,9 @@ export interface MessIssue {
   date: string
   title: string
   excerpt: string
+  // Kerri's designed newsletter page (from Canva), shown above the text
+  image?: string
+  imageAlt?: string
   intro: string
   sections: MessSection[]
   ideaSlugs: string[]
@@ -26,40 +38,60 @@ export const MONTHLY_MESS: MessIssue[] = [
     slug: 'october-2026',
     month: 'October 2026',
     date: '2026-10-12',
-    title: 'The Monthly Mess: October 2026',
-    excerpt: 'Fall and Halloween works for the October shelf: patterning, counting, apple life cycle and a few Thanksgiving ideas to plan ahead.',
-    intro: 'October is a busy month on the shelf. Here is what I am putting out this month, plus a few things to get ready for November.',
+    title: 'The Monthly Mess: October 2026 Newsletter',
+    excerpt: "Kerri's October newsletter: fall patterning and counting works, the apple life cycle, Halloween activities, the witches brew and a candy corn craft.",
+    image: imgOctober2026,
+    imageAlt: "The Messy Table October 2026 newsletter by Kerri Donahue, with fall works, Halloween activities, important dates and a candy corn Q-tip painting craft",
+    intro: 'Fall is here, and what a wonderful time of year it is! I am excited to announce The Messy Table Newsletter for the month! Every month there will be a new newsletter featuring a sneak peek of new works, activities and more I have added to the website. I will be posting the newsletter on my social media pages for you to check out there. Hope you guys enjoy this new addition.',
     sections: [
       {
-        heading: 'On the shelf this month',
-        paragraphs: [
-          'Halloween counting and patterning are the big ones in October. Kids sort spiders, bats and ghosts onto numbered pumpkins, and they finish patterns with ghosts, skulls and pumpkins.',
-          'For math I also use the fall clip cards. Count the pumpkins, apples or leaves and clip the right number.',
+        heading: 'Website Highlights',
+        items: [
+          { title: 'Fall Patterning Work', text: 'Allows the children to learn about patterning, sequencing and how they coincide with each other.', link: '/ideas/fall-patterning-activity' },
+          { title: 'Fall Number Sequence Puzzle', text: 'A fun way for the children in your classroom to practice number sequencing.', link: '/ideas/fall-number-sequencing-puzzle' },
+          { title: 'Fall Count Clip Cards', text: 'Allows children to practice number counting.', link: '/ideas/fall-count-and-clip' },
         ],
       },
       {
-        heading: 'Activities to try',
-        paragraphs: [
-          'The apple life cycle is a good one for science this time of year. Kids put the stages in order and make their own fold-out book. In the Halloween counting brew, kids count spiders, eyeballs and worms into a cauldron.',
-          'Fall patterning uses real acorns, sunflowers and pumpkins. The number sequencing puzzle builds a fall scene when the strips go in order, so kids can check their own work.',
+        heading: "This Season's Activities",
+        items: [
+          { title: 'Apple Life Cycle', text: 'Explore the life cycle of an apple from the core to the skin. Learn how apples grow, different kinds of apples and how they taste.', link: '/ideas/apple-life-cycle-activity' },
+          { title: 'Leaf Cutting', text: 'Great way to practice cutting skills in a fun way.' },
+          { title: 'Halloween Pattern Work', text: 'Exploring different ways to make patterns using fun Halloween objects.', link: '/shop/halloween-patterns' },
+          { title: 'Halloween Counting 1–10', text: 'Engage fine motor skills, and number sequencing practice.', link: '/shop/halloween-counting' },
         ],
       },
       {
-        heading: 'Planning ahead for November',
-        paragraphs: [
-          'If you want to send home Disguise a Turkey, now is a good time to print the turkeys. Thankful hands and placemat weaving are two easy Thanksgiving crafts for the week before the break.',
+        heading: 'Website Spotlight',
+        items: [
+          { title: 'Witches Brew', text: 'Allows the children to practice counting, following directions and making a witches brew.', link: '/ideas/halloween-counting-brew' },
         ],
+      },
+      {
+        heading: 'Fall Craft Idea',
+        items: [{ title: 'Candy Corn Q-Tip Painting' }],
+      },
+      {
+        heading: 'Important Dates',
+        items: [
+          { title: 'October 12: Columbus Day', text: 'Craft idea to come.' },
+          { title: 'October 26: Halloween Activity', text: 'New Halloween activities to come.' },
+          { title: 'October 31: Halloween', text: 'Website break.' },
+        ],
+      },
+      {
+        heading: 'Website Notes',
+        paragraphs: ['Hello fall! Thank you for your continued support and partnership. Together, we help our students learn, grow, and shine every day!'],
       },
     ],
     ideaSlugs: [
-      'apple-life-cycle-activity',
-      'halloween-counting-brew',
       'fall-patterning-activity',
       'fall-number-sequencing-puzzle',
-      'disguise-a-turkey',
-      'thankful-hands',
+      'fall-count-and-clip',
+      'apple-life-cycle-activity',
+      'halloween-counting-brew',
     ],
-    productIds: ['halloween-counting', 'halloween-patterns', 'fall-math-clip-cards', 'thanksgiving-buttoning'],
+    productIds: ['halloween-patterns', 'halloween-counting', 'fall-math-clip-cards'],
   },
 ]
 
