@@ -16,6 +16,7 @@ import PinterestIcon from './components/PinterestIcon'
 import { PINTEREST_URL } from './data/social'
 import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
+import { FollowPinterestButton } from './components/Pinterest'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -47,6 +48,9 @@ function App() {
               <li><NavLink to="/faq">FAQ</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
             </ul>
+            <a href={PINTEREST_URL} className="nav-cart nav-pinterest" target="_blank" rel="noopener noreferrer" aria-label="Follow The Messy Table on Pinterest">
+              <PinterestIcon size={22} />
+            </a>
             <Link to="/shop" className="nav-cart" aria-label="Shop">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
@@ -83,9 +87,9 @@ function App() {
               <h3>The Messy Table</h3>
               <p>Handmade classroom works from a New Hampshire teacher.</p>
               <p>P.O. Box 56 · Milford, NH 03055-0056</p>
-              <a href={PINTEREST_URL} className="footer-social" target="_blank" rel="noopener noreferrer">
-                <PinterestIcon /> Follow on Pinterest
-              </a>
+              <div className="footer-social">
+                <FollowPinterestButton />
+              </div>
             </div>
             <ul className="footer-links">
               <li><Link to="/shop">Shop</Link></li>

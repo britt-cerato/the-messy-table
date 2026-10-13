@@ -18,6 +18,7 @@ import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
 import heroPhoto4 from '../assets/products/flower-sorting-mat.jpg'
 import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
 import { SOCIAL_PROFILES } from '../data/social'
+import { PinterestFollowBanner } from '../components/Pinterest'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -294,6 +295,8 @@ function Home() {
           <Link to="/ideas" className="ideas-button">See All Work Ideas</Link>
         </div>
       </section>
+
+      <PinterestFollowBanner />
 
       <WavyDivider />
 

@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link, useParams } from 'react-router-dom'
 import { getIdea } from '../data/ideas'
 import { PRODUCTS } from '../data/products'
+import { PinterestFollowBanner, SaveToPinterestButton } from '../components/Pinterest'
 
 function IdeaPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -158,7 +159,12 @@ function IdeaPost() {
         </section>
       )}
 
+      <PinterestFollowBanner text="Like this activity? Kerri pins more work ideas and seasonal activities on Pinterest." />
+
       <div className="idea-post-footer">
+        {idea.image && (
+          <SaveToPinterestButton path={`/ideas/${idea.slug}`} image={idea.image} description={`${idea.title}: ${idea.excerpt}`} />
+        )}
         <Link to="/ideas" className="back-link">← Back to all ideas</Link>
       </div>
     </div>
