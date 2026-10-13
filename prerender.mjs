@@ -4,7 +4,7 @@
  * After `vite build` produces the dist/ folder, this script:
  *   1. Starts a vite preview server pointing at dist/
  *   2. Visits every route in the app using Puppeteer
- *   3. Saves the fully-rendered HTML into dist/<route>/index.html
+ *   3. Saves the fully-rendered HTML into dist/<route>.html
  *
  * Run automatically via: npm run build  (see package.json)
  */
@@ -94,10 +94,16 @@ let failed = 0
 
 for (const route of ALL_ROUTES) {
   const url = `http://localhost:${PORT}${route}`
-  // '/404' renders the catch-all NotFound page; Cloudflare Pages serves
-  // dist/404.html with a real 404 status for any unknown URL.
-  const outDir = route === '/' || route === '/404' ? DIST : path.join(DIST, route.slice(1))
-  const outFile = path.join(outDir, route === '/404' ? '404.html' : 'index.html')
+  // Write /shop as dist/shop.html (not dist/shop/index.html). Cloudflare Pages
+  // serves foo.html at /foo, but serves foo/index.html at /foo/ and redirects
+  // /foo there, which made Google see every sitemap/canonical URL as a
+  // redirect. '/404' renders the catch-all NotFound page; Cloudflare Pages
+  // serves dist/404.html with a real 404 status for any unknown URL.
+  const outFile =
+    route === '/' ? path.join(DIST, 'index.html')
+    : route === '/404' ? path.join(DIST, '404.html')
+    : path.join(DIST, `${route.slice(1)}.html`)
+  const outDir = path.dirname(outFile)
 
   try {
     const page = await browser.newPage()
