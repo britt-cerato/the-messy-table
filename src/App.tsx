@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from 'react-router-dom'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import Home from './Pages/Home'
 import Shop, { SeasonShop } from './Pages/Shop'
 import About from './Pages/About'
@@ -10,6 +10,8 @@ import FAQ from './Pages/FAQ'
 import Contact from './Pages/Contact'
 import ForTeachers from './Pages/ForTeachers'
 import ForHomeschool from './Pages/ForHomeschool'
+import { MonthlyMessList, MonthlyMessIssue } from './Pages/MonthlyMess'
+import NotFound from './Pages/NotFound'
 import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
 
@@ -17,34 +19,6 @@ function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return null
-}
-
-function NewsletterForm() {
-  const [email, setEmail] = useState('')
-  const [subscribed, setSubscribed] = useState(false)
-
-  function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    if (email.trim()) setSubscribed(true)
-  }
-
-  if (subscribed) {
-    return <p className="footer-newsletter-subscribed">You're in! Check your inbox soon. 🎉</p>
-  }
-
-  return (
-    <form className="footer-newsletter-form" onSubmit={handleSubmit}>
-      <input
-        className="footer-newsletter-input"
-        type="email"
-        placeholder="your@email.com"
-        value={email}
-        onChange={e => setEmail(e.target.value)}
-        required
-      />
-      <button className="footer-newsletter-btn" type="submit">Join</button>
-    </form>
-  )
 }
 
 function App() {
@@ -58,7 +32,7 @@ function App() {
               <span className="nav-logo-mark" aria-hidden="true">
                 <img src={doodleCrayon} alt="" />
               </span>
-              <h1>The Messy Table</h1>
+              <span className="nav-brand-name">The Messy Table</span>
             </Link>
           </div>
           <div className="nav-right">
@@ -66,6 +40,7 @@ function App() {
               <li><NavLink to="/" end>Home</NavLink></li>
               <li><NavLink to="/shop">Shop</NavLink></li>
               <li><NavLink to="/ideas">Work Ideas</NavLink></li>
+              <li><NavLink to="/monthly-mess">Newsletter</NavLink></li>
               <li><NavLink to="/about">About</NavLink></li>
               <li><NavLink to="/faq">FAQ</NavLink></li>
               <li><NavLink to="/contact">Contact</NavLink></li>
@@ -91,22 +66,26 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/for-teachers" element={<ForTeachers />} />
           <Route path="/for-homeschool" element={<ForHomeschool />} />
+          <Route path="/monthly-mess" element={<MonthlyMessList />} />
+          <Route path="/monthly-mess/:slug" element={<MonthlyMessIssue />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <footer className="footer">
           <div className="footer-newsletter">
             <h4>The Monthly Mess</h4>
-            <p>One crafty email a month: seasonal work ideas, a free printable, and first dibs on new kits.</p>
-            <NewsletterForm />
+            <p>Once a month, Kerri shares what's on her shelf, seasonal work ideas and what's new in the shop.</p>
+            <Link to="/monthly-mess" className="footer-newsletter-btn">Read this month's →</Link>
           </div>
           <div className="footer-inner">
             <div className="footer-brand">
               <h3>The Messy Table</h3>
-              <p>Handmade with love for teachers everywhere.</p>
+              <p>Handmade classroom works from a New Hampshire teacher.</p>
               <p>P.O. Box 56 · Milford, NH 03055-0056</p>
             </div>
             <ul className="footer-links">
               <li><Link to="/shop">Shop</Link></li>
               <li><Link to="/ideas">Work Ideas</Link></li>
+              <li><Link to="/monthly-mess">The Monthly Mess</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/faq">FAQ</Link></li>
               <li><Link to="/contact">Contact</Link></li>

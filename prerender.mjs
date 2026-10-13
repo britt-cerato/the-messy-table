@@ -30,6 +30,7 @@ const STATIC_ROUTES = [
   '/ideas',
   '/for-teachers',
   '/for-homeschool',
+  '/monthly-mess',
   // Season pages — keep in sync with SEASONS in src/data/products.ts
   '/shop/season/fall',
   '/shop/season/winter',
@@ -61,7 +62,14 @@ if (ideasModule) {
   ideaRoutes = slugMatches.map((m) => `/ideas/${m[1]}`)
 }
 
-const ALL_ROUTES = [...STATIC_ROUTES, ...productRoutes, ...ideaRoutes]
+// Monthly Mess issues
+const messText = fs.readFileSync(path.join(__dirname, 'src/data/monthlyMess.ts'), 'utf8')
+const messRoutes = [...messText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) => `/monthly-mess/${m[1]}`)
+
+// '/' goes last: it overwrites dist/index.html, and vite preview serves that
+// file as the starting HTML for every other route. If Home were rendered
+// first, every page would inherit Home's title, description and canonical.
+const ALL_ROUTES = [...STATIC_ROUTES.filter((r) => r !== '/'), ...productRoutes, ...ideaRoutes, ...messRoutes, '/404', '/']
 
 console.log(`\n[prerender] Will pre-render ${ALL_ROUTES.length} routes`)
 console.log('[prerender] Routes:', ALL_ROUTES.join(', '), '\n')
@@ -86,8 +94,10 @@ let failed = 0
 
 for (const route of ALL_ROUTES) {
   const url = `http://localhost:${PORT}${route}`
-  const outDir = route === '/' ? DIST : path.join(DIST, route.slice(1))
-  const outFile = path.join(outDir, 'index.html')
+  // '/404' renders the catch-all NotFound page; Cloudflare Pages serves
+  // dist/404.html with a real 404 status for any unknown URL.
+  const outDir = route === '/' || route === '/404' ? DIST : path.join(DIST, route.slice(1))
+  const outFile = path.join(outDir, route === '/404' ? '404.html' : 'index.html')
 
   try {
     const page = await browser.newPage()
@@ -106,6 +116,16 @@ for (const route of ALL_ROUTES) {
 
     const html = await page.content()
     await page.close()
+
+    // Guard against duplicate head tags (one per page, or Google ignores them)
+    const head = html.slice(0, html.indexOf('</head>'))
+    const counts = {
+      title: (head.match(/<title[ >]/g) || []).length,
+      description: (head.match(/<meta name="description"/g) || []).length,
+      canonical: (head.match(/<link rel="canonical"/g) || []).length,
+    }
+    const dupes = Object.entries(counts).filter(([, n]) => n > 1)
+    if (dupes.length) throw new Error(`duplicate head tags: ${dupes.map(([k, n]) => `${n} ${k}`).join(', ')}`)
 
     fs.mkdirSync(outDir, { recursive: true })
     fs.writeFileSync(outFile, html, 'utf8')

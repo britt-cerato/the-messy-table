@@ -12,6 +12,7 @@ function IdeaPost() {
       <div className="product-not-found">
         <Helmet>
           <title>Article Not Found — The Messy Table</title>
+          <meta name="robots" content="noindex" />
         </Helmet>
         <h2>Article not found</h2>
         <Link to="/ideas" className="back-link">← Back to Ideas</Link>
@@ -145,7 +146,7 @@ function IdeaPost() {
               >
                 <img
                   src={product.image}
-                  alt={`${product.name} — Montessori ${product.categories[0]} work`}
+                  alt={`${product.name}, Montessori ${product.categories[0]} work`}
                   className="product-image"
                   loading="lazy"
                 />
