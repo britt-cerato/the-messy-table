@@ -9,7 +9,6 @@ import img7087 from '../assets/products/IMG_7087.jpeg'
 import img7088 from '../assets/products/IMG_7088.jpeg'
 import img7090 from '../assets/products/IMG_7090.jpeg'
 import img7092 from '../assets/products/IMG_7092.jpeg'
-import img7094 from '../assets/products/IMG_7094.jpeg'
 import img7108 from '../assets/products/IMG_7108.jpeg'
 import img7113 from '../assets/products/IMG_7113.jpeg'
 import img7113_1 from '../assets/products/IMG_7113-1.jpeg'
@@ -65,6 +64,9 @@ import imgBalesOfVowelsPreview from '../assets/products/kerri-bales-of-vowels-pr
 import imgBalesOfVowelsCardsPreview from '../assets/products/kerri-bales-of-vowels-cards-preview.jpg'
 import imgShortOrLongVowelsPreview from '../assets/products/short-or-long-vowels-preview.jpg'
 import imgCloverSkipCountingPreview from '../assets/products/clover-skip-counting-preview.jpg'
+import imgStPatricksWorksheetsPreview from '../assets/products/st-patricks-worksheets-preview.jpg'
+import imgRainbowAdditionShamrocksPreview from '../assets/products/rainbow-addition-shamrocks-preview.jpg'
+import imgShamrockMathPreview from '../assets/products/shamrock-math-preview.jpg'
 import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
 import imgSightWordPracticeLevelsPreview from '../assets/products/sight-word-practice-levels-preview.jpg'
@@ -371,11 +373,11 @@ export const PRODUCTS: Product[] = [
     price: '$5.00',
     categories: ['printable'],
     themes: ['st-patricks'],
-    image: img7094,
-    gallery: [imgCloverSkipCountingPreview],
-    description: "St. Patrick's Day math worksheets, including Shamrock Math, Rainbow Addition and Clover Skip Counting by 10s.",
-    details: ['5 worksheets included', 'Covers addition, graphing & skip counting', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
-    includes: ['Clover Skip Counting by 10s', 'Rainbow Addition', 'Shamrock Math', 'Color 5+2 & Color 3+6'],
+    image: imgStPatricksWorksheetsPreview,
+    gallery: [imgRainbowAdditionShamrocksPreview, imgShamrockMathPreview, imgCloverSkipCountingPreview],
+    description: "St. Patrick's Day math worksheets: Rainbow Addition, Color the Shamrocks, Shamrock Math and Clover Skip Counting by 10s.",
+    details: ['4 worksheets included', 'Covers addition and skip counting by 10s', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
+    includes: ['Rainbow Addition', 'Color 3+6 & 5+2 Shamrocks', 'Shamrock Math', 'Clover Skip Counting by 10s'],
   },
   {
     id: 'dress-up-snowman',
