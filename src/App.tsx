@@ -17,11 +17,31 @@ import { PINTEREST_URL } from './data/social'
 import doodleCrayon from './assets/doodles/doodle-crayon.svg'
 import './App.css'
 import { FollowPinterestButton } from './components/Pinterest'
+import KitSignup from './components/KitSignup'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
   useEffect(() => { window.scrollTo(0, 0) }, [pathname])
   return null
+}
+
+// The Monthly Mess strip at the top of the footer. On the newsletter pages
+// the signup form is already at the top of the page, so the footer only
+// links back there (Kit's form shouldn't appear twice on one page).
+function FooterNewsletter() {
+  const { pathname } = useLocation()
+  const onNewsletterPage = pathname.startsWith('/monthly-mess')
+  return (
+    <div className="footer-newsletter">
+      <h4>The Monthly Mess</h4>
+      <p>One email a month with new works, seasonal activities and what's coming up.</p>
+      {!onNewsletterPage && <KitSignup />}
+      <div className="footer-cta-row">
+        <Link to="/monthly-mess" className="footer-newsletter-btn">Read this month's →</Link>
+        <FollowPinterestButton />
+      </div>
+    </div>
+  )
 }
 
 function App() {
@@ -77,14 +97,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <footer className="footer">
-          <div className="footer-newsletter">
-            <h4>The Monthly Mess</h4>
-            <p>Once a month, Kerri shares what's on her shelf, seasonal work ideas and what's new in the shop. In between, she pins new ideas on Pinterest.</p>
-            <div className="footer-cta-row">
-              <Link to="/monthly-mess" className="footer-newsletter-btn">Read this month's →</Link>
-              <FollowPinterestButton />
-            </div>
-          </div>
+          <FooterNewsletter />
           <div className="footer-inner">
             <div className="footer-brand">
               <h3>The Messy Table</h3>

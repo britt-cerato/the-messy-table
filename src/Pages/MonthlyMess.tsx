@@ -4,6 +4,7 @@ import { MONTHLY_MESS, getMessIssue, type MessIssue as MessIssueType } from '../
 import { getIdea, type Idea } from '../data/ideas'
 import { PRODUCTS } from '../data/products'
 import { PinterestFollowBanner, SaveToPinterestButton } from '../components/Pinterest'
+import KitSignup from '../components/KitSignup'
 
 const LIST_URL = 'https://themessytable.org/monthly-mess'
 const LIST_TITLE = 'The Monthly Mess: Kerri\'s Monthly Update | The Messy Table'
@@ -31,6 +32,8 @@ export function MonthlyMessList() {
         <h1>The Monthly Mess Newsletter</h1>
         <p>Kerri's newsletter, once a month: new works, seasonal activities and what's coming up. Past issues are saved below.</p>
       </section>
+
+      <NewsletterSignup />
 
       <section className="products">
         <h2 className="section-title">This Month</h2>
@@ -68,6 +71,16 @@ function IssueCard({ issue, cta }: { issue: MessIssueType; cta: string }) {
         <span className="idea-list-read-more">{cta}</span>
       </div>
     </Link>
+  )
+}
+
+function NewsletterSignup() {
+  return (
+    <section className="newsletter-signup">
+      <h2>Get the Monthly Mess in your inbox</h2>
+      <p>One email a month with new works, seasonal activities and what's coming up.</p>
+      <KitSignup />
+    </section>
   )
 }
 
@@ -217,6 +230,8 @@ export function MonthlyMessIssue() {
           </div>
         </section>
       )}
+
+      <NewsletterSignup />
 
       <PinterestFollowBanner />
 
