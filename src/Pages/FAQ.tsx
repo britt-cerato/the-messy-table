@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 // ── FAQ data ──────────────────────────────────────────────────────────────────
 // Defined before the component so the FAQPage schema can reference it directly.
@@ -71,6 +72,7 @@ function FAQ() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/faq" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Frequently Asked Questions | The Messy Table" />
         <script type="application/ld+json">{JSON.stringify(faqPageSchema)}</script>

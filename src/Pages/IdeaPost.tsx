@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { getIdea } from '../data/ideas'
 import { PRODUCTS } from '../data/products'
 import { PinterestFollowBanner, SaveToPinterestButton } from '../components/Pinterest'
+import { DEFAULT_OG_IMAGE, SITE_URL, metaDescription, pageTitle } from '../data/seo'
 
 function IdeaPost() {
   const { slug } = useParams<{ slug: string }>()
@@ -22,7 +23,9 @@ function IdeaPost() {
   }
 
   const pageUrl = `https://themessytable.org/ideas/${idea.slug}`
-  const pageTitle = `${idea.title} | The Messy Table`
+  const title = pageTitle(idea.title)
+  const description = metaDescription(idea.excerpt)
+  const shareImage = idea.image ? `${SITE_URL}${idea.image}` : DEFAULT_OG_IMAGE
 
   const relatedProducts = idea.relatedProductIds
     .map((id) => PRODUCTS.find((p) => p.id === id))
@@ -47,6 +50,8 @@ function IdeaPost() {
       url: 'https://themessytable.org',
     },
     datePublished: idea.date,
+    dateModified: idea.date,
+    image: shareImage,
     url: pageUrl,
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -72,18 +77,18 @@ function IdeaPost() {
   return (
     <div>
       <Helmet>
-        <title>{pageTitle}</title>
-        <meta name="description" content={idea.excerpt} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
         <link rel="canonical" href={pageUrl} />
-        <meta property="og:title" content={pageTitle} />
-        <meta property="og:description" content={idea.excerpt} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={pageUrl} />
         <meta property="og:site_name" content="The Messy Table" />
-        {idea.image && <meta property="og:image" content={`https://themessytable.org${idea.image}`} />}
+        <meta property="og:image" content={shareImage} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={pageTitle} />
-        <meta name="twitter:description" content={idea.excerpt} />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content={description} />
         <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
         {faqSchema && (
           <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>

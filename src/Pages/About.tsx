@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import aboutPhoto from '../assets/kerri-about.jpg'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 const personSchema = {
   '@context': 'https://schema.org',
@@ -40,6 +41,7 @@ function About() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/about" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="About Kerri — Montessori Educator & Maker | The Messy Table" />
         <meta name="twitter:description" content="Meet Kerri, a Montessori-trained educator with 5 years of classroom experience in Southern NH and the maker behind The Messy Table." />

@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { PRODUCTS } from '../data/products'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 const FEATURED_IDS = ['animal-nomenclature', 'halloween-counting', 'thanksgiving-buttoning']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -17,6 +18,7 @@ function ForTeachers() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/for-teachers" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Montessori Classroom Materials for Teachers | The Messy Table" />
         <meta name="twitter:description" content="Handmade Montessori works for Pre-K to Grade 2 classrooms, ready for your shelf: nomenclature cards, seasonal activities, and write the room printables." />

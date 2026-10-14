@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import { PINTEREST_URL, SOCIAL_PROFILES } from '../data/social'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 const localBusinessSchema = {
   '@context': 'https://schema.org',
@@ -32,6 +33,7 @@ function Contact() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/contact" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Contact Kerri | The Messy Table" />
         <meta name="twitter:description" content="Get in touch with Kerri at The Messy Table for custom orders or questions about handmade Montessori materials." />

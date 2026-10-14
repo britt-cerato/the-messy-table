@@ -1,3 +1,10 @@
+import imgGuideNomenclature from '../assets/products/IMG_7075.jpeg'
+import imgGuideCVC from '../assets/products/IMG_7108.jpeg'
+import imgGuideMath from '../assets/products/IMG_7164.jpeg'
+import imgGuideLanguageShelf from '../assets/products/IMG_7113-1.jpeg'
+import imgGuideFall from '../assets/products/IMG_7084.jpeg'
+import imgGuideArt from '../assets/products/IMG_7076.jpeg'
+import imgGuidePracticalLife from '../assets/products/IMG_7087.jpeg'
 import imgBirdFeeder from '../assets/products/diy-bird-feeder.png'
 import imgSeedBombs from '../assets/products/garden-seed-bombs.png'
 import imgFlowerCrowns from '../assets/products/flower-crowns.png'
@@ -46,6 +53,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Nomenclature cards are one of the most useful materials in a Montessori classroom. Here\'s what they are, how they work, and how to use them at home or at school.',
     date: '2025-01-15',
     category: 'Nomenclature',
+    image: imgGuideNomenclature,
     relatedProductIds: ['animal-nomenclature', 'penguin-nomenclature', 'horse-bridle-nomenclature', 'van-gogh-cards', 'human-development-cards'],
     intro: 'If you\'ve been in a Montessori classroom, you\'ve probably seen small cards laid out on a work mat: a picture card, a label card, and a "control" card that has both. These are nomenclature cards. They\'re one of the most useful and flexible materials in Montessori language work.',
     sections: [
@@ -106,6 +114,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'CVC words are short three-letter words like "cat", "hop" and "sun". They\'re the first words most children sound out on their own. Here are some hands-on ways to practice them.',
     date: '2025-02-01',
     category: 'Language',
+    image: imgGuideCVC,
     relatedProductIds: ['valentines-word-building', 'word-family-flower-pots', 'spring-worksheets'],
     intro: 'CVC stands for consonant-vowel-consonant. These short words (cat, hop, pin, sun) are the first ones most children can sound out by themselves. When a child reads their first word and looks up at you surprised and proud, it\'s usually a CVC word. The activities below give kindergarten kids lots of hands-on practice.',
     sections: [
@@ -156,6 +165,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Montessori math moves from concrete to abstract. You don\'t need a full classroom set to do this at home. Here\'s what matters and how to start.',
     date: '2025-02-15',
     category: 'Math',
+    image: imgGuideMath,
     relatedProductIds: ['bead-stair', 'ten-frames-clip-cards', 'tally-marks-clip-cards', 'fall-math-clip-cards'],
     intro: 'Montessori math has a reputation for needing a lot of expensive materials: golden bead chains, stamp games, colored bead bars. Those are great in a fully equipped classroom, but you can do the core ideas at home with much simpler tools. The rule is always the same. Children need to hold a quantity in their hands before they can understand it on paper.',
     sections: [
@@ -217,6 +227,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'A language shelf doesn\'t have to be fancy to work. Here\'s a simple way to set up Montessori language work at home, from phonics to word building.',
     date: '2025-03-01',
     category: 'Language',
+    image: imgGuideLanguageShelf,
     relatedProductIds: ['spring-flower-matching', 'valentines-word-building', 'word-family-flower-pots', 'write-the-room-summer'],
     intro: 'Homeschool families new to Montessori often ask, "What goes on the language shelf, and in what order?" The short answer: the shelf follows the same order every child goes through when learning to read. Sounds first, then letters, then building words, then reading. The materials just make each step hands-on.',
     sections: [
@@ -273,6 +284,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Fall is a great season for hands-on classroom work. Counting, patterning, fine motor practice and seasonal science all work well with fall themes.',
     date: '2025-09-01',
     category: 'Seasonal',
+    image: imgGuideFall,
     relatedProductIds: ['halloween-counting', 'halloween-patterns', 'fall-math-clip-cards', 'thanksgiving-buttoning'],
     intro: 'Young children get excited in the fall. It might be the colors, the new school year, or all the holidays coming up. Fall-themed materials hold their attention in a way plain number cards and letter tiles usually don\'t. Here are some Montessori-style activities for Pre-K and Kindergarten classrooms from September through November.',
     sections: [
@@ -327,6 +339,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Young children are natural art lovers. They just need a chance to look closely. Montessori art cards make fine art easy for kids to learn and remember.',
     date: '2025-03-15',
     category: 'Nomenclature',
+    image: imgGuideArt,
     relatedProductIds: ['van-gogh-cards'],
     intro: 'Most adults think learning about art takes formal lessons, museum trips, and sitting still while a docent talks. Young children prove that wrong all the time. Give a three-year-old a good print of a Van Gogh painting and a few minutes, and they\'ll tell you more about what they notice than most adults would.',
     sections: [
@@ -375,6 +388,7 @@ export const IDEAS: Idea[] = [
     excerpt: 'Fine motor skills are the base for writing, self-care and focused work. These simple Montessori practical life activities build those skills, and kids just think they\'re doing a fun job.',
     date: '2025-04-01',
     category: 'Practical Life',
+    image: imgGuidePracticalLife,
     relatedProductIds: ['thanksgiving-buttoning'],
     intro: 'In Montessori, practical life activities aren\'t filler. Pouring, spooning, folding and buttoning are the first works a child does on the shelf, and there\'s a reason. They build the focus, coordination and hand strength that everything else depends on. A child who can button a coat on their own has hands that are getting ready to hold a pencil.',
     sections: [

@@ -10,6 +10,7 @@ import {
   type Product,
   type Theme,
 } from '../data/products'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 const THEME_LABELS: Record<string, string> = {
   valentines: "Valentine's Day",
@@ -170,6 +171,7 @@ function Shop() {
           <meta property="og:description" content={`Handmade Montessori works for ${label.toLowerCase()} from Kerri's classroom.`} />
           <meta property="og:type" content="website" />
           <meta property="og:url" content={`${SITE_URL}/shop?theme=${theme}`} />
+          <meta property="og:image" content={DEFAULT_OG_IMAGE} />
           <meta property="og:site_name" content="The Messy Table" />
         </Helmet>
         <section className="page-hero">
@@ -200,6 +202,7 @@ function Shop() {
         <meta property="og:description" content="Handmade Montessori classroom works for Pre-K through Grade 2: nomenclature cards, math works, write the room, and seasonal activities." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={`${SITE_URL}/shop`} />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Shop Handmade Montessori Materials — The Messy Table" />

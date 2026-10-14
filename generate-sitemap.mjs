@@ -46,24 +46,27 @@ const seasonRoutes = ['fall', 'winter', 'spring', 'summer'].map((season) => ({
 }))
 
 const ideasText = fs.readFileSync(path.join(__dirname, 'src/data/ideas.ts'), 'utf8')
-const ideaRoutes = [...ideasText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) => ({
+const ideaRoutes = [...ideasText.matchAll(/^\s+slug:\s+'([^']+)',\n(?:.*\n)*?\s+date:\s+'([^']+)'/gm)].map((m) => ({
   path: `/ideas/${m[1]}`,
   changefreq: 'monthly',
   priority: '0.8',
+  lastmod: m[2],
 }))
 
 const messText = fs.readFileSync(path.join(__dirname, 'src/data/monthlyMess.ts'), 'utf8')
-const messRoutes = [...messText.matchAll(/^\s+slug:\s+'([^']+)'/gm)].map((m) => ({
+const messRoutes = [...messText.matchAll(/^\s+slug:\s+'([^']+)',\n(?:.*\n)*?\s+date:\s+'([^']+)'/gm)].map((m) => ({
   path: `/monthly-mess/${m[1]}`,
   changefreq: 'monthly',
   priority: '0.7',
+  lastmod: m[2],
 }))
 
 const ALL_ROUTES = [...STATIC_ROUTES, ...seasonRoutes, ...productRoutes, ...ideaRoutes, ...messRoutes]
 
 const urlEntries = ALL_ROUTES.map(
-  ({ path: routePath, changefreq, priority }) => `  <url>
-    <loc>${SITE_URL}${routePath}</loc>
+  ({ path: routePath, changefreq, priority, lastmod }) => `  <url>
+    <loc>${SITE_URL}${routePath}</loc>${lastmod ? `
+    <lastmod>${lastmod}</lastmod>` : ''}
     <changefreq>${changefreq}</changefreq>
     <priority>${priority}</priority>
   </url>`
