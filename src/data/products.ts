@@ -566,7 +566,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 'magic-words',
     name: 'Magic Words Writing Page',
-    price: '$2.00',
+    price: '$5.00',
     categories: ['printable'],
     image: imgMagicWordsPreview,
     gallery: [],
