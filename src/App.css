@@ -1866,3 +1866,30 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 
 .nav-pinterest { margin-right: 14px; }
 .nav-pinterest:hover { color: #e60023; }
+
+/* Kit (Monthly Mess) signup form */
+.kit-signup { max-width: 520px; margin: 0 auto 20px; }
+.kit-signup:empty { display: none; }
+.newsletter-signup {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 28px 24px;
+  background-color: #fff;
+  border: 2px dashed var(--lavender);
+  border-radius: 16px;
+  text-align: center;
+
+  @media (max-width: 760px) { margin: 32px 16px; }
+}
+.newsletter-signup h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.newsletter-signup p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  color: var(--brown-mid);
+  margin-bottom: 16px;
+}
