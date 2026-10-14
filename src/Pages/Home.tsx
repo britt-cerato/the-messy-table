@@ -18,6 +18,7 @@ import heroPhoto3 from '../assets/products/valentines-mason-jar-addition.jpg'
 import heroPhoto4 from '../assets/products/flower-sorting-mat.jpg'
 import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
 import { SOCIAL_PROFILES } from '../data/social'
+import { FollowPinterestButton } from '../components/Pinterest'
 
 const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -295,6 +296,7 @@ function Home() {
         </div>
       </section>
 
+
       <WavyDivider />
 
       {/* ── Meet Kerri ── */}
@@ -326,6 +328,10 @@ function Home() {
                 <span className="meet-kerri-value-icon">🖐</span>
                 Designed for little hands
               </div>
+            </div>
+            <div className="meet-kerri-pinterest">
+              <p>See what Kerri is making next on Pinterest.</p>
+              <FollowPinterestButton label="Follow Kerri on Pinterest" />
             </div>
           </div>
         </div>

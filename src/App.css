@@ -1784,14 +1784,85 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 .mess-item-title a { color: var(--text-dark); text-decoration: underline; text-decoration-color: var(--soft-lavender); text-underline-offset: 3px; }
 .mess-items p { font-family: 'DM Sans', sans-serif; line-height: 1.7; color: var(--text-dark); }
 
-.footer-social {
+.footer-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.meet-kerri-pinterest { margin-top: 28px; }
+.meet-kerri-pinterest p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--brown-mid);
+  margin-bottom: 12px;
+}
+
+/* ── Pinterest ─────────────────────────────────────────── */
+.pinterest-button {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  margin-top: 10px;
+  background-color: #e60023;
+  color: #fff;
+  padding: 11px 22px;
+  border-radius: 30px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.pinterest-button:hover { background-color: #ad081b; }
+
+.pinterest-banner {
+  max-width: 720px;
+  margin: 48px auto;
+  padding: 28px 24px;
+  background-color: #fff;
+  border: 2px dashed var(--blush);
+  border-radius: 16px;
+  text-align: center;
+
+  @media (max-width: 760px) { margin: 40px 16px; }
+}
+.pinterest-banner-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 26px;
+  color: var(--brown);
+  margin-bottom: 8px;
+}
+.pinterest-banner-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--brown-mid);
+  margin-bottom: 18px;
+}
+
+.pinterest-save-button {
+  display: inline-flex;
+  width: fit-content;
+  align-self: flex-start;
+  align-items: center;
+  gap: 6px;
+  margin-top: 16px;
+  padding: 8px 16px;
+  border: 1.5px solid #e60023;
+  border-radius: 30px;
+  color: #e60023;
+  background-color: #fff;
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
-  color: var(--warm-gray);
+  font-weight: 600;
   text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
-.footer-social:hover { color: var(--blush); }
+.pinterest-save-button:hover { background-color: #e60023; color: #fff; }
+.idea-post-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
+.idea-post-footer .pinterest-save-button { margin-top: 0; }
+
+.nav-pinterest { margin-right: 14px; }
+.nav-pinterest:hover { color: #e60023; }

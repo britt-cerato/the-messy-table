@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async'
 import { Link, useParams } from 'react-router-dom'
 import { getProduct } from '../data/products'
 import BuyNowButton from '../components/BuyNowButton'
+import { SaveToPinterestButton } from '../components/Pinterest'
 
 function Product() {
   const { id } = useParams<{ id: string }>()
@@ -154,6 +155,12 @@ function Product() {
               </p>
             </>
           )}
+
+          <SaveToPinterestButton
+            path={`/shop/${product.id}`}
+            image={product.image}
+            description={`${product.name}: ${product.description}`}
+          />
         </div>
       </div>
     </div>

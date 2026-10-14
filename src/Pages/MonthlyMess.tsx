@@ -3,6 +3,7 @@ import { Link, useParams } from 'react-router-dom'
 import { MONTHLY_MESS, getMessIssue, type MessIssue as MessIssueType } from '../data/monthlyMess'
 import { getIdea, type Idea } from '../data/ideas'
 import { PRODUCTS } from '../data/products'
+import { PinterestFollowBanner, SaveToPinterestButton } from '../components/Pinterest'
 
 const LIST_URL = 'https://themessytable.org/monthly-mess'
 const LIST_TITLE = 'The Monthly Mess: Kerri\'s Monthly Update | The Messy Table'
@@ -217,7 +218,12 @@ export function MonthlyMessIssue() {
         </section>
       )}
 
+      <PinterestFollowBanner />
+
       <div className="idea-post-footer">
+        {heroImage && (
+          <SaveToPinterestButton path={`/monthly-mess/${issue.slug}`} image={heroImage} description={`${issue.title}: ${issue.excerpt}`} />
+        )}
         <Link to="/monthly-mess" className="back-link">← All months</Link>
       </div>
     </div>
