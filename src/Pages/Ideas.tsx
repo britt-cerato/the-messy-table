@@ -7,35 +7,8 @@ import fallImg from '../assets/products/IMG_7084.jpeg'
 import springImg from '../assets/products/IMG_7113-1.jpeg'
 import winterImg from '../assets/products/IMG_7139.jpeg'
 import craftsImg from '../assets/products/IMG_7087.jpeg'
-import guideNomenclature from '../assets/products/IMG_7075.jpeg'
-import guideCVC from '../assets/products/IMG_7108.jpeg'
-import guideMath from '../assets/products/IMG_7164.jpeg'
-import guideLanguageShelf from '../assets/products/IMG_7113-1.jpeg'
-import guideFall from '../assets/products/IMG_7084.jpeg'
-import guideArt from '../assets/products/IMG_7076.jpeg'
-import guidePracticalLife from '../assets/products/IMG_7087.jpeg'
-import guideBirdFeeder from '../assets/products/diy-bird-feeder.png'
-import guideSeedBombs from '../assets/products/garden-seed-bombs.png'
-import guideFlowerCrowns from '../assets/products/flower-crowns.png'
-import guideIceCream from '../assets/products/should-i-share-ice-cream.png'
-import guideNappingHouse from '../assets/products/the-napping-house.png'
-import guideSpilledMilk from '../assets/products/it-looks-like-spilled-milk.png'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
-const IDEA_IMAGES: Record<string, string> = {
-  'what-are-nomenclature-cards': guideNomenclature,
-  'cvc-word-activities-kindergarten': guideCVC,
-  'montessori-math-at-home': guideMath,
-  'setting-up-a-language-shelf': guideLanguageShelf,
-  'fall-montessori-activities': guideFall,
-  'montessori-art-appreciation-children': guideArt,
-  'practical-life-fine-motor-activities': guidePracticalLife,
-  'diy-bird-feeder-craft': guideBirdFeeder,
-  'garden-seed-bombs': guideSeedBombs,
-  'flower-crowns': guideFlowerCrowns,
-  'should-i-share-my-ice-cream': guideIceCream,
-  'the-napping-house': guideNappingHouse,
-  'it-looks-like-spilled-milk': guideSpilledMilk,
-}
 
 const THEMES = [
   {
@@ -88,6 +61,7 @@ function Ideas() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/ideas" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Work Ideas & Montessori Activity Guides | The Messy Table" />
         <meta name="twitter:description" content="Free Montessori activity guides and seasonal work ideas from Kerri's classroom." />
@@ -119,8 +93,8 @@ function Ideas() {
         <div className="ideas-list">
           {IDEAS.map((idea) => (
             <Link to={`/ideas/${idea.slug}`} key={idea.slug} className="idea-list-card">
-              {(IDEA_IMAGES[idea.slug] || idea.image) && (
-                <img src={IDEA_IMAGES[idea.slug] || idea.image} alt={idea.title} className="idea-list-image" loading="lazy" />
+              {idea.image && (
+                <img src={idea.image} alt={idea.title} className="idea-list-image" loading="lazy" />
               )}
               <div className="idea-list-text">
                 <span className="idea-list-category">{idea.category}</span>

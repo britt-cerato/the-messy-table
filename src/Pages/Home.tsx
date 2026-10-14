@@ -130,6 +130,15 @@ function Home() {
         <meta name="google-site-verification" content="hFgkrmtEqX8PHDfHHf0isj5rk6s9dtROYtYfnHKMYbQ" />
         <script type="application/ld+json">{JSON.stringify(orgSchema)}</script>
         <script type="application/ld+json">{JSON.stringify(websiteSchema)}</script>
+        <script type="application/ld+json">{JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: HOME_FAQS.map((faq) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: { '@type': 'Answer', text: faq.a },
+          })),
+        })}</script>
       </Helmet>
 
       {/* ── Hero: Scattered Polaroids ── */}
@@ -355,11 +364,9 @@ function Home() {
                 {faq.q}
                 <span className="faq-accordion-arrow">▾</span>
               </button>
-              {openFaq === i && (
-                <div className="faq-accordion-a">
-                  <p>{faq.a}</p>
-                </div>
-              )}
+              <div className="faq-accordion-a" hidden={openFaq !== i}>
+                <p>{faq.a}</p>
+              </div>
             </div>
           ))}
         </div>

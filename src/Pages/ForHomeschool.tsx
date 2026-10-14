@@ -1,6 +1,7 @@
 import { Helmet } from 'react-helmet-async'
 import { Link } from 'react-router-dom'
 import { PRODUCTS } from '../data/products'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 const FEATURED_IDS = ['spring-flower-matching', 'bead-stair', 'build-a-snowman']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
@@ -17,6 +18,7 @@ function ForHomeschool() {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://themessytable.org/for-homeschool" />
         <meta property="og:site_name" content="The Messy Table" />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Montessori Materials for Homeschool Families | The Messy Table" />
         <meta name="twitter:description" content="Handmade Montessori works and printable PDFs for homeschool families. Hands-on math, language, and seasonal works for ages 3–8." />

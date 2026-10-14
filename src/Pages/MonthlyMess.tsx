@@ -5,6 +5,7 @@ import { getIdea, type Idea } from '../data/ideas'
 import { PRODUCTS } from '../data/products'
 import { PinterestFollowBanner, SaveToPinterestButton } from '../components/Pinterest'
 import KitSignup from '../components/KitSignup'
+import { DEFAULT_OG_IMAGE } from '../data/seo'
 
 const LIST_URL = 'https://themessytable.org/monthly-mess'
 const LIST_TITLE = 'The Monthly Mess: Kerri\'s Monthly Update | The Messy Table'
@@ -23,6 +24,7 @@ export function MonthlyMessList() {
         <meta property="og:description" content={LIST_DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={LIST_URL} />
+        <meta property="og:image" content={DEFAULT_OG_IMAGE} />
         <meta property="og:site_name" content="The Messy Table" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={LIST_TITLE} />
@@ -115,6 +117,7 @@ export function MonthlyMessIssue() {
     headline: issue.title,
     description: issue.excerpt,
     datePublished: issue.date,
+    dateModified: issue.date,
     url: pageUrl,
     mainEntityOfPage: { '@type': 'WebPage', '@id': pageUrl },
     author: { '@type': 'Person', name: 'Kerri', url: 'https://themessytable.org/about' },

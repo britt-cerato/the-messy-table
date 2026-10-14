@@ -4,6 +4,8 @@ import { Link, useParams } from 'react-router-dom'
 import { getProduct } from '../data/products'
 import BuyNowButton from '../components/BuyNowButton'
 import { SaveToPinterestButton } from '../components/Pinterest'
+import { IDEAS } from '../data/ideas'
+import { PRODUCTS } from '../data/products'
 
 function Product() {
   const { id } = useParams<{ id: string }>()
@@ -24,6 +26,10 @@ function Product() {
   }
 
   const allImages = [product.image, ...product.gallery]
+  const relatedIdeas = IDEAS.filter((idea) => idea.relatedProductIds.includes(product.id))
+  const moreLikeThis = PRODUCTS.filter(
+    (p) => p.id !== product.id && p.categories.some((c) => product.categories.includes(c)),
+  ).slice(0, 4)
   const pageUrl = `https://themessytable.org/shop/${product.id}`
   const ageDetail = product.details.find((d) => d.toLowerCase().includes('suits') || d.toLowerCase().includes('ages'))
   // Keep titles ≤60 and descriptions ≤160 characters so Google shows them in full
@@ -163,6 +169,40 @@ function Product() {
           />
         </div>
       </div>
+
+      {relatedIdeas.length > 0 && (
+        <section className="products">
+          <h2 className="section-title">Activities That Use This Work</h2>
+          <div className="ideas-list">
+            {relatedIdeas.map((idea) => (
+              <Link to={`/ideas/${idea.slug}`} key={idea.slug} className="idea-list-card">
+                {idea.image && <img src={idea.image} alt={idea.title} className="idea-list-image" loading="lazy" />}
+                <div className="idea-list-text">
+                  <span className="idea-list-category">{idea.category}</span>
+                  <h3 className="idea-list-title">{idea.title}</h3>
+                  <p className="idea-list-excerpt">{idea.excerpt}</p>
+                  <span className="idea-list-read-more">Read the guide →</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {moreLikeThis.length > 0 && (
+        <section className="products">
+          <h2 className="section-title">More Like This</h2>
+          <div className="products-grid">
+            {moreLikeThis.map((p) => (
+              <Link to={`/shop/${p.id}`} key={p.id} className="product-card">
+                <img src={p.image} alt={`${p.name}, Montessori ${p.categories[0]} work`} className="product-image" loading="lazy" />
+                <h3>{p.name}</h3>
+                <p>{p.price}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   )
 }
