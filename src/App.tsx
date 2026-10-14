@@ -79,17 +79,17 @@ function App() {
         <footer className="footer">
           <div className="footer-newsletter">
             <h4>The Monthly Mess</h4>
-            <p>Once a month, Kerri shares what's on her shelf, seasonal work ideas and what's new in the shop.</p>
-            <Link to="/monthly-mess" className="footer-newsletter-btn">Read this month's →</Link>
+            <p>Once a month, Kerri shares what's on her shelf, seasonal work ideas and what's new in the shop. In between, she pins new ideas on Pinterest.</p>
+            <div className="footer-cta-row">
+              <Link to="/monthly-mess" className="footer-newsletter-btn">Read this month's →</Link>
+              <FollowPinterestButton />
+            </div>
           </div>
           <div className="footer-inner">
             <div className="footer-brand">
               <h3>The Messy Table</h3>
               <p>Handmade classroom works from a New Hampshire teacher.</p>
               <p>P.O. Box 56 · Milford, NH 03055-0056</p>
-              <div className="footer-social">
-                <FollowPinterestButton />
-              </div>
             </div>
             <ul className="footer-links">
               <li><Link to="/shop">Shop</Link></li>

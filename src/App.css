@@ -1784,7 +1784,21 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 .mess-item-title a { color: var(--text-dark); text-decoration: underline; text-decoration-color: var(--soft-lavender); text-underline-offset: 3px; }
 .mess-items p { font-family: 'DM Sans', sans-serif; line-height: 1.7; color: var(--text-dark); }
 
-.footer-social { margin-top: 14px; }
+.footer-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.meet-kerri-pinterest { margin-top: 28px; }
+.meet-kerri-pinterest p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--brown-mid);
+  margin-bottom: 12px;
+}
 
 /* ── Pinterest ─────────────────────────────────────────── */
 .pinterest-button {
