@@ -70,6 +70,7 @@ import imgShamrockMathPreview from '../assets/products/shamrock-math-preview.jpg
 import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-preview.jpg'
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
 import imgSightWordPracticeLevelsPreview from '../assets/products/sight-word-practice-levels-preview.jpg'
+import imgMagicWordsPreview from '../assets/products/magic-words-preview.jpg'
 import imgPlantingDigraphs from '../assets/products/planting-digraphs.jpg'
 import imgPlantingDigraphsCards from '../assets/products/planting-digraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
@@ -561,6 +562,16 @@ export const PRODUCTS: Product[] = [
     description: 'Read the word, write the word, then build the word with letter tiles. There are 6 levels with 10 words on each page, so kids can move up as they learn.',
     details: ['6 levels, 60 sight words', 'Level 1: a, and, I, it, in, is, me, my, the, to', 'Three columns: Read the Words · Write the Words · Build the Words', 'Build with letter tiles, magnetic letters or stamps (letters not included)', 'Laminate it or put it in a sheet protector to use with a dry erase marker', 'Printable PDF, emailed to you', 'Suits Pre-K to Grade 1'],
     includes: ['Level 1: My First Words', 'Level 2: Building Words', 'Level 3: Growing Readers', 'Level 4: New Adventures', 'Level 5: Superstar', 'Level 6: Rockstars'],
+  },
+  {
+    id: 'magic-words',
+    name: 'Magic Words Writing Page',
+    price: '$2.00',
+    categories: ['printable'],
+    image: imgMagicWordsPreview,
+    gallery: [],
+    description: 'A magic hat writing page for sight words or spelling words. Kids write up to 10 words on the handwriting lines.',
+    details: ['1 page, 10 numbered handwriting lines', 'Use for sight words, spelling words or any word list', 'Goes well with Sight Word Practice', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
   },
   {
     id: 'planting-digraphs',
