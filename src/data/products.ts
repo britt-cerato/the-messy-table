@@ -71,6 +71,7 @@ import imgBirdhouseBlendsPreview from '../assets/products/birdhouse-blends-previ
 import imgSightWordPractice from '../assets/products/sight-word-practice.jpg'
 import imgSightWordPracticeLevelsPreview from '../assets/products/sight-word-practice-levels-preview.jpg'
 import imgMagicWordsPreview from '../assets/products/magic-words-preview.jpg'
+import imgRainbowWritingPreview from '../assets/products/rainbow-writing-preview.jpg'
 import imgPlantingDigraphs from '../assets/products/planting-digraphs.jpg'
 import imgPlantingDigraphsCards from '../assets/products/planting-digraphs-cards.jpg'
 import imgGrowingSounds from '../assets/products/growing-sounds.jpg'
@@ -571,6 +572,16 @@ export const PRODUCTS: Product[] = [
     image: imgMagicWordsPreview,
     gallery: [],
     description: 'A magic hat writing page for sight words or spelling words. Kids write up to 10 words on the handwriting lines.',
+    details: ['1 page, 10 numbered handwriting lines', 'Use for sight words, spelling words or any word list', 'Goes well with Sight Word Practice', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
+  },
+  {
+    id: 'rainbow-writing',
+    name: 'Rainbow Writing Page',
+    price: '$5.00',
+    categories: ['printable'],
+    image: imgRainbowWritingPreview,
+    gallery: [],
+    description: 'A rainbow writing page for sight words or spelling words. Kids write each word, then trace over it in different colors to make it a rainbow.',
     details: ['1 page, 10 numbered handwriting lines', 'Use for sight words, spelling words or any word list', 'Goes well with Sight Word Practice', 'Printable PDF, emailed to you', 'Suits Kindergarten to Grade 1'],
   },
   {
