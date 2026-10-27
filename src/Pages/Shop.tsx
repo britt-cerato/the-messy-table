@@ -166,11 +166,11 @@ function Shop() {
         <Helmet>
           <title>{label} Montessori Works — The Messy Table</title>
           <meta name="description" content={`Handmade Montessori works for ${label.toLowerCase()}, made by Kerri, a Montessori educator in Southern NH. For Pre-K to Grade 2 classrooms and homeschool families.`} />
-          <link rel="canonical" href={`${SITE_URL}/shop?theme=${theme}`} />
+          <link rel="canonical" href={`${SITE_URL}/shop`} />
           <meta property="og:title" content={`${label} Montessori Works — The Messy Table`} />
           <meta property="og:description" content={`Handmade Montessori works for ${label.toLowerCase()} from Kerri's classroom.`} />
           <meta property="og:type" content="website" />
-          <meta property="og:url" content={`${SITE_URL}/shop?theme=${theme}`} />
+          <meta property="og:url" content={`${SITE_URL}/shop`} />
           <meta property="og:image" content={DEFAULT_OG_IMAGE} />
           <meta property="og:site_name" content="The Messy Table" />
         </Helmet>
