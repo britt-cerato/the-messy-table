@@ -1870,6 +1870,11 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 /* Kit (Monthly Mess) signup form */
 .kit-signup { max-width: 520px; margin: 0 auto 20px; }
 .kit-signup:empty { display: none; }
+.kit-signup .formkit-column { text-align: center; }
+.kit-signup .formkit-header { text-align: center; }
+.kit-signup .formkit-submit { width: 100%; }
+.kit-signup .formkit-disclaimer { text-align: center; }
+.kit-signup .formkit-powered-by-convertkit-container { text-align: center; }
 .newsletter-signup {
   max-width: 720px;
   margin: 40px auto;
