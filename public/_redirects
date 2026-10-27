@@ -1,4 +1,5 @@
 https://www.themessytable.org/* https://themessytable.org/:splat 301
+/products/* /shop/:splat 301
 /shop/color-matching-printable /shop/color-matching 301
 /shop/animal-three-part-farm-zoo /shop/animal-parent-baby-matching 301
 /shop/planting-diagraphs /shop/planting-digraphs 301
