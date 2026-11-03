@@ -1868,10 +1868,13 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 .nav-pinterest:hover { color: #e60023; }
 
 /* Kit (Monthly Mess) signup form */
-.kit-signup { max-width: 520px; margin: 0 auto 20px; }
+.kit-signup { max-width: 420px; margin: 0 auto 20px; }
 .kit-signup:empty { display: none; }
-.kit-signup .formkit-column { text-align: center; }
-.kit-signup .formkit-header { text-align: center; }
+/* Hide the background image column and internal header — we have our own heading above */
+.kit-signup .formkit-background { display: none !important; }
+.kit-signup .formkit-header { display: none !important; }
+.kit-signup .formkit-column { text-align: center; padding: 16px 0 0 !important; background: transparent !important; box-shadow: none !important; border-radius: 0 !important; }
+.kit-signup .seva-form { background: transparent !important; border-radius: 0 !important; box-shadow: none !important; }
 .kit-signup .formkit-submit { width: 100%; }
 .kit-signup .formkit-disclaimer { text-align: center; }
 .kit-signup .formkit-powered-by-convertkit-container { text-align: center; }

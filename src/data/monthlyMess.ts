@@ -4,6 +4,7 @@
 // (by product id) you want to feature. The sitemap and pre-render pick up
 // new entries automatically.
 
+import imgNovember2026 from '../assets/monthly-mess/november-2026-newsletter.jpg'
 import imgOctober2026 from '../assets/monthly-mess/october-2026-newsletter.jpg'
 
 export interface MessItem {
@@ -34,6 +35,55 @@ export interface MessIssue {
 }
 
 export const MONTHLY_MESS: MessIssue[] = [
+  {
+    slug: 'november-2026',
+    month: 'November 2026',
+    date: '2026-11-01',
+    title: 'The Monthly Mess: November 2026 Newsletter',
+    excerpt: "Kerri's November newsletter: Thanksgiving activities, Parts of a Pumpkin, Thankful Hands, turkey crafts and important dates for the month.",
+    image: imgNovember2026,
+    imageAlt: "The Messy Table November 2026 newsletter by Kerri Donahue, with Thanksgiving activities, turkey crafts and important dates",
+    intro: "Can you believe it! With November comes Thanksgiving. I have added some fun Thanksgiving activities as well as crafts for you to enjoy at home with your kiddos or in your classrooms!",
+    sections: [
+      {
+        heading: 'Website Highlights',
+        items: [
+          { title: 'Parts Of A Pumpkin', text: 'Explore parts of a pumpkin and the correct names of each part.' },
+          { title: 'Thankful Hands', text: 'Can share as a class what your thankful for, then make the childs handprint and add what each child is thankful for on the plate.', link: '/ideas/thankful-hands' },
+          { title: 'Placemate Weaving', text: 'Allows each child to practice weaving and their fine motor skills.', link: '/ideas/placemat-weaving' },
+        ],
+      },
+      {
+        heading: "This Season's Activities",
+        items: [
+          { title: 'Turkey Life Cycle', text: 'Teach your class how turkeys are born, how they grown and fun facts about turkeys.' },
+          { title: 'Disguise A Turkey', text: 'Creates a fun way for children to have fun disguising a turkey how ever they want. Allowing the class to guess what disguise their turkey is.', link: '/ideas/disguise-a-turkey' },
+          { title: 'Thanksgiving Dinner Plates', text: 'Create a dinner plate with different thanksgiving food items using paper plates.' },
+          { title: 'A Turkey For Thanksgiving', text: 'A fun way for the children to make a funny sign for their turkey and what their turkey might be thinking.' },
+        ],
+      },
+      {
+        heading: 'Website Spotlight',
+        items: [
+          { title: 'Turkey Buttoning Activity', text: 'Allows children to practice self help buttoning skills.', link: '/shop/thanksgiving-buttoning' },
+        ],
+      },
+      {
+        heading: 'Important Dates',
+        items: [
+          { title: 'November 11: Veterans Day', text: 'Veterans Day Craft' },
+          { title: 'November 20: Thanksgiving Activity', text: 'New Themed Activity' },
+          { title: 'November 26–30: Thanksgiving Break', text: 'Website Break' },
+        ],
+      },
+      {
+        heading: 'Website Note',
+        paragraphs: ['Hope you all have a great Thanksgiving with your families and friends!'],
+      },
+    ],
+    ideaSlugs: ['thankful-hands', 'placemat-weaving', 'disguise-a-turkey'],
+    productIds: ['thanksgiving-buttoning'],
+  },
   {
     slug: 'october-2026',
     month: 'October 2026',
