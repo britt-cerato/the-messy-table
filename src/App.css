@@ -1877,7 +1877,7 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 .kit-signup .seva-form { background: transparent !important; border-radius: 0 !important; box-shadow: none !important; }
 .kit-signup .formkit-submit { width: 100%; }
 .kit-signup .formkit-disclaimer { text-align: center; }
-.kit-signup .formkit-powered-by-convertkit-container { text-align: center; }
+.kit-signup .formkit-powered-by-convertkit-container { display: none !important; }
 .newsletter-signup {
   max-width: 720px;
   margin: 40px auto;
