@@ -54,14 +54,14 @@ body {
   padding: 18px 48px;
   background-color: var(--cream-dark);
   position: relative;
-  z-index: 5;
+  z-index: 10;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 12px;
-    padding: 16px 24px;
+    padding: 14px 20px;
   }
 }
+
+.navbar.nav-open { z-index: 200; }
 
 /* Torn-paper edge shared by the header, page title bands and footer.
    The shape is a mask, so each edge takes its section's own colour. */
@@ -161,6 +161,62 @@ body {
 
 .nav-cart:hover { color: var(--brown); }
 .nav-cart svg { display: block; }
+
+/* Hamburger button — hidden on desktop, shown on mobile */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--brown);
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  transform-origin: center;
+}
+.nav-open .nav-hamburger span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-open .nav-hamburger span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-open .nav-hamburger span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+@media (max-width: 768px) {
+  .nav-hamburger { display: flex; }
+
+  /* Nav links become a full-width dropdown below the bar */
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background-color: var(--cream-dark);
+    padding: 4px 20px 16px;
+    gap: 0;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  }
+  .nav-open .nav-links { display: flex; }
+  .nav-links li { width: 100%; }
+  .nav-links a {
+    display: block;
+    padding: 12px 0;
+    font-size: 15px;
+    border-bottom: 1px solid rgba(107,76,53,0.1);
+  }
+  .nav-links li:last-child a { border-bottom: none; }
+
+  .nav-right { gap: 16px; }
+}
 
 /* ── Hero (Polaroid Scatter) ──────────────────────────── */
 
@@ -1413,6 +1469,12 @@ a.footer-newsletter-btn { display: inline-block; text-decoration: none; }
 .buy-now-success p { font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--brown); margin: 0; }
 
 .product-page-note { font-family: 'DM Sans', sans-serif; font-size: 13px; color: var(--brown-mid); }
+.product-shipping-note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 13px;
+  color: var(--brown-mid);
+  margin-bottom: 12px;
+}
 .product-not-found { padding: 80px 48px; text-align: center; display: flex; flex-direction: column; gap: 24px; align-items: center; }
 .back-link { font-family: 'DM Sans', sans-serif; font-size: 15px; color: var(--brown-mid); text-decoration: none; }
 .back-link:hover { color: var(--brown); }

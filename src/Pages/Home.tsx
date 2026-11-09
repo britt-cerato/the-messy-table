@@ -20,7 +20,7 @@ import heroPhoto5 from '../assets/products/fall-write-the-room-cards.jpg'
 import { SOCIAL_PROFILES } from '../data/social'
 import { FollowPinterestButton } from '../components/Pinterest'
 
-const FEATURED_IDS = ['write-the-room-spring', 'halloween-counting', 'valentines-mason-jar-addition']
+const FEATURED_IDS = ['thanksgiving-buttoning', 'fall-write-the-room', 'animal-nomenclature']
 const featured = FEATURED_IDS.map((id) => PRODUCTS.find((p) => p.id === id)!)
 
 const PREVIEW_IDEAS = IDEAS.filter((i) => i.image).slice(0, 6)

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route, Link, NavLink, useLocation } from 'react-router-dom'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Home from './Pages/Home'
 import Shop, { SeasonShop } from './Pages/Shop'
 import About from './Pages/About'
@@ -45,13 +45,16 @@ function FooterNewsletter() {
 }
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+  const closeMenu = () => setMenuOpen(false)
+
   return (
     <BrowserRouter>
       <ScrollToTop />
       <div className="app">
-        <nav className="navbar">
+        <nav className={`navbar${menuOpen ? ' nav-open' : ''}`}>
           <div className="nav-brand">
-            <Link to="/">
+            <Link to="/" onClick={closeMenu}>
               <span className="nav-logo-mark" aria-hidden="true">
                 <img src={doodleCrayon} alt="" />
               </span>
@@ -60,24 +63,25 @@ function App() {
           </div>
           <div className="nav-right">
             <ul className="nav-links">
-              <li><NavLink to="/" end>Home</NavLink></li>
-              <li><NavLink to="/shop">Shop</NavLink></li>
-              <li><NavLink to="/ideas">Work Ideas</NavLink></li>
-              <li><NavLink to="/monthly-mess">Newsletter</NavLink></li>
-              <li><NavLink to="/about">About</NavLink></li>
-              <li><NavLink to="/faq">FAQ</NavLink></li>
-              <li><NavLink to="/contact">Contact</NavLink></li>
+              <li><NavLink to="/" end onClick={closeMenu}>Home</NavLink></li>
+              <li><NavLink to="/shop" onClick={closeMenu}>Shop</NavLink></li>
+              <li><NavLink to="/ideas" onClick={closeMenu}>Work Ideas</NavLink></li>
+              <li><NavLink to="/monthly-mess" onClick={closeMenu}>Newsletter</NavLink></li>
+              <li><NavLink to="/about" onClick={closeMenu}>About</NavLink></li>
+              <li><NavLink to="/faq" onClick={closeMenu}>FAQ</NavLink></li>
+              <li><NavLink to="/contact" onClick={closeMenu}>Contact</NavLink></li>
             </ul>
             <a href={PINTEREST_URL} className="nav-cart nav-pinterest" target="_blank" rel="noopener noreferrer" aria-label="Follow The Messy Table on Pinterest">
               <PinterestIcon size={22} />
             </a>
-            <Link to="/shop" className="nav-cart" aria-label="Shop">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
-                <line x1="3" y1="6" x2="21" y2="6"/>
-                <path d="M16 10a4 4 0 01-8 0"/>
-              </svg>
-            </Link>
+            <button
+              className="nav-hamburger"
+              onClick={() => setMenuOpen(o => !o)}
+              aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+              aria-expanded={menuOpen}
+            >
+              <span /><span /><span />
+            </button>
           </div>
         </nav>
         <Routes>

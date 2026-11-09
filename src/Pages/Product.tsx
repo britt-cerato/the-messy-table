@@ -153,11 +153,16 @@ function Product() {
             </>
           ) : (
             <>
+              {!product.categories.includes('printable') && (
+                <p className="product-shipping-note">
+                  📦 Ships from New Hampshire · Shipping calculated at PayPal checkout
+                </p>
+              )}
               <BuyNowButton product={product} />
               <p className="product-page-note">
                 {product.categories.includes('printable')
                   ? 'Pay securely with PayPal. Kerri will email you the PDF so you can print it at home. 🖨️'
-                  : "Pay securely with PayPal and enter your shipping address at checkout. Kerri will get your order ready to ship. 💛"}
+                  : 'Pay with PayPal or any debit/credit card — no PayPal account needed. Kerri will get your order ready to ship. 💛'}
               </p>
             </>
           )}
